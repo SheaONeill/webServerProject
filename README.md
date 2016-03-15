@@ -15,7 +15,7 @@ First attempt to move HTML code that is repeated on every page into separate .ph
 //include the doctype from header_doctype.php
 require_once __DIR__ . '/../templates/header_doctype.php';
 
-//insert the title of the page
+//inserted the title of the page between includes
 print '<title>St. Joseph\'s Parish, East Wall</title><!-- title of webpage -->';
 
 //include the meta tags from header_meta.php
