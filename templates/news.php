@@ -13,6 +13,7 @@ require_once __DIR__ . '/../templates/header_imports.php';
 
 //-------------------------------------------
 ?>
+
 <body><!-- begin body opening tag -->
 <div id="main_container"><!-- div to wrap everything-->
 	<!-- ***** header ***** -->
@@ -80,7 +81,7 @@ require_once __DIR__ . '/../templates/header_imports.php';
 	require_once __DIR__ . '/../templates/footer.php';
 
 	?>
-		<p id="copyright">&copy; 2015&nbsp;&nbsp;James O&#39;Neill&nbsp;&nbsp;<a href="mailto:B00084432@student.itb.ie">Email</a></li></p><!-- footer copyright-->
+		<p id="copyright">&copy; 2016&nbsp;&nbsp;James O&#39;Neill&nbsp;&nbsp;<a href="mailto:B00084432@student.itb.ie">Email</a></li></p><!-- footer copyright-->
 	</div><!-- close the_footer_wrapper tag -->
 </div><!-- close main_container div tag -->
 </body><!-- close body tag -->

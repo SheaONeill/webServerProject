@@ -6,20 +6,30 @@
  * Time: 14:11
  */
 
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use ItbProject2016\MainController;
+
 // get action GET parameter (if it exists)
 $action = filter_input(INPUT_GET, 'action', FILTER_SANITIZE_STRING);
 
-if ('about' == $action){
-    require_once __DIR__ . '/../templates/history.php';
+$mainController = new MainController();
+
+if ('history' == $action){
+    $mainController->historyAction();
+if ('news' == $action){
+    $mainController->newsAction();
 } else if ('contact' == $action) {
-    require_once __DIR__ . '/../templates/news.php';
-} else if ('list' == $action) {
-    require_once __DIR__ . '/../templates/donate.php';
-} else if ('list' == $action) {
-    require_once __DIR__ . '/../templates/contact.php';
+    $mainController->contactAction();
+} else if ('donate' == $action) {
+    $mainController->donateAction();
 } else if ('sitemap' == $action) {
-    require_once __DIR__ . '/../templates/site_map.php';
+    $mainController->sitemapAction();
 } else {
     // default is home page ('index' action)
-    require_once __DIR__ . '/../templates/index.php';
-}
+    $mainController->indexAction();
+}}
+
+
+

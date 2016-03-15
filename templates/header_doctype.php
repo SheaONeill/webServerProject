@@ -10,3 +10,4 @@
 <html lang="en"><!-- begin html and define language -->
 <head><!-- begin Head tag -->
     <meta charset="utf-8" /><!-- define the character set  -->
+    <title><?= $pageTitle ?></title><!-- title of webpage -->
