@@ -26,3 +26,6 @@ require_once __DIR__ . '/../templates/header_imports.php';
 
 //include the footer from footer.php
 require_once __DIR__ . '/../templates/footer.php';
+
+Preview:
+http://u2tour.u2fansites.com/TestingWebDevProject/templates/
