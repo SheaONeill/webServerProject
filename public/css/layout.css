@@ -1,0 +1,202 @@
+/*
+    ---------------------------------------
+    layout
+    ---------------------------------------
+*/
+
+#main_container{/* reference the main_container */
+	margin:0 auto;/* top and bottom 0 left and right (browser calculates a margin) http://w3schools.invisionzone.com/index.php?showtopic=33525 */
+	width:100%;/* set the width of main_container */
+}
+/* header layout */
+header {/* reference the header element */
+    margin: 0; /* Some elements have default margins so this resets everything back to 0px */
+	padding: 0; /* Some elements have default padding so this resets everything back to 0px */
+    
+}
+header .media_logo_wrapper{/* reference the header element  *//* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;/* this defines a flex container and enables flex context for all its direct children. */	
+	-webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+	justify-content: space-around;/* items are evenly distributed in the line with equal space around them */
+	padding: 15px; /* padding is the distance between the items and border*/
+}
+header .social_media li{/* reference the header social_media element  */
+	display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+	display:inline-flex; /* to display the menu in-line instead of block */
+	}
+	/* section style */
+section {/* reference the section element  */
+	margin: 0; /* Some elements have default margins so this resets everything back to 0px */
+	padding: 0; /* Some elements have default padding so this resets everything back to 0px */
+}
+
+table {
+    margin: 0 auto; /* or margin: 0 auto 0 auto */
+  }
+
+#section_container {/* reference the section_container */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;/* this defines a flex container and enables flex context for all its direct children. */	
+    /* flex-wrap: wrap; *//* make the flexible items wrap if necesarry */
+	-webkit-justify-content: center;
+    -ms-flex-pack: center;
+	justify-content: center;/* items are centered along the line */
+	perspective: 50em;/* enable perspective */
+}
+section img {/* reference the section images */
+	display: block;/* display as a block element */
+    margin:0 auto;/* top and bottom 0 left and right (browser calculates a margin) */
+	width:100%;/* set the width of the section images */
+}
+/* This CSS is used for the Show/Hide functionality. http://www.cssnewbie.com/showhide-content-css-javascript/#.VR2IsfnF91A */
+   .more {/* reference any element with the more class */
+      display: none;/* hide element (will not take up any space and the page will be displayed as if the element is not there) */
+      border-top: 1px solid #666;/* add a top border to the more class (size  type  colour) */	
+      border-bottom: 1px solid #666; }/* add a bottom border to the more class (size  type  colour) */
+   a.showLink, a.hideLink {/* reference any element with the active showLink and hideLink class */
+      text-decoration: none;/* remove the underline */
+      color: #36f;/*set the font colour */
+      padding-left: 8px;/* set the padding */
+      }
+ 
+article {/* reference the article element  */
+	margin: 0; /* Some elements have default margins so this resets everything back to 0px */
+	padding: 0; /* Some elements have default padding so this resets everything back to 0px */
+}
+
+.flex_four_column {/* reference any element with the flex_four_column class */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display:flex;/* this defines a flex container and enables flex context for all its direct children. */	
+	-webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+	flex-wrap: wrap;/* make the flexible items wrap if necesarry */
+	-webkit-flex: 1;/* Safari 6.1+ */
+    -ms-flex: 1;/* IE 10 */ 
+	flex: 1;/* make all the flexible boxes equal  */
+	}
+
+.flex_four_column_left {/* reference any element with the flex_four_column_left class */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display:flex;/* this defines a flex container and enables flex context for all its direct children. */	
+	-webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+	flex-wrap: wrap;/* make the flexible items wrap if necesarry */
+	flex: 1;/* make all the flexible boxes equal  */
+	transform: rotateY(3deg);/* add perspective */
+	}
+
+.flex_four_column_right {/* reference any element with the flex_four_column_right class */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display:flex;/* this defines a flex container and enables flex context for all its direct children. */	
+	-webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+	flex-wrap: wrap;/* make the flexible items wrap if necesarry */
+	-webkit-flex: 1;/* Safari 6.1+ */
+    -ms-flex: 1;/* IE 10 */ 
+	flex: 1;/* make all the flexible boxes equal  */
+	transform: rotateY(-3deg);/* add perspective */
+	}
+.flex_four_column img {/* reference the flex_four_column img  */
+    width: 100%;/* set the width of the flex_four_column images */
+	height: 100%;/* set the width of the flex_four_column images */
+  }
+.flex {/* reference any element with the flex class */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display:flex;/* this defines a flex container and enables flex context for all its direct children. */	
+	-webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+	flex-wrap: wrap;/* make the flexible items wrap if necesarry */
+	-webkit-flex: 2 0 300px;/* Safari 6.1+ */
+    -ms-flex: 2 0 300px;/* IE 10 */ 
+	flex: 2 0 300px;/* make the flexible boxes 2 times bigger in ratio */
+	padding: 1rem;/* padding is the distance between the element/text and the border */
+	}
+.flex_site_map {/* reference any element with the flex class */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display:flex;/* this defines a flex container and enables flex context for all its direct children. */	
+	width:30%;/* set the width */
+	padding: 1rem;/* padding is the distance between the element/text and the border */
+	}
+.flex_welcome_left , .flex_welcome_right, .flex_welcome_main{/* reference any element with the flex_welcome_left class */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display:flex;/* this defines a flex container and enables flex context for all its direct children. */	
+	-webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+	flex-wrap: wrap;/* make the flexible items wrap if necesarry */
+	 -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+	justify-content: flex-start;
+	}
+.flex_welcome_left{/* reference any element with the flex_welcome_left class */
+	transform: rotateY(2deg);/* add perspective */
+	}
+.flex_welcome_right{/* reference any element with the flex_welcome_left class */
+	transform: rotateY(-2deg);/* add perspective */
+	}
+.flex_donations {/* reference any element with the flex_donations class */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display:flex;/* this defines a flex container and enables flex context for all its direct children. */	
+	-webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+	flex-wrap: wrap;/* make the flexible items wrap if necesarry */
+	}	
+.flex_donations_totals {/* reference any element with the flex_donations_totals class */
+	flex: 1;/* set minimum width for items */
+	}
+.fixed_left {/* reference any element with the fixed class */
+	width: 400px;/* set the width of the fixed class */
+	transform: rotateY(2deg);/* add perspective */
+	}
+.fixed_right {/* reference any element with the fixed class */
+	width: 400px;/* set the width of the fixed class */
+	transform: rotateY(-2deg);/* add perspective */
+	}
+
+#copyright {/* reference the copyright id */
+	margin: 0px; /* Some elements have default margins so this resets everything back to 0px */
+	padding: 0px; /* Some elements have default padding so this resets everything back to 0px */
+  	}
+.the_footer{
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;/* this defines a flex container and enables flex context for all its direct children. */	
+	-webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+	justify-content: space-around;/* items are evenly distributed in the line with equal space around them */
+	padding: 70px; /* set the padding */
+	}
+	
+
+

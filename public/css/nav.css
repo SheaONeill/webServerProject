@@ -1,0 +1,43 @@
+body {
+    margin: 0; /* reset the margins by setting them to 0 */
+    padding: 0; /* reset the padding by setting them to 0 */
+}
+
+nav ul {/* reference the nav unordered link list */
+	margin: 0;/* reset the margins by setting them to 0 */
+	padding: 0;/* reset the padding by setting them to 0 */
+	list-style: none;/* remove bullet points from unordered list item */
+	text-align: center;/* centre align the text */
+	display: flex;/* this defines a flex container and enables flex context for all its direct children. */
+}
+nav ul li a {/* reference the nav unordered active link */
+	display: block;/* makes all the nav unordered active link block level elements */
+	background-color: #a0522d;/* set the background colour of the nav unordered active link */
+	color: yellow;/*set the font colour of the hover link */
+	text-decoration: none;/* remove the underline */
+	padding: 1em;/* set the padding */
+	border-radius: 10px;/* add rounded borders */
+	/* border: 1px solid #deb887; *//* set the border colour of the active link to burlywood */
+	
+}
+nav ul li a:hover {/* reference the nav unordered active hover link */
+	background-color: #deb887;/* set the background colour of the nav unordered hover link */
+	color: #556b2f;/*set the font colour of the hover link */
+	text-decoration: none;/* remove the underline */
+	border-radius: 10px;/* add rounded borders */
+	background: radial-gradient(white, #deb887, #a0522d 50%); /* Standard syntax (must be last) */
+	font-weight: 600;/* set the font-weight of the text */
+	}
+nav ul li a.current_page {/* reference the current_page class of the nav unordered active link */
+	background: radial-gradient(white, #deb887, #a0522d 70%); /* set the background gradient colour of the nav current_page */
+	color: #a0522d;/*set the font colour of the current_page link */
+	font-weight: 700;/* set the font-weight of the text */}
+nav li {/* reference the nav list item */
+    flex: 1;/* set the flexible items be the same length */
+	margin: 0.5em;/* adds a margin of 0.5em top bottom left right */
+}
+nav ul li {/* reference the nav unordered list item */
+  flex: 1 0 200px;/* set minimum width for items */
+  } 
+
+

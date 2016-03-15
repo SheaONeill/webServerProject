@@ -1,0 +1,313 @@
+/*
+    ---------------------------------------
+    Styling
+    ---------------------------------------
+*/
+#main_container{/* reference the main_container */
+	border:1px solid #878e63;/* add a border to the wrapper (size  type  colour) */	
+}
+/* body style */
+body{/* reference the body */
+  background-image:url("../images/background/chruch.png");/* set the body background image */
+  color: #556b2f;/* set the font colour of the body to darkolivegreen */
+  font-family: "open sans", sans-serif;/* set the font-family of the body */
+  font-weight: 400;/* set the font-weight of the body */
+  font-size: 14px;/* set the font-size of the body */
+  line-height: 1.8;/* set the line-height of the text in the body */
+}
+
+@font-face {/* define a font-face */
+    font-family: church;/* a name for the font */
+    src: url(../fonts/catharsis-requiem.bold.ttf);/* point to the font file.  */
+}
+h1{/* reference heading 1 */
+	color: white;
+	font: bold 3.5em church; /* Sets the heading 1 font attributes: (weight  size  font-family) */
+	text-shadow: 1px 1px 2px black, 0 0 25px brown, 0 0 5px #5b5b3d;/* add shadow */
+}
+h2{/* reference heading 2 */
+	font-size: 16px; /* Sets the heading 2 font-size */
+	line-height: 1;/* set the line-height of the heading 2 text */
+	font-weight: 700;/* set the font-weight of the heading 2 text */
+	font-family: "verdana";/* set the font-family of the heading 2 text */
+	text-align: center;/* centre align the text */
+}
+h3{/* reference heading 3 */
+	color: white;/* set the font colour to white */
+	font: bold 2.5em church; /* Sets the heading 1 font attributes: (weight  size  font-family) */
+	text-shadow: 1px 1px 2px black, 0 0 25px brown, 0 0 5px #deb887;/* add shadow */
+	text-align: center;/* centre align the text */
+}
+h4 {/* reference heading 4 */
+	text-align: center;/* centre align  text */
+	color: #999966;/* set the font colour to white */
+	line-height: 1.5em;/* set the line height */
+	background: #fff;/* set the background colour */
+	text-shadow: none;/* no shadow */
+	font: bold 1.3em "verdana"; /* Sets the heading 4 font attributes: (weight  size  font-family) */
+	border: 1px #deb887 solid;/* set the border colour to burlywood */
+    border-radius: 10px;/* set the border radius */
+}
+h4 a{/* reference heading 4 link*/
+	color: #999966;/* set the font colour */
+	text-decoration: none;/* remove the underline */
+}
+h4 a:hover{/* reference heading 4 link*/
+	color: #a0522d;/* set the font colour */
+	text-decoration: none;/* remove the underline */
+}
+header {/* reference the header element */
+    background: linear-gradient(#a0522d, #deb887);
+    padding: 1rem;/* padding is the distance between the element/text and the border */
+}
+
+header .social_media li{/* reference the header social_media list items  */
+	list-style:none; /* remove the bullet points/symbols from the link_menu list items */
+	}
+#nav_container {/* reference the nav_container */
+	background-color: #a0522d;/* set the background colour of the nav_container to sienna */
+    }
+.flex_four_column , .flex_four_column_left, .flex_four_column_right {/* reference the flex_four_column class */
+	padding: 1rem;/* padding is the distance between the element/text and the border */
+    margin: 1rem;/* make all 4 sides have 1rem margin */
+	opacity: 0.9;/* set the opacity level for the flexible divs */
+}
+.flex_four_column {/* reference the flex_four_column class */
+	margin-top: 1.4rem;/* fix margin to make perspective line up */
+	margin-bottom: 1.4rem;/* fix margin to make perspective look line up */
+}
+.flex {/* reference the flex class */
+	padding: 1rem;/* padding is the distance between the element/text and the border */
+    margin: 1rem;/* make all 4 sides have 1rem margin */
+	opacity: 0.9;/* set the opacity level for the flexible divs */
+    border: 4px solid #a0522d;/* set the border colour of the outline to sienna */
+    outline-style: ridge;/* set the outline style to ridge */
+    outline-color: #deb887;/* set the outline colour to burlywood */
+	padding: 1rem;/* padding is the distance between the element/text and the border */
+}
+.flex_site_map {/* reference the flex class */
+	opacity: 0.9;/* set the opacity level for the flexible divs */
+	margin: 1rem;/* make all 4 sides have 1rem margin */
+    }
+.flex_welcome_main{/* reference any element with the flex_welcome_main class */
+	margin-top: 1.4rem;/* fix margin to make perspective line up */
+	margin-bottom: 1.4rem;/* fix margin to make perspective look line up */
+	padding: 1rem;/* padding is the distance between the element/text and the border */
+    opacity: 0.9;/* set the opacity level*/
+	}
+.flex_welcome_main img {/* reference the images inside flex_welcome_main class */
+    float: left;/* float image left */
+    width: 45%;/* set the image width */
+    padding: 0.5rem;/* padding is the distance between the element/text and the border */
+}
+.outline_main {/* reference the outline_main class */
+    border: 4px solid #a0522d;/* set the border colour of the outline to sienna */
+    outline-style: ridge;/* set the outline style to ridge */
+    outline-color: #deb887;/* set the outline colour to burlywood */
+	padding: 1rem;/* padding is the distance between the element/text and the border */
+}
+.outline_main#bottom {/* reference the outline_main class with id bottom*/
+    font-size: 12px;/* set the font-size of the outline_main bottom div */
+	padding: 1rem;/* padding is the distance between the element/text and the border */
+}
+.outline_main img {/* reference the images inside outline_main class */
+    float: left;/* float image left */
+    width: 30%;/* set the image width */
+    
+}
+.flex_welcome_left , .flex_welcome_right{/* reference the flex_welcome_left , flex_welcome_right class */
+	padding: 1rem;/* padding is the distance between the element/text and the border */
+    margin: 1rem;/* make all 4 sides have 1rem margin */
+	opacity: 0.9;/* set the opacity level */
+	
+}
+.flex_welcome_left img {
+    float: right;/* float the image to the right of the text */
+    width: 45%;/* set the width of the image */
+    padding: 0.5rem;/* padding is the distance between the element/text and the border */
+}
+
+.flex_welcome_right img {
+    float: right;/* float the image to the right of the text */
+    width: 45%;/* set the width of the image */
+    padding: 0.1rem;/* padding is the distance between the element/text and the border */
+}
+.flex_donations {/* reference the flex_donations class */
+	padding: 1rem;/* padding is the distance between the element/text and the border */
+    margin: 1rem;/* make all 4 sides have 1rem margin */
+	opacity: 0.9;/* set the opacity level for the flex_donations */
+}
+.flex_donations_totals {/* reference the flex_donations_totals class */
+	padding: 1rem;/* padding is the distance between the element/text and the border */
+    margin: 1rem;/* make all 4 sides have 1rem margin */
+	opacity: 0.9;/* set the opacity level for the flex_donations_totals */
+}
+.fixed_left, .fixed_right {/* reference the .fixed_left, .fixed_right class */
+	padding: 1rem;/* padding is the distance between the element/text and the border */
+    margin: 1rem;/* make all 4 sides have 1rem margin */
+	opacity: 0.9;/* set the opacity level for the fixed divs */
+}
+/* section style */
+section {/* reference the section element  */
+	border: 1px #deb887 solid;/* set the border colour to burlywood */
+	background-image: url("../images/background/ricepaper.png");/* set the section image */
+	opacity: 0.5;/* set the opacity level for the fixed divs */
+	background-repeat: no-repeat;/* set the body background image not to repeat*/
+	background-size: 100% 100%;/* set the body background image to fill and resize as necessary*/
+	border-radius: 10px;/* set the border radius for main */
+	box-shadow: 10px 10px 5px grey;/* add a box shadow with blur */
+}
+section img {
+    border-radius: 10px;/* set the border radius for main */
+	
+}
+/* table styles */
+table .donations{/* reference the donations table */
+	font-family: verdana, sans-serif;/* set the font family for the donations table */
+    font-size: 76%;/* set the font size for the donations table */
+    width: 100%;/* set the width for the donations table */
+	border-collapse: collapse;
+	
+}
+.donations th{/* reference the donations header */
+	color: white;/*set the font colour of the donations header */
+	background-color: olive;/* set the background colour */
+	text-align: center;/* centre align the text */
+	padding: 3px 12px 3px 3px;
+	vertical-align: bottom;/* vertical align donations header with the lowest element on the line */
+}
+table #totals{/* reference the totals table */
+	font-family: verdana, sans-serif;/* set the font family for the totals table */
+    font-size: 76%;/* set the font size for the totals table */
+    width: 550px;/* set the width for the totals table */
+	border-collapse: collapse;
+	border: none;
+}
+#totals th{/* reference the totals header */
+	color: yellow;/*set the font colour of the totals header */
+	background-color: olive;/* set the background colour */
+	text-align: center;/* centre align the text */
+	padding: 3px 12px 3px 3px;/* set the padding for the table header */
+	vertical-align: bottom;/* vertical align totals header with the lowest element on the line */
+	border-radius: 1px;/* set the border radius for main */
+}
+#totals td{/* reference the table data */
+	vertical-align: top;/* vertical align table data with the top of the tallest element on the line */
+	padding: 6px 12px 6px 3px;/* set the padding for the table header */
+	border-bottom: 1px solid olive;
+}
+td img{/* reference the table data with images */
+	width: 72px; /* set the width for the td images */
+	height: 100px; /* set the height for the td images */ 
+	background-color: transparent;/* set the background colour */
+}
+tr.odd{/* reference the table rows with a class of odd */
+	background-color: #F3F3A6;/* set the background colour */
+	text-align: center;/* centre align the text */
+}
+tr.even{/* reference the table rows with a class of even */
+	background-color: #D4D4A2;/* set the background colour */
+	text-align: center;/* centre align the text */
+}
+
+/* form styles */
+.red {/* reference the red class for the asterisk */
+	color: red;/*set the font colour */
+}
+#video_size{/* reference the video_size */
+	width: 100%;/* set the width */
+	height: 100%;/* set the height */
+}
+#google_map_size{/* reference the google_map_size */
+	width: 100%;/* set the width */
+	height: 265px;/* set the height */
+	border:none;/* remove the border */
+}
+
+.stitched {/* https://css-tricks.com/snippets/css/stitched-look/ */
+   padding: 20px;/* set the padding */
+   background: #999966;/* set the background colour */
+   color: #fff;/* set the font colour to white */
+   font-size: 15px;/* set the font size */
+   line-height: 1.3em;/* set the line height */
+   border: 2px dashed #fff;/* set the border */
+   border-radius: 10px;/* set the border radius */
+   box-shadow: 0 0 0 4px #999966, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);/* set the box shadow */
+   text-shadow: -1px -1px #4C4C33;/* set the text shadow */
+   font-weight: normal;/* set the font weight */
+   border-bottom-left-radius: 3px 3px;/* set the border bottom left radius */
+   opacity: 0.8;/* set the opacity level */
+}
+#idtotal {
+	color: yellow;/* set the font colour */
+	font-size: 16px;/* set the font size */
+	line-height: 1em;/* set the line height */
+	padding: 25px;/* set the padding */
+}
+.random_verse {/* reference the random_verse */
+   margin-top: .4rem;/* fix margin  */
+   padding: 25px;/* set the padding */
+   background-image:url("../images/background/chruch.png");/* set the background image */
+   color: #a0522d;/* set the font colour to sienna */
+   font-size: 14px;/* set the font size */
+   line-height: 1.2em;/* set the line height */
+   border-radius: 10px;/* set the border radius */
+   box-shadow: 0 0 0 4px #999966, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);/* set the box shadow */
+   font-weight: normal;/* set the font weight */
+   border-bottom-left-radius: 3px 3px;/* set the border bottom left radius */
+}
+.random_verse img{/* reference the random_verse */
+	float: right;/* float the image to the right of the text */
+    width: 15%;/* set the width of the image */
+    padding: 0.5rem;/* padding is the distance between the element/text and the border */
+}
+#refresh{/* reference the refresh id */
+	text-align: center;/* centre align  text */
+	color: #fff;/* set the font colour to white */
+	line-height: 2em;/* set the line height */
+	background: #a0522d;/* set the background colour to sienna */
+	font-size: 12px;/* set the font size */
+}
+.random_verse a{/* reference the random_verse link */
+	text-decoration: none;/* remove the underline */
+}
+/* site map */
+.site_map_list .circle{/* reference the site map list circle */
+list-style-type:disc;/* set the list style icon to circle */
+}
+.site_map_list .square{/* reference the site map list square */
+list-style-type:square;/* set the list style icon to square */
+}
+footer {/* reference the footer */
+    background-color: #deb887;/* set the background colour of the footer to burlywood */
+    padding: 1rem;/* padding is the distance between the element/text and the border */
+   
+} 
+footer ul {/* reference the footer unordered link list */
+  list-style-type: none;
+  margin: 0;/* reset margins to 0 */
+  padding: 0;/* reset padding to 0 */
+  color: #fff;/* set the link list font colour to white */
+}
+footer ul a {/* reference the footer unordered active link */
+  color: #fff;/* set the font active colour to white */
+}
+footer ul a:hover {/* reference the footer unordered active hover link */
+  color: #d3d3d3;/* set the font hover colour to lightgray */
+}
+.line_break  {/* reference the line_break id */
+	margin-bottom: 25px; /* margins to create a space because <br> wont validate */
+ }
+#copyright {/* reference the copyright id */
+	background-color: #deb887;/* set the background colour of the copyright to burlywood */
+	text-align: center;/* centre align copyright text */
+  	}
+#copyright {/* reference the copyright id paragraph element */
+  color: white;/* set the copyright font colour to white */
+} 
+#copyright a {/* reference the copyright active link */
+  color: #5b5b3d;/* set the copyright font active colour to lightgray */
+}
+#copyright a:hover{/* reference the copyright active link */
+  color: #a0522d;/* set the copyright font active colour  */
+}
