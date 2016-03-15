@@ -62,6 +62,9 @@ section img {/* reference the section images */
       display: none;/* hide element (will not take up any space and the page will be displayed as if the element is not there) */
       border-top: 1px solid #666;/* add a top border to the more class (size  type  colour) */	
       border-bottom: 1px solid #666; }/* add a bottom border to the more class (size  type  colour) */
+
+/* can i do this show hide with php? or will i just use html5 and fancy css tricks hmmm */
+
    a.showLink, a.hideLink {/* reference any element with the active showLink and hideLink class */
       text-decoration: none;/* remove the underline */
       color: #36f;/*set the font colour */

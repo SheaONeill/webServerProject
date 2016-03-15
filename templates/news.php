@@ -1,17 +1,15 @@
 <?php
-//include the doctype from header_doctype.php
+/*//include the doctype from header_doctype.php
 require_once __DIR__ . '/../templates/header_doctype.php';
-
-//insert the title of the page
-print '<title>St. Joseph\'s Parish, East Wall</title><!-- title of webpage -->';
 
 //include the meta tags from header_meta.php
 require_once __DIR__ . '/../templates/header_meta.php';
 
 //include imports and favicon from header_imports.php
-require_once __DIR__ . '/../templates/header_imports.php';
+require_once __DIR__ . '/../templates/header_imports.php';*/
 
-//-------------------------------------------
+//include the full header header_full.php
+require_once __DIR__ . '/../templates/header_full.php';
 ?>
 
 <body><!-- begin body opening tag -->
@@ -36,6 +34,7 @@ require_once __DIR__ . '/../templates/header_imports.php';
     <section class="flex_welcome_left"><!-- begin section tag-->
 		<article><!-- begin article -->
 			<h2>A Journey through East Wall Parish.</h2><!-- heading type three-->
+			<p>Video of parish to go here!</p>
 			<video id="video_size" controls><!-- begin video -->
 			  <source src="" type="video/mp4"><!-- video source -->
 			   Your browser does not support the video tag.<!-- if video element is unsupported display this -->
@@ -45,7 +44,16 @@ require_once __DIR__ . '/../templates/header_imports.php';
 		<article class="random_verse"><!-- begin article -->
 			<h2>Random Bible Verse</h2><!-- heading type two-->
 			<img alt="open_book.png" src="../public/images/background/open_book.png" ><!-- image of open_book -->
-			<div id="tipbox"></div><!-- div to hold random verse -->
+			<div id="tipbox">
+
+
+				<!-- need to load this dynamically-->
+				<h2>Romans 8:35,38-39</h2><p>Who shall separate us from the love of Christ? Shall trouble or hardship or persecution or famine or nakedness or danger or sword? ... I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord.</p>";
+
+
+
+
+			</div><!-- div to hold random verse -->
 			<br><!-- line break -->
 			<a href="javascript:history.go(0);"><p id="refresh">Click here to refresh this page to see a new verse.</p></a><!-- paragraph -->
 		</article><!-- close article tag -->

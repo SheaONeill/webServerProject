@@ -1,17 +1,15 @@
 <?php
-//include the doctype from header_doctype.php
+/*//include the doctype from header_doctype.php
 require_once __DIR__ . '/../templates/header_doctype.php';
-
-//insert the title of the page
-print '<title>St. Joseph\'s Parish, East Wall</title><!-- title of webpage -->';
 
 //include the meta tags from header_meta.php
 require_once __DIR__ . '/../templates/header_meta.php';
 
 //include imports and favicon from header_imports.php
-require_once __DIR__ . '/../templates/header_imports.php';
+require_once __DIR__ . '/../templates/header_imports.php';*/
 
-//-------------------------------------------
+//include the full header header_full.php
+require_once __DIR__ . '/../templates/header_full.php';
 ?>
 <body><!-- begin body opening tag -->
 <div id="main_container"><!-- div to wrap everything-->
