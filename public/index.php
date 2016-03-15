@@ -10,13 +10,15 @@
 $action = filter_input(INPUT_GET, 'action', FILTER_SANITIZE_STRING);
 
 if ('about' == $action){
-    require_once __DIR__ . '/../templates/about.php';
+    require_once __DIR__ . '/../templates/history.php';
 } else if ('contact' == $action) {
-    require_once __DIR__ . '/../templates/contact.php';
+    require_once __DIR__ . '/../templates/news.php';
 } else if ('list' == $action) {
-    require_once __DIR__ . '/../templates/list.php';
+    require_once __DIR__ . '/../templates/donate.php';
+} else if ('list' == $action) {
+    require_once __DIR__ . '/../templates/contact.php';
 } else if ('sitemap' == $action) {
-    require_once __DIR__ . '/../templates/sitemap.php';
+    require_once __DIR__ . '/../templates/site_map.php';
 } else {
     // default is home page ('index' action)
     require_once __DIR__ . '/../templates/index.php';
