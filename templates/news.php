@@ -71,11 +71,34 @@ $bibleVerseParagraph = 'I am convinced that neither death nor life, neither ange
     <!-- ****************** section - block 2 ******************** -->
     <section class="flex_welcome_main"><!-- begin section tag-->
 		<article class="outline_main"><!-- begin article -->
-			<h2>Decoding the Church:</h2><!-- heading type two -->
-			<br><!-- line break -->
-			<p><span id="decoded"><q>Mapping the DNA of Christ's Body.</q></span><span id="encoded"></span></p><!-- wrap text to be decoded in span tag -->
-			<p>by Howard A. Snyder (Author), Daniel V. Runyon (Contributor)</p><!-- paragraph one -->
-			<p>While many models have been proposed for understanding the nature of the church, the primary biblical image is that of the body of Christ. Decoding the Church takes this organic metaphor and examines its DNA to find the key to church structure and mission. The authors suggest that the classical understanding of the church as defined by the Nicene Creed-one, holy, catholic, apostolic church-comprises only one strand of the church's DNA. They propose a more complex, living model for structuring the church and understanding its mission, and then explore how a biblically structured church can transform the world. Decoding the Church evaluates models based in hierarchy, psychology, and ecology, and stresses the biblical and contemporary reality of globalization. Includes discussion questions.</p><!-- paragraph two -->
+
+            <!-- define some variables for news feed  -->
+<?php
+//create the variables with text first test
+$newsFeedMainHeading = 'Decoding the Church:';
+$author = 'Author: ';
+$date = 'Date: ';
+$newsFeedDateAdded = '24/03/17';
+$newsFeedAuthor = 'Howard A. Snyder, Daniel V. Runyon (Contributor)';
+$newsFeedSubHeading1 = 'Mapping the DNA of Christ\'s Body.';
+$newsFeedSubHeading2 = '';
+$newsFeedParagraph1 = 'Decoding the Church takes this organic metaphor and examines its DNA to find the key to church structure and mission.';
+$newsFeedParagraph2 = 'While many models have been proposed for understanding the nature of the church, the primary biblical image is that of the body of Christ.';
+$newsFeedParagraph3 = 'The authors suggest that the classical understanding of the church as defined by the Nicene Creed-one, holy, catholic, apostolic church-comprises only one strand of the church\'s  DNA.';
+$newsFeedParagraph4 ='They propose a more complex, living model for structuring the church and understanding its mission, and then explore how a biblically structured church can transform the world.';
+$newsFeedParagraph5 = 'Decoding the Church evaluates models based in hierarchy, psychology, and ecology, and stresses the biblical and contemporary reality of globalization. Includes discussion questions.';
+?>
+            <!-- need to load this dynamically-->
+           	<h2><?php echo $newsFeedMainHeading?></h2><!-- news feed heading-->
+			<p><?php echo $author, $newsFeedAuthor?></p><!-- author -->
+            <p><?php echo $date, $newsFeedDateAdded?></p><!-- date -->
+            <p><?php echo $newsFeedSubHeading1?></p><!-- subheading 1 -->
+            <p><?php echo $newsFeedSubHeading2?></p><!-- subheading 2 -->
+			<p><?php echo $newsFeedParagraph1?></p><!-- paragraph one -->
+            <p><?php echo $newsFeedParagraph2?></p></p><!-- paragraph two -->
+            <p><?php echo $newsFeedParagraph3?></p></p><!-- paragraph three -->
+            <p><?php echo $newsFeedParagraph4?></p></p><!-- paragraph four -->
+            <p><?php echo $newsFeedParagraph5?></p></p><!-- paragraph five -->
         </article><!-- close article tag -->
     </section><!-- close section tag -->
 	<!-- ****************** section - block 3 ******************** -->
