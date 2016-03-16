@@ -1,56 +1,58 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: B00084432
- * Date: 15/03/2016
- * Time: 16:18
- */
-
-namespace ItbProject2016;
+namespace Itb;
 
 class MainController
 {
+    public function indexAction()
+    {
+        $pageTitle = 'Welcome';
+        $indexLinkStyle = 'current_page';
+        require_once __DIR__ . '/../templates/index.php';
+    }
 
-    function historyAction()
+    public function historyAction()
     {
         $pageTitle = 'History';
         $historyLinkStyle = 'current_page';
         require_once __DIR__ . '/../templates/history.php';
     }
 
-    function newsAction()
+    public function newsAction()
     {
         $pageTitle = 'News';
         $newsLinkStyle = 'current_page';
         require_once __DIR__ . '/../templates/news.php';
     }
 
-    function donateAction()
+    public function donateAction()
     {
         $pageTitle = 'Donate';
         $donateLinkStyle = 'current_page';
+
+        //$dvdRepository = new DvdRepository();
+        //$dvds = $dvdRepository->getAll();
+
         require_once __DIR__ . '/../templates/donate.php';
     }
 
-    function indexAction()
+    public function contactAction()
     {
-        $pageTitle = 'Home Page';
-        $indexLinkStyle = 'current_page';
-        require_once __DIR__ . '/../templates/index.php';
-    }
-
-    function contactAction()
-    {
-        $pageTitle = 'Contact';
+        $pageTitle = 'Contact Us';
         $contactLinkStyle = 'current_page';
         require_once __DIR__ . '/../templates/contact.php';
     }
 
-    function sitemapAction()
+    public function obituaryAction()
     {
         $pageTitle = 'Site Map';
-        $sitemapLinkStyle = 'current_page';
-        require_once __DIR__ . '/../templates/site_map.php';
+        $obituaryLinkStyle = 'current_page';
+        require_once __DIR__ . '/../templates/obituary.php';
     }
 
-}//end class
+    public function site_mapAction()
+    {
+        $pageTitle = 'Site Map';
+        $site_mapLinkStyle = 'current_page';
+        require_once __DIR__ . '/../templates/site_map.php';
+    }
+}

@@ -34,7 +34,7 @@ require_once __DIR__ . '/../templates/header_full.php';
 		<article class="flex"><!-- begin article -->
 			<table class ="donations" ><!-- begin table -->
 				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="../public/images/icons/groups.png" alt="" title=""></a></td><!-- table cell -->
+					<td rowspan = "3"><img src="/images/icons/groups.png" alt="" title=""></a></td><!-- table cell -->
 					<th colspan = "5">Parish Ministry Groups</th><!-- table header -->
 				</tr><!-- close table row -->
 				<tr><!-- begin table row -->
@@ -61,7 +61,7 @@ require_once __DIR__ . '/../templates/header_full.php';
 			<table class ="donations" ><!-- begin table -->
 			
 				<tr><!-- begin table row -->
-				<td rowspan = "3"><img src="../public/images/icons/pastoral_council.png" alt="" title=""></a></td><!-- table cell -->
+				<td rowspan = "3"><img src="/images/icons/pastoral_council.png" alt="" title=""></a></td><!-- table cell -->
 					<th colspan = "5">Pastoral Council</th><!-- table header -->
 				</tr><!-- close table row -->
 				<tr><!-- begin table row -->
@@ -87,7 +87,7 @@ require_once __DIR__ . '/../templates/header_full.php';
 			</table><!-- close table -->
 			<table class ="donations" ><!-- begin table -->
 				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="../public/images/icons/baptismal_ministry.png" alt="" title=""></a></td><!-- table cell -->
+					<td rowspan = "3"><img src="/images/icons/baptismal_ministry.png" alt="" title=""></a></td><!-- table cell -->
 					<th colspan = "5">Baptismal Ministry</th><!-- table header -->
 				</tr><!-- close table row -->
 				<tr><!-- begin table row -->
@@ -113,7 +113,7 @@ require_once __DIR__ . '/../templates/header_full.php';
 			</table><!-- close table -->
 			<table class ="donations" ><!-- begin table -->
 				<tr><!-- begin table row -->
-					<td rowspan = "3">><img src="../public/images/icons/bereavement_support.png" alt="" title=""></a></td><!-- table cell -->
+					<td rowspan = "3">><img src="/images/icons/bereavement_support.png" alt="" title=""></a></td><!-- table cell -->
 					<th colspan = "5">Bethany Bereavement Support</th><!-- table header -->
 				</tr><!-- close table row -->
 				<tr><!-- begin table row -->
@@ -140,7 +140,7 @@ require_once __DIR__ . '/../templates/header_full.php';
 			</table><!-- close table -->
 			<table class ="donations" ><!-- begin table -->
 				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="../public/images/icons/scripture_exploration_group.png" alt="" title=""></a></td><!-- table cell -->
+					<td rowspan = "3"><img src="/images/icons/scripture_exploration_group.png" alt="" title=""></a></td><!-- table cell -->
 					<th colspan = "5">Scripture Exploration Group</th><!-- table header -->
 				</tr><!-- close table row -->
 				<tr><!-- begin table row -->
@@ -167,7 +167,7 @@ require_once __DIR__ . '/../templates/header_full.php';
 			</table><!-- close table -->
 			<table class ="donations" ><!-- begin table -->
 				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="../public/images/icons/ministers_of_the_eucharist.png" alt="" title=""></a></td><!-- table cell -->
+					<td rowspan = "3"><img src="/images/icons/ministers_of_the_eucharist.png" alt="" title=""></a></td><!-- table cell -->
 					<th colspan = "5">Ministers of the Eucharist</th><!-- table header -->
 				</tr><!-- close table row -->
 				<tr><!-- begin table row -->
@@ -194,7 +194,7 @@ require_once __DIR__ . '/../templates/header_full.php';
 			</table><!-- close table -->
 			<table class ="donations" ><!-- begin table -->
 				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="../public/images/icons/ministers_of_the_word.png" alt="" title=""></a></td><!-- table cell -->
+					<td rowspan = "3"><img src="/images/icons/ministers_of_the_word.png" alt="" title=""></a></td><!-- table cell -->
 					<th colspan = "5">The Ministers of the Word</th><!-- table header -->
 				</tr><!-- close table row -->
 				<tr><!-- begin table row -->
@@ -224,7 +224,7 @@ require_once __DIR__ . '/../templates/header_full.php';
 		<article class="flex"><!-- begin article -->
 			<table class ="donations" ><!-- begin table -->
 				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="../public/images/icons/choir.png" alt="" title=""></a></td><!-- table cell -->
+					<td rowspan = "3"><img src="/images/icons/choir.png" alt="" title=""></a></td><!-- table cell -->
 					<th colspan = "5">The Choir</th><!-- table header -->
 				</tr><!-- close table row -->
 				<tr><!-- begin table row -->
@@ -251,7 +251,7 @@ require_once __DIR__ . '/../templates/header_full.php';
 			</table><!-- close table -->
 			<table class ="donations" ><!-- begin table -->
 				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="../public/images/icons/rcia.png" alt="" title=""></a></td><!-- table cell -->
+					<td rowspan = "3"><img src="/images/icons/rcia.png" alt="" title=""></a></td><!-- table cell -->
 					<th colspan = "5">RCIA</th><!-- table header -->
 				</tr><!-- close table row -->
 				<tr><!-- begin table row -->
@@ -278,7 +278,7 @@ require_once __DIR__ . '/../templates/header_full.php';
 			</table><!-- close table -->
 			<table class ="donations" ><!-- begin table -->
 				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="../public/images/icons/church_decoration_group.png" alt="" title=""></a></td><!-- table cell -->
+					<td rowspan = "3"><img src="/images/icons/church_decoration_group.png" alt="" title=""></a></td><!-- table cell -->
 					<th colspan = "5">Church Decoration Group</th><!-- table header -->
 				</tr><!-- close table row -->
 				<tr><!-- begin table row -->
@@ -305,7 +305,7 @@ require_once __DIR__ . '/../templates/header_full.php';
 			</table><!-- close table -->
 			<table class ="donations" ><!-- begin table -->
 				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="../public/images/icons/liturgy_group.png" alt="" title=""></a></td><!-- table cell -->
+					<td rowspan = "3"><img src="/images/icons/liturgy_group.png" alt="" title=""></a></td><!-- table cell -->
 					<th colspan = "5">Liturgy Group</th><!-- table header -->
 				</tr><!-- close table row -->
 				<tr><!-- begin table row -->
@@ -334,7 +334,7 @@ require_once __DIR__ . '/../templates/header_full.php';
 			
 			<table class ="donations" ><!-- begin table -->
 				<tr><!-- begin table row -->
-					<td rowspan = "3">><img src="../public/images/icons/svdp.png" alt="" title=""></a></td><!-- table cell -->
+					<td rowspan = "3">><img src="/images/icons/svdp.png" alt="" title=""></a></td><!-- table cell -->
 					<th colspan = "5">St. Vincent de Paul Society</th><!-- table header -->
 				</tr><!-- close table row -->
 				<tr><!-- begin table row -->
@@ -363,7 +363,7 @@ require_once __DIR__ . '/../templates/header_full.php';
 			
 			<table class ="donations" ><!-- begin table -->
 				<tr><!-- begin table row -->
-					<td rowspan = "3">><img src="../public/images/icons/church_collections.png" alt="" title=""></a></td><!-- table cell -->
+					<td rowspan = "3">><img src="/images/icons/church_collections.png" alt="" title=""></a></td><!-- table cell -->
 					<th colspan = "5">Church Collections</th><!-- table header -->
 				</tr><!-- close table row -->
 				<tr><!-- begin table row -->
@@ -390,7 +390,7 @@ require_once __DIR__ . '/../templates/header_full.php';
 			</table><!-- close table -->
 			<table class ="donations" ><!-- begin table -->
 				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="../public/images/icons/council.png" alt="" title=""></a></td><!-- table cell -->
+					<td rowspan = "3"><img src="/images/icons/council.png" alt="" title=""></a></td><!-- table cell -->
 					<th colspan = "5">Finance Committee</th><!-- table header -->
 				</tr><!-- close table row -->
 				<tr><!-- begin table row -->

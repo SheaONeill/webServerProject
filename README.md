@@ -26,3 +26,16 @@ require_once __DIR__ . '/../templates/header_imports.php';
 
 //include the footer from footer.php
 require_once __DIR__ . '/../templates/footer.php';
+
+16/03/16 12:55
+
+changed bible verse to variables and injected php
+
+$bibleVerseMainHeading
+$bibleVerseSubHeading1
+$bibleVerseSubHeading2
+$bibleVerseParagraph
+
+fixed issues with front controller
+
+updated all site links on header-nav, footer-nav and site map with ?action=

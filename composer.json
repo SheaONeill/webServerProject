@@ -1,10 +1,7 @@
 {
   "autoload":{
     "psr-4":{
-      "ItbProject2016\\": "src/"
+      "Itb\\": "src/"
     }
-  },
-  "scripts":{
-    "phpdoc": "php phpDocumentor.phar -d ./src -t ./src/documentation"
   }
-}
+  }

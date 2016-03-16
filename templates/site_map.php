@@ -33,61 +33,61 @@ require_once __DIR__ . '/../templates/header_full.php';
 		<article><!-- begin article -->
 			<h2>Site Map</h2><!-- heading type two-->
 			<p><ul><!-- begin unordered site_map link list opening tag -->
-					<li class="circle"><a href="index.php">Welcome</a><!-- site_map link list item -->
+					<li class="circle"><a href="index.php?action=index">Welcome</a><!-- site_map link list item -->
 						<ul><!-- begin nested unordered site_map link list opening tag -->
-							<li class="square"><a href="index.php">Saint Joseph - Patron of our Parish</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">Mission statement</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">What is a parish in the 21st Century</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">Mass Times</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">Confessions</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">Baptisms</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">Marriages</a></li><!-- site_map link list item -->
-							<li class="square"><a href="obituary.php" target="_blank">Obituary</a></li><!-- site_map link list item -->
+							<li class="square"><a href="?action=index">Saint Joseph - Patron of our Parish</a></li><!-- site_map link list item -->
+							<li class="square"><a href="?action=index">Mission statement</a></li><!-- site_map link list item -->
+							<li class="square"><a href="?action=index">What is a parish in the 21st Century</a></li><!-- site_map link list item -->
+							<li class="square"><a href="?action=index">Mass Times</a></li><!-- site_map link list item -->
+							<li class="square"><a href="?action=index">Confessions</a></li><!-- site_map link list item -->
+							<li class="square"><a href="?action=index">Baptisms</a></li><!-- site_map link list item -->
+							<li class="square"><a href="?action=index">Marriages</a></li><!-- site_map link list item -->
+							<li class="square"><a href="obituary.php?action=obituary" target="_blank">Obituary</a></li><!-- site_map link list item -->
 						</ul><!-- close nested unordered link list tag -->
 					</li><!-- close link list tag -->
-					<li class="circle"><a href="history.php">History</a><!-- site_map link list item -->
+					<li class="circle"><a href="history.php?action=history">History</a><!-- site_map link list item -->
 						<ul><!-- begin nested unordered site_map link list opening tag -->
-							<li class="square"><a href="index.php">Our Church</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">The Tin Church</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">The Sanctuary</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">Baptismal Font</a></li><!-- site_map link list item -->
+							<li class="square"><a href="history.php?action=history">Our Church</a></li><!-- site_map link list item -->
+							<li class="square"><a href="history.php?action=history">The Tin Church</a></li><!-- site_map link list item -->
+							<li class="square"><a href="history.php?action=history">The Sanctuary</a></li><!-- site_map link list item -->
+							<li class="square"><a href="history.php?action=history">Baptismal Font</a></li><!-- site_map link list item -->
 						</ul><!-- close nested unordered link list tag -->
 					</li><!-- close link list tag -->
-					<li class="circle"><a href="news.php">News</a><!-- site_map link list item -->
+					<li class="circle"><a href="news.php?action=news">News</a><!-- site_map link list item -->
 						<ul><!-- begin nested unordered site_map link list opening tag -->
-							<li class="square"><a href="index.php">A Video Journey through East Wall Parish</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">Random Bible Verse</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">Decoding the Church</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">Prayer For The Church In Ireland</a></li><!-- site_map link list item -->
+							<li class="square"><a href="news.php?action=news">A Video Journey through East Wall Parish</a></li><!-- site_map link list item -->
+							<li class="square"><a href="news.php?action=news">Random Bible Verse</a></li><!-- site_map link list item -->
+							<li class="square"><a href="news.php?action=news">Decoding the Church</a></li><!-- site_map link list item -->
+							<li class="square"><a href="news.php?action=news">Prayer For The Church In Ireland</a></li><!-- site_map link list item -->
 						</ul><!-- close nested unordered link list tag -->
 					</li><!-- close link list tag -->
-					<li class="circle"><a href="donate.php">Donate</a><!-- site_map link list item -->
+					<li class="circle"><a href="donate.php?action=donate">Donate</a><!-- site_map link list item -->
 						<ul><!-- begin nested unordered site_map link list opening tag -->
-							<li class="square"><a href="index.php">Parish Ministry Groups</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">Pastoral Council</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">Baptismal Ministry</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">Bethany Bereavement Support</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">Scripture Exploration Group</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">Ministers of the Eucharist</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">The Ministers of the Word</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">The Choir</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">RCIA</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">Church Decoration Group</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">Liturgy Group</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">St. Vincent de Paul Society</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">Church Collections</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">Finance Committee</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">Donation Totals</a></li><!-- site_map link list item -->
+							<li class="square"><a href="donate.php?action=donate">Parish Ministry Groups</a></li><!-- site_map link list item -->
+							<li class="square"><a href="donate.php?action=donate">Pastoral Council</a></li><!-- site_map link list item -->
+							<li class="square"><a href="donate.php?action=donate">Baptismal Ministry</a></li><!-- site_map link list item -->
+							<li class="square"><a href="donate.php?action=donate">Bethany Bereavement Support</a></li><!-- site_map link list item -->
+							<li class="square"><a href="donate.php?action=donate">Scripture Exploration Group</a></li><!-- site_map link list item -->
+							<li class="square"><a href="donate.php?action=donate">Ministers of the Eucharist</a></li><!-- site_map link list item -->
+							<li class="square"><a href="donate.php?action=donate">The Ministers of the Word</a></li><!-- site_map link list item -->
+							<li class="square"><a href="donate.php?action=donate">The Choir</a></li><!-- site_map link list item -->
+							<li class="square"><a href="donate.php?action=donate">RCIA</a></li><!-- site_map link list item -->
+							<li class="square"><a href="donate.php?action=donate">Church Decoration Group</a></li><!-- site_map link list item -->
+							<li class="square"><a href="donate.php?action=donate">Liturgy Group</a></li><!-- site_map link list item -->
+							<li class="square"><a href="donate.php?action=donate">St. Vincent de Paul Society</a></li><!-- site_map link list item -->
+							<li class="square"><a href="donate.php?action=donate">Church Collections</a></li><!-- site_map link list item -->
+							<li class="square"><a href="donate.php?action=donate">Finance Committee</a></li><!-- site_map link list item -->
+							<li class="square"><a href="donate.php?action=donate">Donation Totals</a></li><!-- site_map link list item -->
 						</ul><!-- close nested unordered link list tag -->
 					</li><!-- close link list tag -->
-					<li class="circle"><a href="contact.php">Contact</a><!-- site_map link list item -->
+					<li class="circle"><a href="contact.php?action=contact">Contact</a><!-- site_map link list item -->
 						<ul><!-- begin nested unordered site_map link list opening tag -->
-							<li class="square"><a href="index.php">Contact Us</a></li><!-- site_map link list item -->
-							<li class="square"><a href="index.php">How to find us</a></li><!-- site_map link list item -->
+							<li class="square"><a href="contact.php?action=contact">Contact Us</a></li><!-- site_map link list item -->
+							<li class="square"><a href="contact.php?action=contact">How to find us</a></li><!-- site_map link list item -->
 						</ul><!-- close nested unordered link list tag -->
 					</li><!-- close link list tag -->
-					<li class="circle"><a href="obituary.php" target="_blank">Obituary</a></li><!-- site_map link list item -->
-					<li class="circle"><a href="site_map.php">Site Map</a></li><!-- site_map link list item -->
+					<li class="circle"><a href="obituary.php?action=obituary" target="_blank">Obituary</a></li><!-- site_map link list item -->
+					<li class="circle"><a href="site_map.php?action=site_map">Site Map</a></li><!-- site_map link list item -->
 				</ul><!-- close unordered link list tag -->
 		</article>
     </section><!-- close section tag -->

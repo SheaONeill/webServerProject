@@ -42,13 +42,22 @@ require_once __DIR__ . '/../templates/header_full.php';
 		</article><!-- close article tag -->
 		
 		<article class="random_verse"><!-- begin article -->
-			<h2>Random Bible Verse</h2><!-- heading type two-->
-			<img alt="open_book.png" src="../public/images/background/open_book.png" ><!-- image of open_book -->
-			<div id="tipbox">
+			<h2>Random Bible Verse <?php echo rand(1, 5); ?></h2><!-- testing php random function stage 1-->
+			<img alt="open_book.png" src="/images/background/open_book.png" ><!-- image of open_book -->
+			<div id="bibleVerse">
 
+				<!--define some variables for random bible verse -->
+<?php
+//create the variables with text first test
+$bibleVerseMainHeading = 'Romans 8:35,38-39';
+$bibleVerseSubHeading1 = 'Who shall separate us from the love of Christ?';
+$bibleVerseSubHeading2 = 'Shall trouble or hardship or persecution or famine or nakedness or danger or sword? ...';
+$bibleVerseParagraph = 'I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord.';
+
+?>
 
 				<!-- need to load this dynamically-->
-				<h2>Romans 8:35,38-39</h2><p>Who shall separate us from the love of Christ? Shall trouble or hardship or persecution or famine or nakedness or danger or sword? ... I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord.</p>";
+				<h2><?php echo $bibleVerseMainHeading?></h2><p><?php echo $bibleVerseSubHeading1?></p><p><?php echo $bibleVerseSubHeading2?></p><p>"<?php echo $bibleVerseParagraph?>"</p>;
 
 
 
@@ -74,7 +83,7 @@ require_once __DIR__ . '/../templates/header_full.php';
 		<article class="stitched"><!-- begin article -->
 			<h2>Prayer For The Church In Ireland</h2><!-- heading type two -->
 			<p>God of our fathers, renew us in the faith which is our life and salvation, the hope which promises forgiveness and interior renewal, the charity which purifies and opens our hearts to love you, and in you, each of our brothers and sisters.</p><!-- paragraph one --> 
-			<img alt="code.png" src="../public/images/background/code.png" ><!-- image of code -->
+			<img alt="code.png" src="/images/background/code.png" ><!-- image of code -->
 			<p>Lord Jesus Christ, may the Church in Ireland renew her age-old commitment to the education of our young people in the way of truth and goodness, holiness and generous service to society.</p><!-- paragraph two -->
 			<p>Holy Spirit, comforter, advocate and guide, inspire a new springtime of holiness and apostolic zeal for the Church in Ireland. 	May our sorrow and our tears, our sincere effort to redress past wrongs, and our firm purpose of amendment bear an abundant harvest of grace for the deepening of the faith in our families, parishes, schools and communities, for the spiritual progress of Irish society, and the growth of charity, justice, joy and peace within the whole human family. To you, Triune God, confident in the loving protection of Mary, Queen of Ireland, our Mother, and of Saint Patrick, Saint Brigid and all the saints, do we entrust ourselves, our children, and the needs of the Church in Ireland.</p><!-- paragraph three -->
 			<p>Amen.</p><!-- paragraph four -->

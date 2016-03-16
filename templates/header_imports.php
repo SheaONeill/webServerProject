@@ -7,6 +7,6 @@
  */
 ?>
 
-    <style> @import "../public/css/layout.css";@import "../public/css/nav.css";@import "../public/css/stylesheet.css";@import "../public/css/media_queries.css";</style><!-- link to stylesheets -->
-    <link rel="icon" type="image/png" href="../public/images/icons/favicon.ico"><!-- bookmark icon -->
+    <style> @import "/css/layout.css";@import "/css/nav.css";@import "/css/stylesheet.css";@import "/css/media_queries.css";</style><!-- link to stylesheets -->
+    <link rel="icon" type="image/png" href="/images/icons/favicon.ico"><!-- bookmark icon -->
 </head><!-- close head tag -->
