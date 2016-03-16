@@ -1,16 +1,16 @@
 # webServerProject
 
-changed the .html files to end in .php
+####  changed the .html files to end in .php
 
-created folder /public to contain public files (css,images etc.)
+####  created folder /public to contain public files (css,images etc.)
 
-and a single 'front controller' index.php file, which bases its action on the GET parameter 'action'
+####  and a single 'front controller' index.php file, which bases its action on the GET parameter 'action'
 
-individual page content has been moved into directory templates,
+###  individual page content has been moved into directory templates,
 
-use of require_once is used to build the appropriate HTML text content for the GET action
+###  use of require_once is used to build the appropriate HTML text content for the GET action
 
-First attempt to move HTML code that is repeated on every page into separate .php files:
+## First attempt to move HTML code that is repeated on every page into separate .php files:
 
 //include the doctype from header_doctype.php
 require_once __DIR__ . '/../templates/header_doctype.php';
@@ -28,9 +28,9 @@ require_once __DIR__ . '/../templates/header_imports.php';
 require_once __DIR__ . '/../templates/footer.php';
 
 
-16/03/16 12:55
+## 16/03/16 
 
-changed bible verse to variables and injected php
+### changed bible verse to variables and injected php
 
 $bibleVerseMainHeading<!-- heading -->
 
@@ -41,12 +41,12 @@ $bibleVerseSubHeading2<!-- subheading2 -->
 $bibleVerseParagraph<!-- text -->
 
 
-fixed issues with front controller
+## fixed issues with front controller
 
-updated all site links on header-nav, footer-nav and site map with ?action=
+## updated all site links on header-nav, footer-nav and site map with ?action=
 
 
-changed news feed to variables and injected php
+### changed news feed to variables and injected php
 
 $newsFeedMainHeading?><!-- news feed heading-->
 
