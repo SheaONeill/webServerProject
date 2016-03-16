@@ -32,13 +32,13 @@ require_once __DIR__ . '/../templates/footer.php';
 
 ### changed bible verse to variables and injected php
 
-$bibleVerseMainHeading<!-- heading -->
+1. $bibleVerseMainHeading<!-- heading -->
 
-$bibleVerseSubHeading1<!-- subheading -->
+2. $bibleVerseSubHeading1<!-- subheading -->
 
-$bibleVerseSubHeading2<!-- subheading2 -->
+3. $bibleVerseSubHeading2<!-- subheading2 -->
 
-$bibleVerseParagraph<!-- text -->
+4. $bibleVerseParagraph<!-- text -->
 
 
 ## fixed issues with front controller
