@@ -48,24 +48,24 @@ require_once __DIR__ . '/../templates/footer.php';
 
 ### changed news feed to variables and injected php
 
-$newsFeedMainHeading?><!-- news feed heading-->
+1. $newsFeedMainHeading?><!-- news feed heading-->
 
-$author, $newsFeedAuthor?><!-- author title, author -->
+2. $author, $newsFeedAuthor?><!-- author title, author -->
 
-$date, $newsFeedDateAdded?><!-- date title, date -->
+3. $date, $newsFeedDateAdded?><!-- date title, date -->
 
-$newsFeedSubHeading1?><!-- subheading 1 -->
+4. $newsFeedSubHeading1?><!-- subheading 1 -->
 
-$newsFeedSubHeading2?><!-- subheading 2 -->
+5. $newsFeedSubHeading2?><!-- subheading 2 -->
 
-$newsFeedParagraph1?><!-- paragraph one -->
+6. $newsFeedParagraph1?><!-- paragraph one -->
 
-$newsFeedParagraph2?><!-- paragraph two -->
+7. $newsFeedParagraph2?><!-- paragraph two -->
 
-$newsFeedParagraph3?><!-- paragraph three -->
+8. $newsFeedParagraph3?><!-- paragraph three -->
 
-$newsFeedParagraph4?><!-- paragraph four -->
+9. $newsFeedParagraph4?><!-- paragraph four -->
 
-$newsFeedParagraph5?><!-- paragraph five -->
+10. $newsFeedParagraph5?><!-- paragraph five -->
 
 Preview: http://u2tour.u2fansites.com/TestingWebDevProject/templates/
