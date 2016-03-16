@@ -39,3 +39,5 @@ $bibleVerseParagraph
 fixed issues with front controller
 
 updated all site links on header-nav, footer-nav and site map with ?action=
+
+Preview: http://u2tour.u2fansites.com/TestingWebDevProject/templates/
