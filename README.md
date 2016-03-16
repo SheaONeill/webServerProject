@@ -27,30 +27,45 @@ require_once __DIR__ . '/../templates/header_imports.php';
 //include the footer from footer.php
 require_once __DIR__ . '/../templates/footer.php';
 
+
 16/03/16 12:55
 
 changed bible verse to variables and injected php
 
 $bibleVerseMainHeading<!-- heading -->
+
 $bibleVerseSubHeading1<!-- subheading -->
+
 $bibleVerseSubHeading2<!-- subheading2 -->
+
 $bibleVerseParagraph<!-- text -->
+
 
 fixed issues with front controller
 
 updated all site links on header-nav, footer-nav and site map with ?action=
 
+
 changed news feed to variables and injected php
 
 $newsFeedMainHeading?><!-- news feed heading-->
+
 $author, $newsFeedAuthor?><!-- author title, author -->
+
 $date, $newsFeedDateAdded?><!-- date title, date -->
+
 $newsFeedSubHeading1?><!-- subheading 1 -->
+
 $newsFeedSubHeading2?><!-- subheading 2 -->
+
 $newsFeedParagraph1?><!-- paragraph one -->
+
 $newsFeedParagraph2?><!-- paragraph two -->
+
 $newsFeedParagraph3?><!-- paragraph three -->
+
 $newsFeedParagraph4?><!-- paragraph four -->
+
 $newsFeedParagraph5?><!-- paragraph five -->
 
 Preview: http://u2tour.u2fansites.com/TestingWebDevProject/templates/
