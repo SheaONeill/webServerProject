@@ -1,5 +1,5 @@
 <?php
-/*//include the doctype from header_doctype.php
+ /* include the doctype from header_doctype.php
 require_once __DIR__ . '/../templates/header_doctype.php';
 
 //include the meta tags from header_meta.php
@@ -19,7 +19,13 @@ require_once __DIR__ . '/../templates/header_full.php';
 		//include the social media links from body_header_media_logos.php
 		require_once __DIR__ . '/../templates/body_header_media_logos.php';
 		?>
-	</header><!-- close header tag -->	
+	</header><!-- close header tag -->
+	<div id ="login_header">
+		<?php
+		//include the login_header.php
+		require_once __DIR__ . '/../templates/login_header.php';
+		?>
+	</div>
 	<div id="nav_container"><!-- div to wrap the nav-->
 		<?php
 		//include the navbar from body_header_nav.php

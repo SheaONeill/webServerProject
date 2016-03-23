@@ -105,7 +105,7 @@ $newsFeedParagraph4 ='They propose a more complex, living model for structuring 
 $newsFeedParagraph5 = 'Decoding the Church evaluates models based in hierarchy, psychology, and ecology, and stresses the biblical and contemporary reality of globalization. Includes discussion questions.';
 ?>
             <!-- need to load this dynamically-->
-           	<h2><?php echo $newsFeedMainHeading?></h2><!-- news feed heading-->
+           	<h2><?= $newsFeedMainHeading ?></h2><!-- news feed heading-->
 			<p><?php echo $author, $newsFeedAuthor?></p><!-- author -->
             <p><?php echo $date, $newsFeedDateAdded?></p><!-- date -->
             <p><?php echo $newsFeedSubHeading1?></p><!-- subheading 1 -->
