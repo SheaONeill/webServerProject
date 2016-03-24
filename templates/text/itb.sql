@@ -1,11 +1,4 @@
--- phpMyAdmin SQL Dump
--- version 4.4.15.5
--- http://www.phpmyadmin.net
---
--- Host: localhost:3306
--- Generation Time: Mar 24, 2016 at 05:32 PM
--- Server version: 10.0.24-MariaDB
--- PHP Version: 5.6.19
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -34,12 +27,7 @@ CREATE TABLE IF NOT EXISTS `administrator` (
 
 --
 -- Dumping data for table `administrator`
---
-
-INSERT INTO `administrator` (`adminID`, `adminUserName`, `adminPassword`) VALUES
-(1, 'Admin', 'admin');
-
--- --------------------------------------------------------
+ --------------------------------------------------------
 
 --
 -- Table structure for table `products`

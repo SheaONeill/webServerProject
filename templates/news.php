@@ -77,7 +77,7 @@ $bibleVerseParagraph = 'People do not pick figs from thornbushes, or grapes from
 
 				<!-- need to load this dynamically-->
                 <?php
-                // outputs something like:
+/*                // outputs something like:
                 //  [1] hammer
                 //  [5] nail
                 //  [7] nuts
@@ -91,7 +91,7 @@ $bibleVerseParagraph = 'People do not pick figs from thornbushes, or grapes from
 
                 }
                 
-                ?>
+                */?>
                 
 
 			</div><!-- div to hold random verse -->

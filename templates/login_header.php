@@ -21,7 +21,7 @@
             //----------------------------
             ?>
 
-            you are logged in as: <strong><?= $username ?></strong><?= $expire_time ?>
+            you are logged in as: <strong><?= $username ?></strong>
 
             <form action="/index.php?action=logout" method = "post">
 
