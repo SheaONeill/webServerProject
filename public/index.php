@@ -9,10 +9,13 @@ use Itb\MainController;
 use Itb\AdminController;
 use Itb\LoginController;
 
+
 define('DB_HOST', 'localhost');
 define('DB_USER', 'JavaBeanz');
 define('DB_PASS', 'coffee');
 define('DB_NAME', 'itb');
+
+
 
 $action = filter_input(INPUT_GET,'action',FILTER_SANITIZE_STRING);
 $mainController = new MainController();
@@ -50,6 +53,7 @@ switch ($action){
 
     case 'news':
         $mainController->newsAction();
+
         break;
 
     case 'donate':
@@ -64,12 +68,15 @@ switch ($action){
         $mainController->obituaryAction();
         break;
 
-    case 'site_map':
-        $mainController->site_mapAction();
+    case 'showOne':
+        $mainController->showOneAction();
         break;
 
     default:
         $mainController->indexAction();
+        // $mainController->listAction();
+        
+        
 }
 
 
