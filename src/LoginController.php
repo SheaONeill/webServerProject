@@ -40,7 +40,7 @@ class LoginController
 
         } else {
             $message = 'bad username or password, please try again';
-            require_once __DIR__ . '/../templates/message.php';
+            require_once __DIR__ . '/../templates/includes/message.php';
         }
     }
 

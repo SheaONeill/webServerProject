@@ -1,6 +1,6 @@
 <?php
 namespace Itb;
-
+use Itb;
 class MainController
 {
 
@@ -11,7 +11,31 @@ class MainController
     {
         $this->loginController = new LoginController();
     }
+    
+// testing verse list
+public function listAction() {
 
+    $verses = Verse::getAll();
+    require_once __DIR__ . '/../templates/list.php';
+}
+    
+    /*public function  showOneAction()
+    /*{
+
+        $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
+        $heading = filter_input(INPUT_GET, 'heading', FILTER_SANITIZE_NUMBER_STR);
+        $verses = Verse::getAll();
+
+        if (null != $verses) {
+
+            require_once __DIR__ . '/../templates/details.php';
+        } else {
+
+
+            require_once __DIR__ . '/../templates/message.php';
+        }
+
+    }//end show functiom*/
 
 
 
@@ -42,7 +66,7 @@ class MainController
         //added this from seperate controllers example
         $isLoggedIn = $this->loginController->isLoggedInFromSession();
         $username = $this->loginController->usernameFromSession();
-
+        $verse = new Verse();
         $pageTitle = 'News';
         $newsLinkStyle = 'current_page';
         require_once __DIR__ . '/../templates/news.php';
