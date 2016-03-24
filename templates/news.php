@@ -9,22 +9,25 @@ require_once __DIR__ . '/../templates/header_meta.php';
 require_once __DIR__ . '/../templates/header_imports.php';*/
 
 //include the full header header_full.php
-require_once __DIR__ . '/../templates/header_full.php';
+require_once __DIR__ . '/../templates/includes/header_full.php';
+require_once __DIR__ . '/../src/Verse.php';
+
+
 ?>
 
-<body><!-- begin body opening tag -->
+<body xmlns="http://www.w3.org/1999/html"><!-- begin body opening tag -->
 <div id="main_container"><!-- div to wrap everything-->
 	<!-- ***** header ***** -->
 	<header><!-- begin header opening tag -->
 		<?php
 		//include the social media links from body_header_media_logos.php
-		require_once __DIR__ . '/../templates/body_header_media_logos.php';
+		require_once __DIR__ . '/../templates/includes/body_header_media_logos.php';
 		?>
 	</header><!-- close header tag -->
 	<div id="nav_container"><!-- div to wrap the nav-->
 		<?php
 		//include the navbar from body_header_nav.php
-		require_once __DIR__ . '/../templates/body_header_nav.php';
+		require_once __DIR__ . '/../templates/includes/body_header_nav.php';
 		?>
 	</div><!-- close nav_container -->
 
@@ -73,10 +76,23 @@ $bibleVerseParagraph = 'People do not pick figs from thornbushes, or grapes from
 ?>
 
 				<!-- need to load this dynamically-->
-				<h2><?php echo $bibleVerseMainHeading?></h2><p><?php echo $bibleVerseSubHeading1?></p><p><?php echo $bibleVerseSubHeading2?></p><p>"<?php echo $bibleVerseParagraph?>"</p>;
+                <?php
+                // outputs something like:
+                //  [1] hammer
+                //  [5] nail
+                //  [7] nuts
+                foreach ($verses as $verse){
+                    print '<p>';
+                    print 'id [' . $verse->getId() . '] ';
+                    print $verse->getHeading();
+                    print $verse->getSubheading1();
+                    print $verse->getSubheading2();
+                    print $verse->getParagraph();
 
-
-
+                }
+                
+                ?>
+                
 
 			</div><!-- div to hold random verse -->
 			<br><!-- line break -->
@@ -134,7 +150,7 @@ $newsFeedParagraph5 = 'Decoding the Church evaluates models based in hierarchy, 
 
 	<?php
 	//include the footer from footer.php
-	require_once __DIR__ . '/../templates/footer.php';
+	require_once __DIR__ . '/../templates/includes/footer.php';
 
 	?>
 		<p id="copyright">&copy; 2016&nbsp;&nbsp;James O&#39;Neill&nbsp;&nbsp;<a href="mailto:B00084432@student.itb.ie">Email</a></li></p><!-- footer copyright-->

@@ -9,7 +9,7 @@ require_once __DIR__ . '/../templates/header_meta.php';
 require_once __DIR__ . '/../templates/header_imports.php';*/
 
 //include the full header header_full.php
-require_once __DIR__ . '/../templates/header_full.php';
+require_once __DIR__ . '/../templates/includes/header_full.php';
 ?>
 <body><!-- begin body opening tag -->
 <div id="main_container"><!-- div to wrap everything-->
@@ -17,7 +17,7 @@ require_once __DIR__ . '/../templates/header_full.php';
 	<header><!-- begin header opening tag -->
 		<?php
 		//include the social media links from body_header_media_logos.php
-		require_once __DIR__ . '/../templates/body_header_media_logos.php';
+		require_once __DIR__ . '/../templates/includes/body_header_media_logos.php';
 		?>
 	</header><!-- close header tag -->
 	<div id ="login_header">
@@ -29,7 +29,7 @@ require_once __DIR__ . '/../templates/header_full.php';
 	<div id="nav_container"><!-- div to wrap the nav-->
 		<?php
 		//include the navbar from body_header_nav.php
-		require_once __DIR__ . '/../templates/body_header_nav.php';
+		require_once __DIR__ . '/../templates/includes/body_header_nav.php';
 		?>
 	</div><!-- close nav_container -->
 
@@ -86,7 +86,7 @@ require_once __DIR__ . '/../templates/header_full.php';
 
 <?php
 //include the footer from footer.php
-require_once __DIR__ . '/../templates/footer.php';
+require_once __DIR__ . '/../templates/includes/footer.php';
 
 ?>
 		<p id="copyright">&copy; 2016&nbsp;&nbsp;James O&#39;Neill&nbsp;&nbsp;<a href="mailto:B00084432@student.itb.ie">Email</a></li></p><!-- footer copyright-->
