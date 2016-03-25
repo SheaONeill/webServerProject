@@ -12,11 +12,12 @@ require_once __DIR__ . '/../templates/header_imports.php';*/
 require_once __DIR__ . '/../templates/includes/header_full.php';
 
 use Itb\Verse;
+use Itb\NewsFeed;
 
 
 ?>
 
-<body xmlns="http://www.w3.org/1999/html"><!-- begin body opening tag -->
+<body xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"><!-- begin body opening tag -->
 <div id="main_container"><!-- div to wrap everything-->
 	<!-- ***** header ***** -->
 	<header><!-- begin header opening tag -->
@@ -54,11 +55,8 @@ use Itb\Verse;
 			<!-- maybe put this in a class and call more oranised less messy-->
                 <?php
 				// define some variables for random bible verse -->/
-				//
-
 				$randomVerseGen = rand(1000,1002);
 				$currentVerse = Verse::getOneById($randomVerseGen);
-
 				?>
   			<!--display verse with value stored in $randomVerseGen-->
 				<p><?=$currentVerse->getHeading($randomVerseGen);?></p>
@@ -66,53 +64,40 @@ use Itb\Verse;
 				<p><?=$currentVerse->getSubheading2($randomVerseGen);?></p>
 				<p><?=$currentVerse->getParagraph($randomVerseGen);?></p>
 
-                
-</p>
 			</div><!-- div to hold random verse -->
 			<br><!-- line break -->
 
 			<!--php refresh page-->
 			<a href="<?php echo $_SERVER["REQUEST_URI"]; ?>"><p id="refresh">Click here to refresh this page to see a new verse.</p></a><!-- paragraph -->
 
-			<!-- paragraph -->
-
-
 		</article><!-- close article tag -->
-    </section><!-- close section tag -->
+    </section><!-- close verse section tag -->
 
-    <!-- ****************** section - block 2 ******************** -->
+    <!-- ****************** news feed section  ******************** -->
     <section class="flex_welcome_main"><!-- begin section tag-->
 		<article class="outline_main"><!-- begin article -->
 
-            <!-- define some variables for news feed  -->
-<?php
-//create the variables with text first test
-$newsFeedMainHeading = 'Decoding the Church:';
-$author = 'Author: ';
-$date = 'Date: ';
-$newsFeedDateAdded = '24/03/17';
-$newsFeedAuthor = 'Howard A. Snyder, Daniel V. Runyon (Contributor)';
-$newsFeedSubHeading1 = 'Mapping the DNA of Christ\'s Body.';
-$newsFeedSubHeading2 = '';
-$newsFeedParagraph1 = 'Decoding the Church takes this organic metaphor and examines its DNA to find the key to church structure and mission.';
-$newsFeedParagraph2 = 'While many models have been proposed for understanding the nature of the church, the primary biblical image is that of the body of Christ.';
-$newsFeedParagraph3 = 'The authors suggest that the classical understanding of the church as defined by the Nicene Creed-one, holy, catholic, apostolic church-comprises only one strand of the church\'s  DNA.';
-$newsFeedParagraph4 ='They propose a more complex, living model for structuring the church and understanding its mission, and then explore how a biblically structured church can transform the world.';
-$newsFeedParagraph5 = 'Decoding the Church evaluates models based in hierarchy, psychology, and ecology, and stresses the biblical and contemporary reality of globalization. Includes discussion questions.';
-?>
-            <!-- need to load this dynamically-->
-           	<h2><?= $newsFeedMainHeading ?></h2><!-- news feed heading-->
-			<p><?php echo $author, $newsFeedAuthor?></p><!-- author -->
-            <p><?php echo $date, $newsFeedDateAdded?></p><!-- date -->
-            <p><?php echo $newsFeedSubHeading1?></p><!-- subheading 1 -->
-            <p><?php echo $newsFeedSubHeading2?></p><!-- subheading 2 -->
-			<p><?php echo $newsFeedParagraph1?></p><!-- paragraph one -->
-            <p><?php echo $newsFeedParagraph2?></p></p><!-- paragraph two -->
-            <p><?php echo $newsFeedParagraph3?></p></p><!-- paragraph three -->
-            <p><?php echo $newsFeedParagraph4?></p></p><!-- paragraph four -->
-            <p><?php echo $newsFeedParagraph5?></p></p><!-- paragraph five -->
+
+
+			<!-- maybe put this in a class and call more organised less messy-->
+			<?php
+			// -- define some variables for news feed  -->
+			//temp string for testing
+            $whichNewsFeed = 1;
+			//get the news array for whichnewsfeed
+			$currentFeed = NewsFeed::getOneById($whichNewsFeed);
+			?>
+			<!--display news from db matching value stored in $whichNewsFeed-->
+			<p><h2><?=$currentFeed->getHeading();?></h2></p><!-- news feed heading-->
+			<p><h3><?=$currentFeed->getNewsFeedSub1($whichNewsFeed);?></h3></p><!-- subheading 1 -->
+			<p><?=$currentFeed->getNewsFeedSub2($whichNewsFeed);?></p><!-- subheading 2 -->
+			<p><?=$currentFeed->getNewsText1($whichNewsFeed);?></p><!--  news text 1 -->
+			<p><?=$currentFeed->getNewsText2($whichNewsFeed);?></p><!--  news text 2 -->
+			<p>Author: <?=$currentFeed->getAuthor($whichNewsFeed);?></p><!-- author -->
+			<p>Date: <?=$currentFeed->getDate($whichNewsFeed);?></p><!-- date -->
+
         </article><!-- close article tag -->
-    </section><!-- close section tag -->
+    </section><!-- close news feed section -->
 	<!-- ****************** section - block 3 ******************** -->
     <section class="flex_welcome_right"><!-- begin section tag-->
 		<article class="stitched"><!-- begin article -->
