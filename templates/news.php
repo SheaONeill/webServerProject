@@ -46,7 +46,7 @@ use Itb\Verse;
 		</article><!-- close article tag -->
 		
 		<article class="random_verse"><!-- begin article -->
-			<h2>Random Bible Verse <?=$randomVerseGen = rand(1000,1002)?><!-- random stage 1->
+			<h2>Random Bible Verse<!-- random stage 1->
 			<img alt="open_book.png" src="/images/background/open_book.png" ><!-- image of open_book -->
 			<div id="bibleVerse">
 			<p>
@@ -55,22 +55,17 @@ use Itb\Verse;
                 <?php
 				// define some variables for random bible verse -->/
 				//
+
+				$randomVerseGen = rand(1000,1002);
 				$currentVerse = Verse::getOneById($randomVerseGen);
-				//$verses = Verse::getAll();
 
-                //foreach ((array) $verses as $verse){
+				?>
+  			<!--display verse with value stored in $randomVerseGen-->
+				<p><?=$currentVerse->getHeading($randomVerseGen);?></p>
+				<p><?=$currentVerse->getSubheading1($randomVerseGen);?></p>
+				<p><?=$currentVerse->getSubheading2($randomVerseGen);?></p>
+				<p><?=$currentVerse->getParagraph($randomVerseGen);?></p>
 
-				// display verse with value stored in $test
-				/*print $randomVerseGen;*/
-				print $currentVerse->getHeading($randomVerseGen);
-				print $currentVerse->getSubheading1($randomVerseGen);
-				print $currentVerse->getSubheading2($randomVerseGen);
-				print $currentVerse->getParagraph($randomVerseGen);
-
-
-				//}*/
-                
-                ?>
                 
 </p>
 			</div><!-- div to hold random verse -->
