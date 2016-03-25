@@ -68,9 +68,13 @@ switch ($action){
         $mainController->obituaryAction();
         break;
 
+    /*case 'list':
+        $mainController->listAction();
+        break;
+
     case 'showOne':
         $mainController->showOneAction();
-        break;
+        break;*/
 
     default:
         $mainController->indexAction();

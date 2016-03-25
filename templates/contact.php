@@ -34,7 +34,9 @@ require_once __DIR__ . '/../templates/includes/header_full.php';
 			<h3>Contact Us</h3>
 				<p><q>Fields marked with asterisk (<span class="red">*</span>) are required</q></p>
 				<!-- Fieldset around data -->
-				<form action= "index.php" method="post" onsubmit="alert('Thank you your form has been submitted!')"><!-- begin form-->
+				<!--<form action= "index.php" method="post" onsubmit="alert('Thank you your form has been submitted!')">--><!-- begin form-->
+			<form action="/index.php?action=processLogin" method="post">
+
 				<fieldset><legend>Use the following form to send a message</legend><br>
 				<!-- Dropdown Menu -->  
 				Who you would like to contact?<span class="red">*</span><br><!-- red asterisk -->

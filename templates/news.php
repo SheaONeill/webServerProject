@@ -10,7 +10,8 @@ require_once __DIR__ . '/../templates/header_imports.php';*/
 
 //include the full header header_full.php
 require_once __DIR__ . '/../templates/includes/header_full.php';
-require_once __DIR__ . '/../src/Verse.php';
+
+use Itb\Verse;
 
 
 ?>
@@ -77,11 +78,12 @@ $bibleVerseParagraph = 'People do not pick figs from thornbushes, or grapes from
 
 				<!-- need to load this dynamically-->
                 <?php
-/*                // outputs something like:
+                // outputs something like:
                 //  [1] hammer
                 //  [5] nail
                 //  [7] nuts
-                foreach ($verses as $verse){
+				$verses = Verse::getAll();
+                foreach ((array) $verses as $verse){
                     print '<p>';
                     print 'id [' . $verse->getId() . '] ';
                     print $verse->getHeading();
@@ -91,12 +93,16 @@ $bibleVerseParagraph = 'People do not pick figs from thornbushes, or grapes from
 
                 }
                 
-                */?>
+                ?>
                 
 
 			</div><!-- div to hold random verse -->
 			<br><!-- line break -->
-			<a href="javascript:history.go(0);"><p id="refresh">Click here to refresh this page to see a new verse.</p></a><!-- paragraph -->
+
+			<!--php refresh page-->
+			<a href="<?php echo $_SERVER["REQUEST_URI"]; ?>"><p id="refresh">Click here to refresh this page to see a new verse.</p></a><!-- paragraph -->
+
+			<!-- paragraph -->
 		</article><!-- close article tag -->
     </section><!-- close section tag -->
 

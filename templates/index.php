@@ -13,13 +13,17 @@ require_once __DIR__ . '/../templates/includes/header_full.php';
 ?>
 <body><!-- begin body opening tag -->
 <div id="main_container"><!-- div to wrap everything-->
-<!-- ***** header ***** -->
+
+    <!--Need to movee this so when i change them its globally-->
+
+    <!-- ***** header ***** -->
 	<header><!-- begin header opening tag -->
 		<?php
 		//include the social media links from body_header_media_logos.php
 		require_once __DIR__ . '/../templates/includes/body_header_media_logos.php';
 		?>
 	</header><!-- close header tag -->
+
 	<div id ="login_header">
 		<?php
 		//include the login_header.php

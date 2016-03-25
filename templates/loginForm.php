@@ -5,20 +5,20 @@
 ?>
 
 <form
-    action="/index.php?action=processLogin"
-    method="post"
-    >
+//action="/index.php?action=processLogin"
+//method="post"
+>
 
-    <p>
-        username:
-        <input type="text" name="username">
-    </p>
+<p>
+    username:
+    <input type="text" name="username">
+</p>
 
-    <p>
-        password:
-        <input type="password" name="password">
-    </p>
+<p>
+    password:
+    <input type="password" name="password">
+</p>
 
-    <input type="submit" value="login">
+//<input type="submit" value="login">
 
 </form>

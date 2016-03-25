@@ -12,15 +12,15 @@ class MainController
         $this->loginController = new LoginController();
     }
     
-// testing verse list
-public function listAction() {
+    /*// testing verse list
+    public function listAction() {
 
     $verses = Verse::getAll();
     require_once __DIR__ . '/../templates/list.php';
-}
+    }
     
-    /*public function  showOneAction()
-    /*{
+    public function  showOneAction()
+    {
 
         $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
         $heading = filter_input(INPUT_GET, 'heading', FILTER_SANITIZE_NUMBER_STR);
@@ -121,13 +121,13 @@ public function listAction() {
     }
 
 
-    public function loginAction()
+    /*public function loginAction()
     {
         //added this from seperate controllers example
         $isLoggedIn = $this->loginController->isLoggedInFromSession();
         $username = $this->loginController->usernameFromSession();
 
         require_once __DIR__ . '/../templates/loginForm.php';
-    }
+    }*/
 
 }

@@ -11,8 +11,7 @@
 <!--<header>-->
 
     <!-- login / logout -->
-<form action="/index.php?action=processLogin"
-      method="post">
+<!--<form action="/index.php?action=processLogin" method="post">-->
         <?php
         //----------------------------
         if($isLoggedIn):
@@ -36,8 +35,8 @@
 
 
 
-                <!--<form action="/index.php?action=processLogin"
-                      method="post">-->
+                <form action="/index.php?action=processLogin"
+                      method="post">
 
                     username:<input type="text" name="username">
                     password: <input type="password" name = "password"/>
