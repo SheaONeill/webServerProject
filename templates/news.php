@@ -95,7 +95,7 @@ use Itb\NewsFeed;
 			$newNewsFeedArray = new NewsFeed();
 			$newsFeeds = $newNewsFeedArray->getAll();
 
-			foreach ($newsFeeds as $newsFeed) {
+			foreach ((array)$newsFeeds as $newsFeed) {
 
 
 				?>
