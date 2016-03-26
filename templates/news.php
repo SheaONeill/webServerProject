@@ -37,28 +37,39 @@ use Itb\NewsFeed;
 <div id="section_container"><!-- div to wrap the sections -->
     <!-- ****************** section - block 1 ******************** -->
     <section class="flex_welcome_left"><!-- begin section tag-->
-		<article><!-- begin article -->
-			<h2>A Journey through East Wall Parish.</h2><!-- heading type three-->
-			<p>Video of parish to go here!</p>
-			<video id="video_size" controls><!-- begin video -->
-			  <source src="" type="video/mp4"><!-- video source -->
-			   Your browser does not support the video tag.<!-- if video element is unsupported display this -->
-			</video><!-- close video tag -->
+		<article class="outline_main"><!-- begin article -->
+			<h3>Rent a Soul for Sunday</h3>
 		</article><!-- close article tag -->
 		
 		<article class="random_verse"><!-- begin article -->
-			<h2>Random Bible Verse<!-- random stage 1->
-			<img alt="open_book.png" src="/images/background/open_book.png" ><!-- image of open_book -->
+			<h2>Random Bible Verse></h2><!-- random stage 1-->
 			<div id="bibleVerse">
-			<p>
+			<p><img alt="open_book.png" src="/images/background/open_book.png" ><!-- image of open_book -->
 
 			<!-- maybe put this in a class and call more oranised less messy-->
                 <?php
+
+				//create new verse object
+				$newVerseArray = new Verse();
+				//get all the verses
+				$temp = $newVerseArray->getAll();
+				//count the vesres
+				$numGetItems = count($temp);
+				//testing
+				print 'number of items in GET array = ' . $numGetItems;
+
+
 				// define some variables for random bible verse -->/
+				// need to figure out how to get last id value
+				// and do something like this
+				// $randomVerseGen = rand($firstID,$lastID());
+				//$key=>&$value
 				$randomVerseGen = rand(1000,1002);
-				$currentVerse = Verse::getOneById($randomVerseGen);
+
+				$currentVerse = $newVerseArray->getOneById($randomVerseGen);
 				?>
   			<!--display verse with value stored in $randomVerseGen-->
+				<p><?=$currentVerse->getId($randomVerseGen);?></p>
 				<p><?=$currentVerse->getHeading($randomVerseGen);?></p>
 				<p><?=$currentVerse->getSubheading1($randomVerseGen);?></p>
 				<p><?=$currentVerse->getSubheading2($randomVerseGen);?></p>
@@ -76,26 +87,30 @@ use Itb\NewsFeed;
     <!-- ****************** news feed section  ******************** -->
     <section class="flex_welcome_main"><!-- begin section tag-->
 		<article class="outline_main"><!-- begin article -->
-
-
+			<div id = "newsFeed" style="overflow:scroll; height:auto;">
 
 			<!-- maybe put this in a class and call more organised less messy-->
 			<?php
 			// -- define some variables for news feed  -->
+			$newNewsFeedArray = new NewsFeed();
+			$temp = $newNewsFeedArray->getAll();
+
+			$numGetItems = count($temp);
+			print 'number of items in GET array = ' . $numGetItems;
 			//temp string for testing
-            $whichNewsFeed = 1;
+			$whichNewsFeed = 1;
 			//get the news array for whichnewsfeed
 			$currentFeed = NewsFeed::getOneById($whichNewsFeed);
 			?>
 			<!--display news from db matching value stored in $whichNewsFeed-->
-			<p><h2><?=$currentFeed->getHeading();?></h2></p><!-- news feed heading-->
+			<p><h2><?=$currentFeed->getHeading($whichNewsFeed);?></h2></p><!-- news feed heading-->
 			<p><h3><?=$currentFeed->getNewsFeedSub1($whichNewsFeed);?></h3></p><!-- subheading 1 -->
 			<p><?=$currentFeed->getNewsFeedSub2($whichNewsFeed);?></p><!-- subheading 2 -->
 			<p><?=$currentFeed->getNewsText1($whichNewsFeed);?></p><!--  news text 1 -->
 			<p><?=$currentFeed->getNewsText2($whichNewsFeed);?></p><!--  news text 2 -->
 			<p>Author: <?=$currentFeed->getAuthor($whichNewsFeed);?></p><!-- author -->
 			<p>Date: <?=$currentFeed->getDate($whichNewsFeed);?></p><!-- date -->
-
+			</div>
         </article><!-- close article tag -->
     </section><!-- close news feed section -->
 	<!-- ****************** section - block 3 ******************** -->

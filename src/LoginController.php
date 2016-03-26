@@ -44,7 +44,7 @@ class LoginController
             //or http://stackoverflow.com/questions/10643626/refresh-page-after-form-submiting
 
         } else {
-            $message_heading = "WARNING ERROR";
+            $message_heading = "It's a Sin!";
             $message = 'bad username or password, please try again';
             require_once __DIR__ . '/../templates/includes/src/message.php';
         }

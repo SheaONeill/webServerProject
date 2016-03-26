@@ -29,7 +29,11 @@ require_once __DIR__ . '/../templates/includes/header_full.php';
         <!-- ****************** section - block 1 ******************** -->
         <section class="flex_site_map"><!-- begin section tag-->
             <article><!-- begin article -->
-                <h2>Thank You...</h2><!-- heading type two-->
+                <?php
+                //require_once '_header.php';
+                ?>
+                <h2<?= $message_heading ?>></h2><!-- heading type two-->
+                <p><?= $message ?></p>
             </article>
         </section><!-- close section tag -->
     </div><!-- close section_container tag -->
@@ -37,17 +41,19 @@ require_once __DIR__ . '/../templates/includes/header_full.php';
     <!-- ****************** footer - block  ******************** -->
     <div id="the_footer_wrapper"><!-- div to wrap the footer -->
 
-
         <!-- ****************** php includes footer  ******************** -->
-
         <?php
         //include the footer from footer.php
         require_once __DIR__ . '/../templates/includes/footer.php';
-
         ?>
+
         <!-- ****************** copyright footer  ******************** -->
-        <p id="copyright">&copy; 2016&nbsp;&nbsp;James O&#39;Neill&nbsp;&nbsp;<a href="mailto:B00084432@student.itb.ie">Email</a></li></p><!-- footer copyright-->
+        <p id="copyright">&copy; 2016&nbsp;&nbsp;James O&#39;Neill&nbsp;&nbsp;<a href="mailto:B00084432@student.itb.ie">Email</a></li>
+        </p><!-- footer copyright-->
     </div><!-- close the_footer_wrapper tag -->
+
 </div><!-- close main_container div tag -->
+
 </body><!-- close body tag -->
+
 </html><!-- close html tag -->
