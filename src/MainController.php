@@ -12,12 +12,12 @@ class MainController
         $this->loginController = new LoginController();
     }
     
-    /*// testing verse list
+    // testing verse list
     public function listAction() {
 
     $verses = Verse::getAll();
     require_once __DIR__ . '/../templates/list.php';
-    }
+}
     
     public function  showOneAction()
     {
@@ -35,7 +35,7 @@ class MainController
             require_once __DIR__ . '/../templates/message.php';
         }
 
-    }//end show functiom*/
+    }//end show functiom
 
 
 
