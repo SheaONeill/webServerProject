@@ -13,82 +13,27 @@ use Mattsmithdev\PdoCrud\DatabaseManager;
 class NewsFeed extends DatabaseTable{
 
     //create the variables to match database
-    private $heading;
-    private $newsFeedSub1;
-    private $newsFeedSub2;
-    private $newsText1;
-    private $newsText2;
-    private $author ;
+    private $id;
+    private $author;
     private $date;
+    private $newsFeedHeading;
+    private $newsFeedSubHeading1;
+    private $newsFeedSubHeading2;
+    private $newsFeedParagraph1;
+    private $newsFeedParagraph2;
 
     /**
      * @return mixed
      */
-    public function getHeading() {
-        return $this->heading;
+    public function getId() {
+        return $this->id;
     }
 
     /**
-     * @param mixed $heading
+     * @param mixed $id
      */
-    public function setHeading($heading) {
-        $this->heading = $heading;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getNewsFeedSub1() {
-        return $this->newsFeedSub1;
-    }
-
-    /**
-     * @param mixed $newsFeedSub1
-     */
-    public function setNewsFeedSub1($newsFeedSub1) {
-        $this->newsFeedSub1 = $newsFeedSub1;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getNewsFeedSub2() {
-        return $this->newsFeedSub2;
-    }
-
-    /**
-     * @param mixed $newsFeedSub2
-     */
-    public function setNewsFeedSub2($newsFeedSub2) {
-        $this->newsFeedSub2 = $newsFeedSub2;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getNewsText1() {
-        return $this->newsText1;
-    }
-
-    /**
-     * @param mixed $newsText1
-     */
-    public function setNewsText1($newsText1) {
-        $this->newsText1 = $newsText1;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getNewsText2() {
-        return $this->newsText2;
-    }
-
-    /**
-     * @param mixed $newsText2
-     */
-    public function setNewsText2($newsText2) {
-        $this->newsText2 = $newsText2;
+    public function setId($id) {
+        $this->id = $id;
     }
 
     /**
@@ -119,8 +64,75 @@ class NewsFeed extends DatabaseTable{
         $this->date = $date;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getNewsFeedHeading() {
+        return $this->newsFeedHeading;
+    }
 
+    /**
+     * @param mixed $newsFeedHeading
+     */
+    public function setNewsFeedHeading($newsFeedHeading) {
+        $this->newsFeedHeading = $newsFeedHeading;
+    }
 
+    /**
+     * @return mixed
+     */
+    public function getNewsFeedSubHeading1() {
+        return $this->newsFeedSubHeading1;
+    }
+
+    /**
+     * @param mixed $newsFeedSubHeading1
+     */
+    public function setNewsFeedSubHeading1($newsFeedSubHeading1) {
+        $this->newsFeedSubHeading1 = $newsFeedSubHeading1;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNewsFeedSubHeading2() {
+        return $this->newsFeedSubHeading2;
+    }
+
+    /**
+     * @param mixed $newsFeedSubHeading2
+     */
+    public function setNewsFeedSubHeading2($newsFeedSubHeading2) {
+        $this->newsFeedSubHeading2 = $newsFeedSubHeading2;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNewsFeedParagraph1() {
+        return $this->newsFeedParagraph1;
+    }
+
+    /**
+     * @param mixed $newsFeedParagraph1
+     */
+    public function setNewsFeedParagraph1($newsFeedParagraph1) {
+        $this->newsFeedParagraph1 = $newsFeedParagraph1;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNewsFeedParagraph2() {
+        return $this->newsFeedParagraph2;
+    }
+
+    /**
+     * @param mixed $newsFeedParagraph2
+     */
+    public function setNewsFeedParagraph2($newsFeedParagraph2) {
+        $this->newsFeedParagraph2 = $newsFeedParagraph2;
+    }
 
 
 }//end class

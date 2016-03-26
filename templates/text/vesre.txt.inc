@@ -1,3 +1,31 @@
+--
+-- Database: `itb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `verses`
+--
+
+CREATE TABLE `verses` (
+`id` int(11) NOT NULL,
+`heading` text NOT NULL,
+`subheading1` text NOT NULL,
+`subheading2` text NOT NULL,
+`paragraph` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `verses`
+--
+
+INSERT INTO `verses` (`id`, `heading`, `subheading1`, `subheading2`, `paragraph`) VALUES
+(1000, 'Romans 8:35,38-39', 'Who shall separate us from the love of Christ?', 'Shall trouble or hardship or persecution or famine or nakedness or danger or sword? ...', 'I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord.'),
+(1001, 'Matthew 28:5-7', 'The angel said to the women, Do not be afraid, for I know that you are looking for Jesus, who was crucified', 'He is not here; he has risen, just as he said.', 'Come and see the place where he lay. Then go quickly and tell his disciples: &#039;He has risen from the dead and is going ahead of you into Galilee. There you will see him.&#039; Now I have told you.'),
+(1002, 'Isaiah 61:1-3', 'The Spirit of the Sovereign LORD is on me, because the LORD has anointed me to preach good news to the poor.', 'He has sent me to bind up the brokenhearted,', 'to proclaim freedom for the captives and release from darkness for the prisoners, to proclaim the year of the LORD&#039;s favor and the day of vengeance of our God, to comfort all who mourn, and provide for those who grieve in Zion -- to bestow on them a crown of beauty instead of ashes, the oil of gladness instead of mourning, and a garment of praise instead of a spirit of despair. They will be called oaks of righteousness, a planting of the LORD for the display of his splendor');
+
+
 /**
  * User: B00084432
  * Date: 25/03/2016

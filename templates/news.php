@@ -93,23 +93,27 @@ use Itb\NewsFeed;
 			<?php
 			// -- define some variables for news feed  -->
 			$newNewsFeedArray = new NewsFeed();
-			$temp = $newNewsFeedArray->getAll();
+			$newsFeeds = $newNewsFeedArray->getAll();
 
-			$numGetItems = count($temp);
-			print 'number of items in GET array = ' . $numGetItems;
-			//temp string for testing
-			$whichNewsFeed = 1;
-			//get the news array for whichnewsfeed
-			$currentFeed = NewsFeed::getOneById($whichNewsFeed);
+			foreach ($newsFeeds as $newsFeed) {
+
+
+				?>
+
+				<!--display news from db matching value stored in $whichNewsFeed-->
+				<p><h2><?= $newsFeed->getNewsFeedHeading(); ?></h2></p><!-- news feed heading-->
+				<p><h3><?= $newsFeed->getNewsFeedSubHeading1(); ?></h3></p><!-- subheading 1 -->
+				<p><?= $newsFeed->getNewsFeedSubHeading2(); ?></p><!-- subheading 2 -->
+				<p><?= $newsFeed->getNewsFeedParagraph1(); ?></p><!--  news text 1 -->
+				<p><?= $newsFeed->getNewsFeedParagraph2(); ?></p><!--  news text 2 -->
+				<p>Author: <?= $newsFeed->getAuthor(); ?></p><!-- author -->
+				<p>Date: <?= $newsFeed->getDate(); ?></p><!-- date -->
+
+				<?php
+			}
+
 			?>
-			<!--display news from db matching value stored in $whichNewsFeed-->
-			<p><h2><?=$currentFeed->getHeading($whichNewsFeed);?></h2></p><!-- news feed heading-->
-			<p><h3><?=$currentFeed->getNewsFeedSub1($whichNewsFeed);?></h3></p><!-- subheading 1 -->
-			<p><?=$currentFeed->getNewsFeedSub2($whichNewsFeed);?></p><!-- subheading 2 -->
-			<p><?=$currentFeed->getNewsText1($whichNewsFeed);?></p><!--  news text 1 -->
-			<p><?=$currentFeed->getNewsText2($whichNewsFeed);?></p><!--  news text 2 -->
-			<p>Author: <?=$currentFeed->getAuthor($whichNewsFeed);?></p><!-- author -->
-			<p>Date: <?=$currentFeed->getDate($whichNewsFeed);?></p><!-- date -->
+
 			</div>
         </article><!-- close article tag -->
     </section><!-- close news feed section -->
@@ -117,7 +121,7 @@ use Itb\NewsFeed;
     <section class="flex_welcome_right"><!-- begin section tag-->
 		<article class="stitched"><!-- begin article -->
 			<h2>Prayer For The Church In Ireland</h2><!-- heading type two -->
-			<p>God of our fathers, renew us in the faith which is our life and salvation, the hope which promises forgiveness and interior renewal, the charity which purifies and opens our hearts to love you, and in you, each of our brothers and sisters.</p><!-- paragraph one --> 
+			<p>God of our fathers, renew us in the faith which is our life and salvation, the hope which promises forgiveness and interior renewal, the charity which purifies and opens our hearts to love you, and in you, each of our brothers and sisters.</p><!-- paragraph one -->
 			<img alt="code.png" src="/images/background/code.png" ><!-- image of code -->
 			<p>Lord Jesus Christ, may the Church in Ireland renew her age-old commitment to the education of our young people in the way of truth and goodness, holiness and generous service to society.</p><!-- paragraph two -->
 			<p>Holy Spirit, comforter, advocate and guide, inspire a new springtime of holiness and apostolic zeal for the Church in Ireland. 	May our sorrow and our tears, our sincere effort to redress past wrongs, and our firm purpose of amendment bear an abundant harvest of grace for the deepening of the faith in our families, parishes, schools and communities, for the spiritual progress of Irish society, and the growth of charity, justice, joy and peace within the whole human family. To you, Triune God, confident in the loving protection of Mary, Queen of Ireland, our Mother, and of Saint Patrick, Saint Brigid and all the saints, do we entrust ourselves, our children, and the needs of the Church in Ireland.</p><!-- paragraph three -->
