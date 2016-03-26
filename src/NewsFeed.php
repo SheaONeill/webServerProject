@@ -9,6 +9,7 @@ namespace Itb;
 use Mattsmithdev\PdoCrud\DatabaseTable;
 use Mattsmithdev\PdoCrud\DatabaseManager;
 class NewsFeed extends DatabaseTable{
+    
     //create the variables to match database#
     private $id;
     private $author;
