@@ -35,7 +35,7 @@ require_once __DIR__ . '/../templates/includes/header_full.php';
 				<p><q>Fields marked with asterisk (<span class="red">*</span>) are required</q></p>
 				<!-- Fieldset around data -->
 				<!--<form action= "index.php" method="post" onsubmit="alert('Thank you your form has been submitted!')">--><!-- begin form-->
-			<form action="/index.php?action=processLogin" method="post">
+			<form action="/index.php?action=contactForm" method="post">
 
 				<fieldset><legend>Use the following form to send a message</legend><br>
 				<!-- Dropdown Menu -->  
@@ -51,8 +51,7 @@ require_once __DIR__ . '/../templates/includes/header_full.php';
 				<input type="email" size="20" maxlength="40" name="email" id = "email" placeholder="jesus@heaven.god" required><br>
 				<!-- Message Box -->
 				Message<br>
-				<textarea name = "textArea" id = "textArea" rows="10" cols="40" wrap="hard" > 
-				</textarea><br>
+				<textarea name = "textArea" id = "textArea" rows="10" cols="40" required></textarea><br>
 				
 				<!-- Checkbox -->
 				Subscription for Parish Newsletter<input type="checkbox" name="newsletter" id = "newsletter" value="newsletter" checked><br>

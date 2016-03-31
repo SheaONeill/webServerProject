@@ -1,0 +1,20 @@
+created a general message page for all errors or messages and passed values to display
+added isset() function to check if the variable existed and was passed otherwise skip
+
+added contactFormAction to front controller for contact page form processing
+replaced the underscore from values passed from form with space and capitalise each word
+for displaying details after form submission:
+
+eg. ucwords(str_replace('_',' ',$who_to_contact))
+
+parish_priest now is set to: Parish Priest
+
+
+if non required form values are empty do not pass message
+
+eg if subscribed to newsletter is true then set the variable value
+otherwise skip and dont pass to message.php output:
+
+eg. if (!empty($messageDetails_04)) {
+    $messageDetails_04 = 'Newsletter Subscription: ' . $newsletter;
+}

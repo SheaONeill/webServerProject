@@ -68,6 +68,10 @@ switch ($action){
         $mainController->obituaryAction();
         break;
 
+    case 'contactForm':
+        $mainController->contactFormAction();
+        break;
+
     /*case 'list':
         $mainController->listAction();
         break;

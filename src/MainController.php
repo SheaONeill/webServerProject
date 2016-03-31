@@ -120,7 +120,45 @@ class MainController
         require_once __DIR__ . '/../templates/site_map.php';
     }
 
+    public function contactFormAction()
+    {
+        //added this from seperate controllers example
+        //$isLoggedIn = $this->loginController->isLoggedInFromSession();
+        //$username = $this->loginController->usernameFromSession();
 
+        $numItems = sizeof($_GET);
+
+        $who_to_contact = filter_input(INPUT_POST, 'who_to_contact', FILTER_SANITIZE_STRING);
+        $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
+        $textArea = filter_input(INPUT_POST, 'textArea', FILTER_SANITIZE_STRING);
+        $newsletter = filter_input(INPUT_POST, 'newsletter', FILTER_SANITIZE_STRING);
+        $messenger = filter_input(INPUT_POST, '$messenger', FILTER_SANITIZE_STRING);
+
+        //refresh page
+        //header('Location: /../templates/thank_you.php');
+
+        $message_heading = 'Thank You for your message';
+        $mainMessage = 'Here are the message details:';
+        
+         //replace the underscore with space and capitalise each word
+        $messageDetails_01 = 'Contact: ' . ucwords(str_replace('_',' ',$who_to_contact));
+        $messageDetails_02 = 'Your Email: ' . $email;
+        $messageDetails_03 = 'Message sent to ' . ucwords(str_replace('_',' ',$who_to_contact)). " : ". $textArea;
+
+        // if subscribed to newsletter then set the variable value
+        if (!empty($messageDetails_04)) {
+            $messageDetails_04 = 'Newsletter Subscription: ' . $newsletter;
+        }
+         // if subscribed to messenger then set then variable value
+        if (!empty($messageDetails_05)) {
+            $messageDetails_05 = 'Messenger Subscription: ' . $messenger;
+        }
+        require_once __DIR__ . '/../templates/includes/src/message.php';
+        
+        //$pageTitle = 'Site Map';
+        //$site_mapLinkStyle = 'current_page';
+        
+    }
     /*public function loginAction()
     {
         //added this from seperate controllers example

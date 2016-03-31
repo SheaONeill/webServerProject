@@ -34,4 +34,6 @@ $newsletter = filter_input(INPUT_GET, 'newsletter', FILTER_SANITIZE_STRING);
 //refresh page
 header('Location: thank_you');
 
-?>
+$message_heading = "Thank You for yor message";
+$message = "Here are the details:";
+require_once __DIR__ . '/../templates/includes/src/message.php';

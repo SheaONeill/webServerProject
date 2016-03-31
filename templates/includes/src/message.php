@@ -32,8 +32,16 @@ require_once __DIR__ . '/../header_full.php';
                 <?php
                 //require_once '_header.php';
                 ?>
-                <h1><?= $message_heading ?></h1><!-- heading type two-->
-                <p><?= $message ?></p>
+                <h1><?= $message_heading ?></h1><!-- incoming message heading-->
+
+                <!-- display if true depending on controller it originates from -->
+                <p><?php if (isset($mainMessage)) echo $mainMessage ?></p>
+                <p><?php if (isset($messageDetails_01)) echo $messageDetails_01 ?></p>
+                <p><?php if (isset($messageDetails_02)) echo $messageDetails_02 ?></p>
+                <p><?php if (isset($messageDetails_03)) echo $messageDetails_03 ?></p>
+                <p><?php if (isset($messageDetails_04)) echo $messageDetails_04 ?></p>
+                <p><?php if (isset($messageDetails_05)) echo $messageDetails_05 ?></p>
+
             </article>
         </section><!-- close section tag -->
     </div><!-- close section_container tag -->
