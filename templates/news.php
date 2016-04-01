@@ -43,12 +43,13 @@ use Itb\NewsFeed;
 <div id="section_container"><!-- div to wrap the sections -->
     <!-- ****************** section - block 1 ******************** -->
     <section class="flex_welcome_left"><!-- begin section tag-->
-		<article class="outline_main"><!-- begin article -->
-			<h3>Rent a Soul for Sunday</h3>
-		</article><!-- close article tag -->
-		
+
 		<article class="random_verse"><!-- begin article -->
-			<h2>Random Bible Verse></h2><!-- random stage 1-->
+            <article class="outline_main"><!-- begin article -->
+                <h3>Bible Verse for Today</h3>
+            </article><!-- close article tag -->
+
+            <br><!-- line break -->
 			<div id="bibleVerse">
 			<p><img alt="open_book.png" src="/images/background/open_book.png" ><!-- image of open_book -->
 
@@ -62,7 +63,7 @@ use Itb\NewsFeed;
 				//count the vesres
 				$numGetItems = count($temp);
 				//testing
-				print 'number of items in GET array = ' . $numGetItems;
+                //print 'number of items in GET array = ' . $numGetItems;
 
 
 				// define some variables for random bible verse -->/
@@ -75,25 +76,27 @@ use Itb\NewsFeed;
 				$currentVerse = $newVerseArray->getOneById($randomVerseGen);
 				?>
   			<!--display verse with value stored in $randomVerseGen-->
-				<p><?=$currentVerse->getId($randomVerseGen);?></p>
+                <!--<p><? /*=$currentVerse->getId($randomVerseGen);*/ ?></p>-->
 				<p><?=$currentVerse->getHeading($randomVerseGen);?></p>
 				<p><?=$currentVerse->getSubheading1($randomVerseGen);?></p>
 				<p><?=$currentVerse->getSubheading2($randomVerseGen);?></p>
 				<p><?=$currentVerse->getParagraph($randomVerseGen);?></p>
 
 			</div><!-- div to hold random verse -->
-			<br><!-- line break -->
 
 			<!--php refresh page-->
 			<a href="<?php echo $_SERVER["REQUEST_URI"]; ?>"><p id="refresh">Click here to refresh this page to see a new verse.</p></a><!-- paragraph -->
-
+            <br><!-- line break -->
+            <article class="outline_main"><!-- begin article -->
+                <h3>Rent a Soul for Sunday</h3>
+            </article><!-- close article tag -->
 		</article><!-- close article tag -->
     </section><!-- close verse section tag -->
 
     <!-- ****************** news feed section  ******************** -->
-    <section class="flex_welcome_main"><!-- begin section tag-->
-		<article class="outline_main"><!-- begin article -->
-			<div id = "newsFeed" style="overflow:scroll; height:auto;">
+    <section class="flex_news_main"><!-- begin section tag-->
+        <article class="outline_newsFeed"><!-- begin article -->
+            <div id="newsFeed"> <!--style="overflow:scroll; height:auto;">-->
 
 			<!-- maybe put this in a class and call more organised less messy-->
 			<?php

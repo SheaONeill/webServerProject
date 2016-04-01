@@ -30,3 +30,5 @@ admin_links.php, adminEditNews.php,
 adminEditVerse.php,
 adminEditDonation.php,
 adminEditUser.php
+
+fixed scrollbar on news feed

@@ -13,10 +13,14 @@
 	margin: 0 180px;/* change the margins by setting them to 0 180px */
   }
   .flex_welcome_left , .flex_welcome_right {/* reference the flex_welcome_left flex_welcome_right*/
-    max-width:22%;/* set the maximum width to 17% */
+    max-width: 22%; /* set the maximum width to 22% */
   }
   .flex_welcome_main{/* reference the flex_welcome_main */
-    max-width:25%;/* set the maximum width to 17% */
+    max-width: 25%; /* set the maximum width to 25% */
+  }
+
+  .flex_news_main { /* reference the flex_welcome_main */
+    max-width: 25%; /* set the maximum width to 25% */
   }
   .flex_four_column , .flex_four_column_left, .flex_four_column_right {/* reference the flex_four_column */
     max-width:17%;/* set the maximum width to 17% */
@@ -46,7 +50,11 @@
     max-width:19%;/* set the maximum width to 17% */
   }
   .flex_welcome_main{/* reference the flex_welcome_main */
-    max-width:35%;/* set the maximum width to 17% */
+    max-width: 35%; /* set the maximum width to 33% */
+  }
+
+  .flex_news_main { /* reference the flex_welcome_main */
+    max-width: 35%; /* set the maximum width to 35% */
   }
   .flex_four_column , .flex_four_column_left, .flex_four_column_right {/* reference the flex_four_column */
     max-width:17%;/* set the maximum width to 17% */

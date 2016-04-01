@@ -95,6 +95,15 @@ header .social_media li{/* reference the header social_media list items  */
 	padding: 1rem;/* padding is the distance between the element/text and the border */
     opacity: 0.9;/* set the opacity level*/
 	}
+
+.flex_news_main { /* reference any element with the flex_welcome_main class */
+	margin-top: 1.4rem; /* fix margin to make perspective line up */
+	margin-bottom: 1.4rem; /* fix margin to make perspective look line up */
+	padding: 1rem; /* padding is the distance between the element/text and the border */
+	opacity: 0.9; /* set the opacity level*/
+	height: 100vh; /*http://webdesign.tutsplus.com/tutorials/how-to-make-responsive-scrollable-panels-with-flexbox--cms-23269*/
+}
+
 .flex_welcome_main img {/* reference the images inside flex_welcome_main class */
     float: left;/* float image left */
     width: 45%;/* set the image width */
@@ -105,6 +114,14 @@ header .social_media li{/* reference the header social_media list items  */
     outline-style: ridge;/* set the outline style to ridge */
     outline-color: #deb887;/* set the outline colour to burlywood */
 	padding: 1rem;/* padding is the distance between the element/text and the border */
+}
+
+.outline_newsFeed { /* reference the outline_main class */
+	border: 4px solid #a0522d; /* set the border colour of the outline to sienna */
+	outline-style: ridge; /* set the outline style to ridge */
+	outline-color: #deb887; /* set the outline colour to burlywood */
+	padding: 1rem; /* padding is the distance between the element/text and the border */
+	overflow-y: scroll; /*http://webdesign.tutsplus.com/tutorials/how-to-make-responsive-scrollable-panels-with-flexbox--cms-23269*/
 }
 .outline_main#bottom {/* reference the outline_main class with id bottom*/
     font-size: 12px;/* set the font-size of the outline_main bottom div */
@@ -271,6 +288,12 @@ tr.even{/* reference the table rows with a class of even */
 .random_verse a{/* reference the random_verse link */
 	text-decoration: none;/* remove the underline */
 }
+
+#newsFeed {
+	min-height: inherit; /* needs vendor prefixes */
+
+}
+
 /* site map */
 .site_map_list .circle{/* reference the site map list circle */
 list-style-type:disc;/* set the list style icon to circle */
