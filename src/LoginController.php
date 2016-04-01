@@ -37,7 +37,6 @@ class LoginController
             setcookie( 'password', $password, $expire_time );
 
             //refresh page
-            //header('Location: index.php');
             //http://stackoverflow.com/questions/4221116/php-refresh-current-page
             header('Location: '.$_SERVER['PHP_SELF']);
 

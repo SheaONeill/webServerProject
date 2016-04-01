@@ -18,3 +18,15 @@ otherwise skip and dont pass to message.php output:
 eg. if (!empty($messageDetails_04)) {
     $messageDetails_04 = 'Newsletter Subscription: ' . $newsletter;
 }
+
+added admin pages to prepare for editing news, verse, user and donations
+added link styles and included login header
+
+pages updated:
+
+index.php,
+adminController,php,
+admin_links.php, adminEditNews.php,
+adminEditVerse.php,
+adminEditDonation.php,
+adminEditUser.php

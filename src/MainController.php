@@ -10,35 +10,8 @@ class MainController
     public function __construct()
     {
         $this->loginController = new LoginController();
-    }
+    }     
     
-    // testing verse list
-    public function listAction() {
-
-    $verses = Verse::getAll();
-    require_once __DIR__ . '/../templates/list.php';
-}
-    
-    public function  showOneAction()
-    {
-
-        $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
-        $heading = filter_input(INPUT_GET, 'heading', FILTER_SANITIZE_NUMBER_STR);
-        $verses = Verse::getAll();
-
-        if (null != $verses) {
-
-            require_once __DIR__ . '/../templates/details.php';
-        } else {
-
-
-            require_once __DIR__ . '/../templates/message.php';
-        }
-
-    }//end show functiom
-
-
-
     public function indexAction()
     {
         //added this from seperate controllers example
@@ -134,9 +107,6 @@ class MainController
         $newsletter = filter_input(INPUT_POST, 'newsletter', FILTER_SANITIZE_STRING);
         $messenger = filter_input(INPUT_POST, '$messenger', FILTER_SANITIZE_STRING);
 
-        //refresh page
-        //header('Location: /../templates/thank_you.php');
-
         $message_heading = 'Thank You for your message';
         $mainMessage = 'Here are the message details:';
         
@@ -154,18 +124,7 @@ class MainController
             $messageDetails_05 = 'Messenger Subscription: ' . $messenger;
         }
         require_once __DIR__ . '/../templates/includes/src/message.php';
-        
-        //$pageTitle = 'Site Map';
-        //$site_mapLinkStyle = 'current_page';
-        
-    }
-    /*public function loginAction()
-    {
-        //added this from seperate controllers example
-        $isLoggedIn = $this->loginController->isLoggedInFromSession();
-        $username = $this->loginController->usernameFromSession();
 
-        require_once __DIR__ . '/../templates/loginForm.php';
-    }*/
+    }
 
 }

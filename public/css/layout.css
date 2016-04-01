@@ -19,9 +19,9 @@ header .media_logo_wrapper{/* reference the header element  *//* https://css-tri
 	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
 	display: -ms-flexbox;      /* TWEENER - IE 10 */
 	display: -webkit-flex;     /* NEW - Chrome */
-	display: flex;/* this defines a flex container and enables flex context for all its direct children. */	
+	display: flex; /* this defines a flex container and enables flex context for all its direct children. */
 	-webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
+
 	justify-content: space-around;/* items are evenly distributed in the line with equal space around them */
 	padding: 15px; /* padding is the distance between the items and border*/
 }
@@ -70,7 +70,7 @@ section img {/* reference the section images */
       color: #36f;/*set the font colour */
       padding-left: 8px;/* set the padding */
       }
- 
+
 article {/* reference the article element  */
 	margin: 0; /* Some elements have default margins so this resets everything back to 0px */
 	padding: 0; /* Some elements have default padding so this resets everything back to 0px */
@@ -186,8 +186,8 @@ article {/* reference the article element  */
 	}
 
 #copyright {/* reference the copyright id */
-	margin: 0px; /* Some elements have default margins so this resets everything back to 0px */
-	padding: 0px; /* Some elements have default padding so this resets everything back to 0px */
+	margin: 0; /* Some elements have default margins so this resets everything back to 0px */
+	padding: 0; /* Some elements have default padding so this resets everything back to 0px */
   	}
 .the_footer{
 	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -196,7 +196,7 @@ article {/* reference the article element  */
 	display: -webkit-flex;     /* NEW - Chrome */
 	display: flex;/* this defines a flex container and enables flex context for all its direct children. */	
 	-webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
+
 	justify-content: space-around;/* items are evenly distributed in the line with equal space around them */
 	padding: 70px; /* set the padding */
 	}

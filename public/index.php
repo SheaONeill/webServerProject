@@ -23,13 +23,22 @@ $adminController = new AdminController();
 $loginController = new LoginController();
 
 switch ($action){
+
     //---------- ADMIN ROUTES ---------------
-    case 'adminCodes':
-        $adminController->adminCodesAction();
+    case 'adminEditVerse':
+        $adminController->adminEditVerseAction();
         break;
 
-    case 'adminHome':
-        $adminController->adminHomeAction();
+    case 'adminEditNews':
+        $adminController->adminEditNewsAction();
+        break;
+
+    case 'adminEditDonation':
+        $adminController->adminEditDonationAction();
+        break;
+
+    case 'adminEditUser':
+        $adminController->adminEditUserAction();
         break;
 
     //---------- login ROUTES ---------------
@@ -43,9 +52,6 @@ switch ($action){
 
 
     //---------- main ROUTES ---------------
-    case 'login':
-        $mainController->loginAction();
-        break;
 
     case 'history':
         $mainController->historyAction();
@@ -68,17 +74,13 @@ switch ($action){
         $mainController->obituaryAction();
         break;
 
+    case 'site_map':
+        $mainController->site_mapAction();
+        break;
+
     case 'contactForm':
         $mainController->contactFormAction();
         break;
-
-    /*case 'list':
-        $mainController->listAction();
-        break;
-
-    case 'showOne':
-        $mainController->showOneAction();
-        break;*/
 
     default:
         $mainController->indexAction();
@@ -86,30 +88,4 @@ switch ($action){
         
         
 }
-
-
-/*
-// get action GET parameter (if it exists)
-$action = filter_input(INPUT_GET, 'action', FILTER_SANITIZE_STRING);
-
-$mainController = new MainController();
-
-if ('history' == $action) {
-    $mainController->historyAction();
-} else if ('news' == $action){
-    $mainController->newsAction();
-} else if ('donate' == $action) {
-    $mainController->donateAction();
-} else if ('contact' == $action) {
-    $mainController->contactAction();
-} else if ('obituary' == $action) {
-    $mainController->obituaryAction();
-} else if ('site_map' == $action) {
-    $mainController->site_mapAction();
-} else {
-    // default is home page ('index' action)
-    $mainController->indexAction();
-}*/
-
-
 
