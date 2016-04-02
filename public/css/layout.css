@@ -30,6 +30,14 @@ header .social_media li{/* reference the header social_media element  */
     display: -webkit-inline-flex;
 	display:inline-flex; /* to display the menu in-line instead of block */
 	}
+
+/* login header layout  */
+
+#login_header {
+
+	display: inline-flex; /* to display the menu in-line instead of block */
+}
+
 	/* section style */
 section {/* reference the section element  */
 	margin: 0; /* Some elements have default margins so this resets everything back to 0px */
@@ -171,6 +179,17 @@ article {/* reference the article element  */
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+}
+
+.flex_news_feed { /* reference any element with the flex_donations class */
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	display: flex; /* this defines a flex container and enables flex context for all its direct children. */
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap; /* make the flexible items wrap if necesarry */
 }
 
 .flex_welcome_left{/* reference any element with the flex_welcome_left class */

@@ -36,38 +36,49 @@ use Itb\NewsFeed;
 
     <div id=""><!-- div to wrap the sections -->
         <!-- ****************** section - block 1 ******************** -->
-        <section class="flex_donations"><!-- begin section tag-->
+        <section class="flex_news_feed"><!-- begin section tag-->
             <article class=""><!-- begin article -->
-                <h3>News Feed Editor News Feed Editor News Feed Editor News Feed Editor News Feed Editor</h3>
+                <h3><?= ucwords($username) ?> News Feed Editor Section</h3>
 
                 <?php foreach ($newsFeeds as $newsFeed) :
 
                 ?>
-                <table id="totals">
-                    <tr>
-                        <th>Details</th>
-                        <th>ID</th>
-                        <th>Date</th>
-                        <th>Author</th>
-                        <th>Title</th>
-                        <th>Actions</th>
 
+                <table id="totals">
+                    <tr><!-- temporary styles -> use css for these widths -->
+                        <th style="width: 11%">Details</th>
+                        <th style="width: 3%">ID</th>
+                        <th style="width: 10%">Date</th>
+                        <th style="width:25%">Author</th>
+                        <th style="width: 30%">Title</th>
+                        <th colspan="2" style="width: 15%">Actions</th>
                     </tr>
+
                     <tr class="even">
-                        <td><a href="index.php?action=showSingleNewsItem&id=<?= $newsFeed->getId() ?>">Preview
-                                Article</a></td>
+                        <form action="index.php" method="get">
+                            <td><input type="hidden" name="action" value="showSingleNewsItem">
+                                <input type="hidden" name="id" value="<?= $newsFeed->getId() ?>">
+                                <input type="submit" value="Preview Article">
+                        </form>
+                        </td>
                         <td><?= $newsFeed->getId() ?></td>
                         <td><?= $newsFeed->getDate() ?></td>
                         <td><?= $newsFeed->getAuthor() ?></td>
                         <td><?= $newsFeed->getNewsFeedHeading() ?></td>
-                        <td><a href="index.php?action=showEditNewsArticle&id=<?= $newsFeed->getId() ?>">Edit News
-                                Article</a></td>
-                        <td><a href="index.php?action=deleteNewsArticle&id=<?= $newsFeed->getId() ?>">Delete News
-                                Article</a></td>
-                        <form action="index.php" method="get">
-                            <input type="hidden" name="action" value="showEditNewsArticle">
+                        <td>
+                            <form action="index.php" method="get">
+                                <input type="hidden" name="action" value="showEditNewsArticle">
+                                <input type="hidden" name="id" value="<?= $newsFeed->getId() ?>">
+                                <input type="submit" value="Edit Article"></form>
+                        </td>
+
+
+                        <td>
+                            <form action="index.php" method="get">
+                                <input type="hidden" name="action" value="deleteNewsArticle">
                             <input type="hidden" name="id" value="<?= $newsFeed->getId() ?>">
-                            <input type="submit" value="Edit News Article"></form>
+                                <input type="submit" value="Delete Article"></form>
+                        </td>
                     </tr>
                     <?php endforeach; ?><!--using alternative syntax for control structures-->
                 </table>

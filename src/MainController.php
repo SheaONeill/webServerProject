@@ -107,7 +107,7 @@ class MainController
         $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
         $textArea = filter_input(INPUT_POST, 'textArea', FILTER_SANITIZE_STRING);
         $newsletter = filter_input(INPUT_POST, 'newsletter', FILTER_SANITIZE_STRING);
-        $messenger = filter_input(INPUT_POST, '$messenger', FILTER_SANITIZE_STRING);
+        $messenger = filter_input(INPUT_POST, 'messenger', FILTER_SANITIZE_STRING);
 
         $message_heading = 'Thank You for your message';
         $mainMessage = 'Here are the message details:';
@@ -118,12 +118,12 @@ class MainController
         $messageDetails_03 = 'Message sent to ' . ucwords(str_replace('_',' ',$who_to_contact)). " : ". $textArea;
 
         // if subscribed to newsletter then set the variable value
-        if (!empty($messageDetails_04)) {
-            $messageDetails_04 = 'Newsletter Subscription: ' . $newsletter;
+        if (!empty($newsletter)) {
+            $messageDetails_04 = 'Newsletter Subscription: Subscribed';
         }
          // if subscribed to messenger then set then variable value
-        if (!empty($messageDetails_05)) {
-            $messageDetails_05 = 'Messenger Subscription: ' . $messenger;
+        if (!empty($messenger)) {
+            $messageDetails_05 = 'Messenger Subscription: Subscribed';
         }
         require_once __DIR__ . '/../templates/includes/src/message.php';
 

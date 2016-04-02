@@ -4,9 +4,7 @@
  * User: sheaoneill
  * Date: 23/03/16
  * Time: 22:46
- 
- 
- This class is responsible for gettting the verses in the data base*/
+ */
 
 namespace Itb;
 
@@ -15,19 +13,56 @@ namespace Itb;
 use Mattsmithdev\PdoCrud\DatabaseTable;
 use Mattsmithdev\PdoCrud\DatabaseManager;
 
+/**
+ * Class Verse
+ *
+ * This class is responsible for getting and setting the
+ * variables for the random verses to and from the data base
+ * @package Itb
+ */
 class Verse extends DatabaseTable
 
 {
-    
+
+    /**
+     * this is the variable to store
+     * the id of the verse
+     * @var int
+     */
     private $id;
+
+    /**
+     * this is the variable to store
+     * the verses heading
+     * @var string
+     */
     private $heading;
+
+    /**
+     * this is the variable to store
+     * the verses first subheading
+     * @var string
+     */
     private $subheading1;
+
+    /**
+     * this is the variable to store
+     * the verses second subheading
+     * @var string
+     */
     private $subheading2;
+
+    /**
+     * this is the variable to store
+     * the paragraph for the verse
+     * @var
+     */
     private $paragraph;
 
 
     /**
-     * @return mixed
+     * this function gets the id
+     * @return int $id
      */
     public function getId()
     {
@@ -35,7 +70,17 @@ class Verse extends DatabaseTable
     }
 
     /**
-     * @return mixed
+     * this function sets the id
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * this function gets the heading
+     * @return string $heading
      */
     public function getHeading()
     {
@@ -43,7 +88,17 @@ class Verse extends DatabaseTable
     }
 
     /**
-     * @return mixed
+     * this function sets the heading
+     * @param string $heading
+     */
+    public function setHeading($heading)
+    {
+        $this->heading = $heading;
+    }
+
+    /**
+     * this function gets the first subheading
+     * @return string $subheading1
      */
     public function getSubheading1()
     {
@@ -51,7 +106,17 @@ class Verse extends DatabaseTable
     }
 
     /**
-     * @return mixed
+     * this function sets the first subheading
+     * @param string $subheading1
+     */
+    public function setSubheading1($subheading1)
+    {
+        $this->subheading1 = $subheading1;
+    }
+
+    /**
+     * this function gets the second subheading
+     * @return string subheading2
      */
     public function getSubheading2()
     {
@@ -59,11 +124,30 @@ class Verse extends DatabaseTable
     }
 
     /**
-     * @return mixed
+     * this function sets the second subheading
+     * @param string $subheading2
+     */
+    public function setSubheading2($subheading2)
+    {
+        $this->subheading2 = $subheading2;
+    }
+
+    /**
+     * this function gets the paragraph
+     * @return string $paragraph
      */
     public function getParagraph()
     {
         return $this->paragraph;
+    }
+
+    /**
+     * this function sets the paragraph
+     * @param string $paragraph
+     */
+    public function setParagraph($paragraph)
+    {
+        $this->paragraph = $paragraph;
     }
   
 }//end class

@@ -5,6 +5,11 @@
 	.flex_donations {/* reference the flex_donations */
     max-width:50%;/* set the maximum width to 50% so the donation icons line up in two colums */
   }
+
+  .flex_news_feed { /* reference the flex_donations */
+    max-width: 94%; /* set the maximum width to 50% so the donation icons line up in two colums */
+  }
+
   .flex_donations_totals {/* reference the flex_donations_totals */
     max-width:20%;/* set the maximum width to 20% so the donation total is a thin column */
   }
@@ -38,6 +43,10 @@
 	
 	.flex_donations {/* reference the flex_donations */
     max-width:58%;/* set the maximum width to 58% so the donation icons line up in two colums */
+    }
+
+  .flex_news_feed { /* reference the flex_donations */
+    max-width: 88%; /* set the maximum width to 58% so the donation icons line up in two colums */
   }
   .flex_donations_totals {/* reference the flex_donations_totals */
     max-width:20%;/* set the maximum width to 20% so the donation total is a thin column */

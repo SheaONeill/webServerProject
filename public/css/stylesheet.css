@@ -64,6 +64,18 @@ header {/* reference the header element */
 header .social_media li{/* reference the header social_media list items  */
 	list-style:none; /* remove the bullet points/symbols from the link_menu list items */
 	}
+
+/* login header style  */
+
+#login_header {
+
+	color: #556b2f; /* set the font colour of the body to darkolivegreen */
+	font-family: "open sans", sans-serif; /* set the font-family of the body */
+	font-weight: 400; /* set the font-weight of the body */
+	font-size: 16px; /* set the font-size of the body */
+	padding: .2rem; /* padding is the distance between the element/text and the border */
+}
+
 #nav_container {/* reference the nav_container */
 	background-color: #a0522d;/* set the background colour of the nav_container to sienna */
     }
@@ -289,10 +301,29 @@ tr.even{/* reference the table rows with a class of even */
 	text-decoration: none;/* remove the underline */
 }
 
+/* --------------news feed -----------------------*/
 #newsFeed {
 	min-height: inherit; /* needs vendor prefixes */
 
 }
+
+table #newsFeed {
+	min-height: inherit; /* needs vendor prefixes */
+
+}
+
+.flex_news_feed { /* reference the flex_donations class */
+	padding: 1rem; /* padding is the distance between the element/text and the border */
+	margin: 1rem; /* make all 4 sides have 1rem margin */
+	opacity: 0.9; /* set the opacity level for the flex_donations */
+}
+
+.flex_news_feed_totals { /* reference the flex_donations_totals class */
+	padding: 1rem; /* padding is the distance between the element/text and the border */
+	margin: 1rem; /* make all 4 sides have 1rem margin */
+	opacity: 0.9; /* set the opacity level for the flex_donations_totals */
+}
+
 
 /* site map */
 .site_map_list .circle{/* reference the site map list circle */

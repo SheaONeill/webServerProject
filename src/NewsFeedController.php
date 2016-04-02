@@ -167,10 +167,10 @@ class NewsFeedController
         echo $newsFeedParagraph2;
         $newsFeed->setNewsFeedParagraph2($newsFeedParagraph2);
 
-        $insertSuccess = NewsFeed::insert($newsFeed);
+        $updateSuccess = NewsFeed::update($newsFeed);
 
 
-        if ($insertSuccess) {
+        if ($updateSuccess) {
 
             $this->adminNewsAction("showAllNewsItems");
 

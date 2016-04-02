@@ -30,8 +30,8 @@ class LoginController
             // STORE login status SESSION
             $_SESSION['user'] = $username;
 
-            //save name in a cookie, to expire in 1 hour
-            $hour_as_seconds = 60*1;
+            //save name in a cookie, to expire
+            $hour_as_seconds = 15 * 1;
             $expire_time = time() + $hour_as_seconds;
             setcookie( 'user', $username, $expire_time );
             setcookie( 'password', $password, $expire_time );

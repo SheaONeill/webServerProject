@@ -6,16 +6,14 @@
  * Time: 00:13
  */
 
-?>
-
-<?php
 //----------------------------
 if ($isLoggedIn):
 
 
 ?>
 
-you are logged in as: <strong><?= $username ?></strong>
+<!-- display welcome message with username and capitalise first letter -->
+Welcome&nbsp; <strong><?= ucwords($username) ?>! </strong>&nbsp;&nbsp;
 
 <form action="index.php?action=logout" method="post">
 
