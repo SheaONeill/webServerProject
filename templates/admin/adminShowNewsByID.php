@@ -8,6 +8,9 @@
 
 //include the full header header_full.php
 require_once __DIR__ . '/../includes/header_full.php';
+
+use Itb\NewsFeed;
+
 ?>
 <body><!-- begin body opening tag -->
 <div id="main_container"><!-- div to wrap everything-->
@@ -35,15 +38,24 @@ require_once __DIR__ . '/../includes/header_full.php';
         <!-- ****************** section - block 1 ******************** -->
         <section class="flex_welcome_main"><!-- begin section tag-->
             <article class="outline_main"><!-- begin article -->
-                <?php
+                <h3>News Feed Editor News Feed Editor News Feed Editor</h3>
 
 
-                ?>
-                <h1>Edit News</h1><!-- incoming message heading-->
+                <!--display news from db matching value stored in $whichNewsFeed-->
+                <p>
+                <h2><?= $newsFeeds->getId(); ?></h2></p><!-- news feed ID-->
+                <p>
+                <h2><?= $newsFeeds->getNewsFeedHeading(); ?></h2></p><!-- news feed heading-->
+                <p>
+                <h3><?= $newsFeeds->getNewsFeedSubHeading1(); ?></h3></p><!-- subheading 1 -->
+                <p><?= $newsFeeds->getNewsFeedSubHeading2(); ?></p><!-- subheading 2 -->
+                <p><?= $newsFeeds->getNewsFeedParagraph1(); ?></p><!--  news text 1 -->
+                <p><?= $newsFeeds->getNewsFeedParagraph2(); ?></p><!--  news text 2 -->
+                <p>Author: <?= $newsFeeds->getAuthor(); ?></p><!-- author -->
+                <p>Date: <?= $newsFeeds->getDate(); ?></p><!-- date -->
 
-                
 
-            </article>
+            </article><!-- close article -->
         </section><!-- close section tag -->
     </div><!-- close section_container tag -->
 

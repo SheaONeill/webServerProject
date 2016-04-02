@@ -9,30 +9,30 @@
 
 //-------------------------------------------------
 // default style strings to empty, if not set
-if (empty($adminEditNewsLinkStyle)) {
-    $adminEditNewsLinkStyle = '';
+if (empty($adminNewsLinkStyle)) {
+    $adminNewsLinkStyle = '';
 }
-if (empty($adminEditVerseLinkStyle)) {
-    $adminEditVerseLinkStyle = '';
+if (empty($adminVerseLinkStyle)) {
+    $adminVerseLinkStyle = '';
 }
-if (empty($adminEditDonationLinkStyle)) {
-    $adminEditDonationLinkStyle = '';
+if (empty($adminDonationLinkStyle)) {
+    $adminDonationLinkStyle = '';
 }
-if (empty($adminEditUserLinkStyle)) {
-    $adminEditUserLinkStyle = '';
+if (empty($adminUserLinkStyle)) {
+    $adminUserLinkStyle = '';
 }
 
 
 ?>
 <nav><!-- begin navigation -->
     <ul><!-- begin unordered link list opening tag -->
-        <li><a href="/index.php?action=adminEditNews" class="<?= $adminEditNewsLinkStyle ?>">Edit News</a></li>
+        <li><a href="index.php?action=adminNews" class="<?= $adminNewsLinkStyle ?>"> News</a></li>
         <!-- list item and set current page-->
-        <li><a href="/index.php?action=adminEditVerse" class="<?= $adminEditVerseLinkStyle ?>">Edit Verse</a></li>
+        <li><a href="index.php?action=adminVerse" class="<?= $adminVerseLinkStyle ?>"> Verse</a></li>
         <!-- list item and set current page-->
-        <li><a href="/index.php?action=adminEditDonation" class="<?= $adminEditDonationLinkStyle ?>">Edit Donation</a>
+        <li><a href="index.php?action=adminDonation" class="<?= $adminDonationLinkStyle ?>"> Donation</a>
         </li><!-- list item and set current page-->
-        <li><a href="/index.php?action=adminEditUser" class="<?= $adminEditUserLinkStyle ?>">Edit User</a></li>
+        <li><a href="index.php?action=adminUser" class="<?= $adminUserLinkStyle ?>"> User</a></li>
         <!-- list item and set current page-->
     </ul><!-- close unordered link list tag -->
 </nav><!-- close navigation tag -->

@@ -10,30 +10,14 @@ class AdminController
         $this->loginController = new LoginController();
     }
 
-    public function adminEditNewsAction()
+    public function adminVerseAction()
     {
         $isLoggedIn = $this->loginController->isLoggedInFromSession();
         if ($isLoggedIn){
             $username = $this->loginController->usernameFromSession();
-            $pageTitle = 'Edit News';
-            $adminEditNewsLinkStyle = 'current_page';
-            require_once __DIR__ . '/../templates/admin/adminEditNews.php';
-        } else {
-
-            $message_heading = "************************************************************";
-            $mainMessage = 'UNAUTHORIZED ACCESS AREA 1';
-            require_once __DIR__ . '/../templates/includes/src/message.php';
-        }
-    }
-
-    public function adminEditVerseAction()
-    {
-        $isLoggedIn = $this->loginController->isLoggedInFromSession();
-        if ($isLoggedIn){
-            $username = $this->loginController->usernameFromSession();
-            $pageTitle = 'Edit Verse';
-            $adminEditVerseLinkStyle = 'current_page';
-            require_once __DIR__ . '/../templates/admin/adminEditVerse.php';
+            $pageTitle = ' Verse';
+            $adminVerseLinkStyle = 'current_page';
+            require_once __DIR__ . '/../templates/admin/adminVerse.php';
         } else {
 
             $message_heading = "--------------------------------------------------------------";
@@ -42,14 +26,14 @@ class AdminController
         }
     }
 
-    public function adminEditDonationAction()
+    public function adminDonationAction()
     {
         $isLoggedIn = $this->loginController->isLoggedInFromSession();
         if ($isLoggedIn) {
             $username = $this->loginController->usernameFromSession();
-            $pageTitle = 'Edit Donation';
-            $adminEditDonationLinkStyle = 'current_page';
-            require_once __DIR__ . '/../templates/admin/adminEditDonation.php';
+            $pageTitle = ' Donation';
+            $adminDonationLinkStyle = 'current_page';
+            require_once __DIR__ . '/../templates/admin/adminDonation.php';
         } else {
 
             $message_heading = "--------------------------------------------------------------";
@@ -58,14 +42,14 @@ class AdminController
         }
     }
 
-    public function adminEditUserAction()
+    public function adminUserAction()
     {
         $isLoggedIn = $this->loginController->isLoggedInFromSession();
         if ($isLoggedIn) {
             $username = $this->loginController->usernameFromSession();
-            $pageTitle = 'Edit User';
-            $adminEditUserLinkStyle = 'current_page';
-            require_once __DIR__ . '/../templates/admin/adminEditUser.php';
+            $pageTitle = ' User';
+            $adminUserLinkStyle = 'current_page';
+            require_once __DIR__ . '/../templates/admin/adminUser.php';
         } else {
 
             $message_heading = "--------------------------------------------------------------";

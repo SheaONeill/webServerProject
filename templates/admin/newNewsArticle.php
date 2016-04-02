@@ -1,13 +1,16 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: B00084432
- * Date: 01/04/2016
- * Time: 02:04
+ * User: sheaoneill
+ * Date: 01/04/16
+ * Time: 12:35
  */
 
 //include the full header header_full.php
 require_once __DIR__ . '/../includes/header_full.php';
+
+use Itb\NewsFeed;
+
 ?>
 <body><!-- begin body opening tag -->
 <div id="main_container"><!-- div to wrap everything-->
@@ -35,14 +38,37 @@ require_once __DIR__ . '/../includes/header_full.php';
         <!-- ****************** section - block 1 ******************** -->
         <section class="flex_welcome_main"><!-- begin section tag-->
             <article class="outline_main"><!-- begin article -->
-                <?php
+                <h3>News Feed or</h3>
 
 
-                ?>
-                <h1>Edit User</h1><!-- incoming message heading-->
+                <p><q>Fields marked with asterisk (<span class="red">*</span>) are required</q></p>
+                <!-- Fieldset around data -->
+                <form action="index.php?action=createNewsArticle" method="post">
 
+                    <fieldset>
+                        <legend>Testing Crud</legend>
+                        <br>
+                        Author:<span class="red">*</span><br><!-- red asterisk -->
+                        <p><input name="author" type="text"></p>
+                        Date:<span class="red">*</span><br><!-- red asterisk -->
+                        <p><input name="date" type="text"></p>
+                        Heading:<span class="red">*</span><br><!-- red asterisk -->
+                        <p><input name="newsFeedHeading" type="text"></p>
+                        SubHeading1:<span class="red">*</span><br><!-- red asterisk -->
+                        <p><input name="newsFeedSubHeading1" type="text"></p>
+                        SubHeading2:<span class="red">*</span><br><!-- red asterisk -->
+                        <p><input name="newsFeedSubHeading2" type="text"></p>
+                        Paragraph1:<span class="red">*</span><br><!-- red asterisk -->
+                        <p><input name="newsFeedParagraph1" type="text"></p>
+                        Paragraph2:<span class="red">*</span><br><!-- red asterisk -->
+                        <p><input name="newsFeedParagraph2" type="text"></p>
 
-            </article>
+                        <p><input type="submit" name="submit" id="submit" value="Publish"/><!-- form input -->
+
+                            <input type="reset"></p><!-- form input -->
+                    </fieldset>
+                </form><!-- close form -->
+            </article><!-- close article -->
         </section><!-- close section tag -->
     </div><!-- close section_container tag -->
 

@@ -17,7 +17,7 @@ if ($isLoggedIn):
 
 you are logged in as: <strong><?= $username ?></strong>
 
-<form action="/index.php?action=logout" method="post">
+<form action="index.php?action=logout" method="post">
 
     <input type="submit" value="logout">
 
@@ -29,7 +29,7 @@ you are logged in as: <strong><?= $username ?></strong>
 
     ?>
 
-    <form action="/index.php?action=processLogin"
+    <form action="index.php?action=processLogin"
           method="post">
 
         username:<input type="text" name="username">

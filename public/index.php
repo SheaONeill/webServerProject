@@ -8,6 +8,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use Itb\MainController;
 use Itb\AdminController;
 use Itb\LoginController;
+use Itb\NewsFeedController;
 
 
 define('DB_HOST', 'localhost');
@@ -21,24 +22,68 @@ $action = filter_input(INPUT_GET,'action',FILTER_SANITIZE_STRING);
 $mainController = new MainController();
 $adminController = new AdminController();
 $loginController = new LoginController();
+$newsFeedController = new NewsFeedController();
 
 switch ($action){
 
-    //---------- ADMIN ROUTES ---------------
-    case 'adminEditVerse':
-        $adminController->adminEditVerseAction();
+    //--------------- Admin Verse Section ----------------
+
+    case 'adminVerse':
+        $adminController->adminVerseAction();
         break;
 
-    case 'adminEditNews':
-        $adminController->adminEditNewsAction();
+    //--------------- Admin News Section ----------------
+
+    case 'adminNews':
+
+        $newsFeedController->adminNewsAction("showAllNewsItems");
         break;
 
-    case 'adminEditDonation':
-        $adminController->adminEditDonationAction();
+    case 'showSingleNewsItem':
+
+        $newsFeedController->adminNewsAction("showSingleNewsItem");
         break;
 
-    case 'adminEditUser':
-        $adminController->adminEditUserAction();
+    //--------------- Admin News CRUD Section ----------------
+
+    case 'showCreateNewsArticle':
+
+        $newsFeedController->showCreateNewsArticleAction();
+        break;
+
+    case 'createNewsArticle':
+
+        $newsFeedController->createNewsArticleAction();
+        break;
+
+    case 'showEditNewsArticle':
+
+        $newsFeedController->showEditNewsArticleAction();
+        break;
+
+    case 'editNewsArticle':
+
+        $newsFeedController->editNewsArticleAction();
+        break;
+
+
+    //--------------- Admin Test Section ----------------
+
+    case 'deleteNewsArticle':
+
+        $newsFeedController->deleteNewsArticleAction();
+        break;
+
+//--------------- Admin Donation Section ----------------
+
+    case 'adminDonation':
+        $adminController->adminDonationAction();
+        break;
+
+    //--------------- Admin User Section ----------------
+
+    case 'adminUser':
+        $adminController->adminUserAction();
         break;
 
     //---------- login ROUTES ---------------

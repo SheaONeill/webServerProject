@@ -7,6 +7,8 @@ class MainController
     //added this from seperate controllers example
     private $loginController;
 
+    //------------testing----------------
+
     public function __construct()
     {
         $this->loginController = new LoginController();
@@ -125,6 +127,8 @@ class MainController
         }
         require_once __DIR__ . '/../templates/includes/src/message.php';
 
-    }
+    }//end contact form action
 
-}
+    //testing list newsfeeds
+
+}//end class MainController

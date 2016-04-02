@@ -26,9 +26,9 @@ pages updated:
 
 index.php,
 adminController,php,
-admin_links.php, adminEditNews.php,
-adminEditVerse.php,
-adminEditDonation.php,
-adminEditUser.php
+admin_links.php, adminNews.php,
+adminVerse.php,
+adminDonation.php,
+adminUser.php
 
 fixed scrollbar on news feed

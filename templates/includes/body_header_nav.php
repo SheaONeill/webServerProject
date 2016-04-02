@@ -29,7 +29,8 @@ if (empty($donateLinkStyle)){
 
 <nav><!-- begin navigation -->
     <ul><!-- begin unordered link list opening tag -->
-        <li><a href="../index.php?action=index" class="<?= $indexLinkStyle ?>">Welcome</a></li><!-- list item and set current page-->
+        <li><a href="..index.php?action=index" class="<?= $indexLinkStyle ?>">Welcome</a></li>
+        <!-- list item and set current page-->
         <li><a href="../history.php?action=history" class="<?= $historyLinkStyle ?>">History</a></li>
         <!-- list item and set current page-->
         <li><a href="../news.php?action=news" class="<?= $newsLinkStyle ?>">News</a></li>

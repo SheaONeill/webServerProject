@@ -101,8 +101,8 @@ use Itb\NewsFeed;
 			<!-- maybe put this in a class and call more organised less messy-->
 			<?php
 			// -- define some variables for news feed  -->
-			$newNewsFeedArray = new NewsFeed();
-			$newsFeeds = $newNewsFeedArray->getAll();
+			$newsFeedArray = new NewsFeed();
+			$newsFeeds = $newsFeedArray->getAll();
 
 			foreach ((array)$newsFeeds as $newsFeed) {
 
