@@ -4,18 +4,58 @@ namespace Itb;
 use Mattsmithdev\PdoCrud\DatabaseTable;
 use Mattsmithdev\PdoCrud\DatabaseManager;
 
+/**
+ * Class User
+ *
+ * This class is responsible for getting and setting the
+ * variables for the users and password to and from the data base
+ *
+ * @package Itb
+ */
 class User extends DatabaseTable
 {
+    /**
+     * declare variable for user role and set the value
+     */
     const ROLE_USER = 1;
+
+    /**
+     * declare variable for admin role and set the value
+     */
     const ROLE_ADMIN = 2;
 
+    /**
+     * this is the variable to store
+     * the id of the user
+     * @var int $id
+     */
     private $id;
+
+    /**
+     * this is the variable to store
+     * the username of the user
+     * @var string $username
+     */
     private $username;
+
+    /**
+     * this is the variable to store
+     * the password of the user
+     * @var string $password
+     */
     private $password;
+
+    /**
+     * this is the variable to store
+     * the role of the user
+     * @var int $role
+     */
     private $role;
 
     /**
-     * @return mixed
+     * get the id for the user
+     *
+     * @return int $id
      */
     public function getId()
     {
@@ -23,7 +63,9 @@ class User extends DatabaseTable
     }
 
     /**
-     * @param mixed $id
+     * set the id for the user
+     *
+     * @param int $id
      */
     public function setId($id)
     {
@@ -31,7 +73,9 @@ class User extends DatabaseTable
     }
 
     /**
-     * @return mixed
+     * get the username for the user
+     *
+     * @return string $username
      */
     public function getUsername()
     {
@@ -39,23 +83,20 @@ class User extends DatabaseTable
     }
 
     /**
-     * @param mixed $username
+     * set the username for the user
+     *
+     * @param string $username
      */
     public function setUsername($username)
     {
         $this->username = $username;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getPassword()
-    {
-        return $this->password;
-    }
 
     /**
-     * @return mixed
+     * get the role for the user
+     *
+     * @return int
      */
     public function getRole()
     {
@@ -63,7 +104,9 @@ class User extends DatabaseTable
     }
 
     /**
-     * @param mixed $role
+     * set the role for the user
+     *
+     * @param int $role
      */
     public function setRole($role)
     {
@@ -71,7 +114,17 @@ class User extends DatabaseTable
     }
 
     /**
-     * hash the password before storing ...
+     * get the password for the user
+     * @return string $password
+     */
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    /**
+     * set and hash the password for the user
+     *
      * @param mixed $password
      */
     public function setPassword($password)
@@ -82,11 +135,12 @@ class User extends DatabaseTable
     }
 
     /**
-     * return success (or not) of attempting to find matching username/password in the repo
-     * @param $username
-     * @param $password
+     * if a matching username and password in the database
+     * is found return true or false
+     * @param string $username
+     * @param string $password
      *
-     * @return bool
+     * @return boolean
      */
     public static function canFindMatchingUsernameAndPassword($username, $password)
     {
@@ -105,15 +159,17 @@ class User extends DatabaseTable
     }
 
     /**
-     * if record exists with $username, return User object for that record
+     * if a record exists in the database with $username
+     * then return the user object for that record
      * otherwise return 'null'
      *
-     * @param $username
+     * @param string $username
      *
-     * @return mixed|null
+     * @return string|null
      */
     public static function getOneByUsername($username)
     {
+
         $db = new DatabaseManager();
         $connection = $db->getDbh();
 
@@ -125,12 +181,14 @@ class User extends DatabaseTable
 
         if ($object = $statement->fetch()) {
             return $object;
-        } else {
+
+        }//enf if true
+
+        else {
             return null;
-        }
-    }
+        }//end else
+
+    }//end getOneByUsername function
 
 
-
-
-}
+}//end class user
