@@ -53,10 +53,7 @@ class MainController
 
         $pageTitle = 'Donate';
         $donateLinkStyle = 'current_page';
-
-        //$dvdRepository = new DvdRepository();
-        //$dvds = $dvdRepository->getAll();
-
+     
         require_once __DIR__ . '/../templates/donate.php';
     }
 

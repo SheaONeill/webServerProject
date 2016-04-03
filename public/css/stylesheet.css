@@ -324,6 +324,18 @@ table #newsFeed {
 	opacity: 0.9; /* set the opacity level for the flex_donations_totals */
 }
 
+hr.image_hr {
+
+    height: 4px;
+    border: 1;
+    box-shadow: inset 0 9px 9px -3px #a0522d;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
 
 /* site map */
 .site_map_list .circle{/* reference the site map list circle */

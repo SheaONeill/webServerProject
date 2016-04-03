@@ -10,6 +10,10 @@ require_once __DIR__ . '/../templates/header_imports.php';*/
 
 //include the full header header_full.php
 require_once __DIR__ . '/../templates/includes/header_full.php';
+
+use Itb\Product;
+use Itb\CartController;
+
 ?>
 <body><!-- begin body opening tag -->
 <div id="main_container"><!-- div to wrap everything-->
@@ -39,440 +43,52 @@ require_once __DIR__ . '/../templates/includes/header_full.php';
     <section class="flex_donations"><!-- begin section tag-->
 		<article class="flex"><!-- begin article -->
 			<table class ="donations" ><!-- begin table -->
-				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="/images/icons/groups.png" alt="" title=""></a></td><!-- table cell -->
-					<th colspan = "5">Parish Ministry Groups</th><!-- table header -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell --><!-- table cell -->
-					<td></td><!-- table cell --><!-- table cell -->
-					<td></td><!-- table cell --><!-- table cell -->
-					<td>Donation Amount:</td><!-- table cell --><!-- table cell -->
-					<td><select name="" id ="" size = "1" required><!-- table select cell -->
-							<option value="0" selected>Choose</option><!-- option value -->
-							<option value="5">5.00</option><!-- option value -->
-							<option value="10">10.00</option><!-- option value -->
-							<option value="20">20.00</option><!-- option value -->
-							<option value="50">50.00</option><!-- option value -->
-						</select>
-					`</td><!-- table cell --><!-- table cell -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell --><!-- table cell -->
-					<td></td><!-- table cell --><!-- table cell -->
-					<td></td><!-- table cell --><!-- table cell -->
-					<td>Chosen Donation:</td><!-- table cell --><!-- table cell -->
-					<td><input type="text" id="total" size="6"></td><!-- amount chosen -->
+				<tr>
+					<th>Product</th>
+					<th>Price</th>
+					<th>(add to cart)</th>
+				</tr>
+				<?php
+
+				//testing shopping cart
+
+				$shoppingCart = \Itb\CartController::getShoppingCart();
+
+				$products = Product::getAll();
+
+				//-----------------------------
+				foreach($products as $product):
+//-----------------------------
+					?>
+					<tr>
+						<td><?= $product->getDescription() ?></td>
+						<td>&euro; <?= $product->getPrice() ?></td>
+						<td><a href="/index.php?action=addToCart&id=<?= $product->getId() ?>">(add to cart)</a></td>
+					</tr>
+
+					<?php
+//-----------------------------
+				endforeach;
+				//-----------------------------
+				?>
 			</table><!-- close table -->
-			<table class ="donations" ><!-- begin table -->
-			
-				<tr><!-- begin table row -->
-				<td rowspan = "3"><img src="/images/icons/pastoral_council.png" alt="" title=""></a></td><!-- table cell -->
-					<th colspan = "5">Pastoral Council</th><!-- table header -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Donation Amount:</td><!-- table cell -->
-					<td><select name="" id ="" size = "1" required><!-- table select cell -->
-							<option value="0" selected>Choose</option><!-- option value -->
-							<option value="5">5.00</option><!-- option value -->
-							<option value="10">10.00</option><!-- option value -->
-							<option value="20">20.00</option><!-- option value -->
-							<option value="50">50.00</option><!-- option value -->
-						</select>
-					`</td><!-- table cell -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Chosen Donation:</td><!-- table cell -->
-					<td>total</td><!-- table cell -->
-			</table><!-- close table -->
-			<table class ="donations" ><!-- begin table -->
-				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="/images/icons/baptismal_ministry.png" alt="" title=""></a></td><!-- table cell -->
-					<th colspan = "5">Baptismal Ministry</th><!-- table header -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Donation Amount:</td><!-- table cell -->
-					<td><select name="" id ="" size = "1" required><!-- table select cell -->
-							<option value="0" selected>Choose</option><!-- option value -->
-							<option value="5">5.00</option><!-- option value -->
-							<option value="10">10.00</option><!-- option value -->
-							<option value="20">20.00</option><!-- option value -->
-							<option value="50">50.00</option><!-- option value -->
-						</select>
-					</td><!-- table cell -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Chosen Donation:</td><!-- table cell -->
-					<td><input type="text" id="total" size="6"></td><!-- amount chosen -->
-			</table><!-- close table -->
-			<table class ="donations" ><!-- begin table -->
-				<tr><!-- begin table row -->
-					<td rowspan = "3">><img src="/images/icons/bereavement_support.png" alt="" title=""></a></td><!-- table cell -->
-					<th colspan = "5">Bethany Bereavement Support</th><!-- table header -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Donation Amount:</td><!-- table cell -->
-					<td><select name="" id ="" size = "1" required><!-- table select cell -->
-							<option value="0" selected>Choose</option><!-- option value -->
-							<option value="5">5.00</option><!-- option value -->
-							<option value="10">10.00</option><!-- option value -->
-							<option value="20">20.00</option><!-- option value -->
-							<option value="50">50.00</option><!-- option value -->
-						</select>
-					</td><!-- table cell -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Chosen Donation:</td><!-- table cell -->
-					<td><input type="text" id="total" size="6"></td><!-- amount chosen -->
-				</tr><!-- close table row -->
-			</table><!-- close table -->
-			<table class ="donations" ><!-- begin table -->
-				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="/images/icons/scripture_exploration_group.png" alt="" title=""></a></td><!-- table cell -->
-					<th colspan = "5">Scripture Exploration Group</th><!-- table header -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Donation Amount:</td><!-- table cell -->
-					<td><select name="" id ="" size = "1" required><!-- table select cell -->
-							<option value="0" selected>Choose</option><!-- option value -->
-							<option value="5">5.00</option><!-- option value -->
-							<option value="10">10.00</option><!-- option value -->
-							<option value="20">20.00</option><!-- option value -->
-							<option value="50">50.00</option><!-- option value -->
-						</select>
-					</td><!-- table cell -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Chosen Donation:</td><!-- table cell -->
-                    <td><input type="text" id="total" size="6"></td><!-- amount chosen -->
-				</tr><!-- close table row -->
-			</table><!-- close table -->
-			<table class ="donations" ><!-- begin table -->
-				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="/images/icons/ministers_of_the_eucharist.png" alt="" title=""></a></td><!-- table cell -->
-					<th colspan = "5">Ministers of the Eucharist</th><!-- table header -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Donation Amount:</td><!-- table cell -->
-					<td><select name="" id ="" size = "1" required><!-- table select cell -->
-							<option value="0" selected>Choose</option><!-- option value -->
-							<option value="5">5.00</option><!-- option value -->
-							<option value="10">10.00</option><!-- option value -->
-							<option value="20">20.00</option><!-- option value -->
-							<option value="50">50.00</option><!-- option value -->
-						</select>
-					</td><!-- table cell -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Chosen Donation:</td><!-- table cell -->
-                    <td><input type="text" id="total" size="6"></td><!-- amount chosen -->
-				</tr><!-- close table row -->
-			</table><!-- close table -->
-			<table class ="donations" ><!-- begin table -->
-				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="/images/icons/ministers_of_the_word.png" alt="" title=""></a></td><!-- table cell -->
-					<th colspan = "5">The Ministers of the Word</th><!-- table header -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Donation Amount:</td><!-- table cell -->
-					<td><select name="" id ="" size = "1" required><!-- table select cell -->
-							<option value="0" selected>Choose</option><!-- option value -->
-							<option value="5">5.00</option><!-- option value -->
-							<option value="10">10.00</option><!-- option value -->
-							<option value="20">20.00</option><!-- option value -->
-							<option value="50">50.00</option><!-- option value -->
-						</select>
-					</td><!-- table cell -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Chosen Donation:</td><!-- table cell -->
-                    <td><input type="text" id="total" size="6"></td><!-- amount chosen -->
-				</tr><!-- close table row -->
-			</table><!-- close table -->
+
+
+
 		</article><!-- close article -->	
     
 		<article class="flex"><!-- begin article -->
-			<table class ="donations" ><!-- begin table -->
-				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="/images/icons/choir.png" alt="" title=""></a></td><!-- table cell -->
-					<th colspan = "5">The Choir</th><!-- table header -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Donation Amount:</td><!-- table cell -->
-					<td><select name="" id ="" size = "1" required><!-- table select cell -->
-							<option value="0" selected>Choose</option><!-- option value -->
-							<option value="5">5.00</option><!-- option value -->
-							<option value="10">10.00</option><!-- option value -->
-							<option value="20">20.00</option><!-- option value -->
-							<option value="50">50.00</option><!-- option value -->
-						</select>
-					</td><!-- table cell -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Chosen Donation:</td><!-- table cell -->
-                    <td><input type="text" id="total" size="6"></td><!-- amount chosen -->
-				</tr><!-- close table row -->
-			</table><!-- close table -->
-			<table class ="donations" ><!-- begin table -->
-				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="/images/icons/rcia.png" alt="" title=""></a></td><!-- table cell -->
-					<th colspan = "5">RCIA</th><!-- table header -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Donation Amount:</td><!-- table cell -->
-					<td><select name="" id ="" size = "1" required><!-- table select cell -->
-							<option value="0" selected>Choose</option><!-- option value -->
-							<option value="5">5.00</option><!-- option value -->
-							<option value="10">10.00</option><!-- option value -->
-							<option value="20">20.00</option><!-- option value -->
-							<option value="50">50.00</option><!-- option value -->
-						</select>
-					</td><!-- table cell -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Chosen Donation:</td><!-- table cell -->
-                    <td><input type="text" id="total" size="6"></td><!-- amount chosen -->
-				</tr><!-- close table row -->
-			</table><!-- close table -->
-			<table class ="donations" ><!-- begin table -->
-				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="/images/icons/church_decoration_group.png" alt="" title=""></a></td><!-- table cell -->
-					<th colspan = "5">Church Decoration Group</th><!-- table header -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Donation Amount:</td><!-- table cell -->
-					<td><select name="" id ="" size = "1" required><!-- table select cell -->
-							<option value="0" selected>Choose</option><!-- option value -->
-							<option value="5">5.00</option><!-- option value -->
-							<option value="10">10.00</option><!-- option value -->
-							<option value="20">20.00</option><!-- option value -->
-							<option value="50">50.00</option><!-- option value -->
-						</select>
-					</td><!-- table cell -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Chosen Donation:</td><!-- table cell -->
-                    <td><input type="text" id="total" size="6"></td><!-- amount chosen -->
-				</tr><!-- close table row -->
-			</table><!-- close table -->
-			<table class ="donations" ><!-- begin table -->
-				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="/images/icons/liturgy_group.png" alt="" title=""></a></td><!-- table cell -->
-					<th colspan = "5">Liturgy Group</th><!-- table header -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Donation Amount:</td><!-- table cell -->
-					<td><select name="" id ="" size = "1" required><!-- table select cell -->
-							<option value="0" selected>Choose</option><!-- option value -->
-							<option value="5">5.00</option><!-- option value -->
-							<option value="10">10.00</option><!-- option value -->
-							<option value="20">20.00</option><!-- option value -->
-							<option value="50">50.00</option><!-- option value -->
-						</select>
-					</td><!-- table cell -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Chosen Donation:</td><!-- table cell -->
-                    <td><input type="text" id="total" size="6"></td><!-- amount chosen -->
-				</tr><!-- close table row -->
-				
-			</table><!-- close table -->
-			
-			<table class ="donations" ><!-- begin table -->
-				<tr><!-- begin table row -->
-					<td rowspan = "3">><img src="/images/icons/svdp.png" alt="" title=""></a></td><!-- table cell -->
-					<th colspan = "5">St. Vincent de Paul Society</th><!-- table header -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Donation Amount:</td><!-- table cell -->
-					<td><select name="" id ="" size = "1" required><!-- table select cell -->
-							<option value="0" selected>Choose</option><!-- option value -->
-							<option value="5">5.00</option><!-- option value -->
-							<option value="10">10.00</option><!-- option value -->
-							<option value="20">20.00</option><!-- option value -->
-							<option value="50">50.00</option><!-- option value -->
-						</select>
-					</td><!-- table cell -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Chosen Donation:</td><!-- table cell -->
-                    <td><input type="text" id="total" size="6"></td><!-- amount chosen -->
-				</tr><!-- close table row -->
-				
-			</table><!-- close table -->
-			
-			<table class ="donations" ><!-- begin table -->
-				<tr><!-- begin table row -->
-					<td rowspan = "3">><img src="/images/icons/church_collections.png" alt="" title=""></a></td><!-- table cell -->
-					<th colspan = "5">Church Collections</th><!-- table header -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Donation Amount:</td><!-- table cell -->
-					<td><select name="" id ="" size = "1" required><!-- table select cell -->
-							<option value="0" selected>Choose</option><!-- option value -->
-							<option value="5">5.00</option><!-- option value -->
-							<option value="10">10.00</option><!-- option value -->
-							<option value="20">20.00</option><!-- option value -->
-							<option value="50">50.00</option><!-- option value -->
-						</select>
-					</td><!-- table cell -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Chosen Donation:</td><!-- table cell -->
-                    <td><input type="text" id="total" size="6"></td><!-- amount chosen -->
-				</tr><!-- close table row -->
-			</table><!-- close table -->
-			<table class ="donations" ><!-- begin table -->
-				<tr><!-- begin table row -->
-					<td rowspan = "3"><img src="/images/icons/council.png" alt="" title=""></a></td><!-- table cell -->
-					<th colspan = "5">Finance Committee</th><!-- table header -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Donation Amount:</td><!-- table cell -->
-					<td><select name="" id ="" size = "1" required><!-- table select cell -->
-							<option value="0" selected>Choose</option><!-- option value -->
-							<option value="5">5.00</option><!-- option value -->
-							<option value="10">10.00</option><!-- option value -->
-							<option value="20">20.00</option><!-- option value -->
-							<option value="50">50.00</option><!-- option value -->
-						</select>
-					</td><!-- table cell -->
-				</tr><!-- close table row -->
-				<tr><!-- begin table row -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td></td><!-- table cell -->
-					<td>Chosen Donation:</td><!-- table cell -->
-                    <td><input type="text" id="total" size="6"></td><!-- amount chosen -->
-				</tr><!-- close table row -->
-			</table><!-- close table -->
+
+			<?php
+			//--------------------------------
+			require_once '_cart.php';
+			//--------------------------------
+			?>
+
+
 		</article><!-- close article -->	
     </section><!-- close section tag -->
-	<!-- ****************** section - block 3 ******************** -->
-    
-    <section class="flex_donations_totals"><!-- begin section tag-->
-		<article class="outline_main"><!-- begin article -->
-			<form action= "javascript:HideAllShowOne('idtotal')" method="post" ><!-- begin form-->
-			<table id ="totals">
-				<caption><em>Donation Totals</em></caption>
-				<tr><!-- begin table row -->
-					<th colspan="2">Description</th><!-- table header --> 
-					<th>TOTALS:</th><!-- table header -->
-				</tr><!-- close table row -->
-				<tr class="odd"><!-- begin odd table row -->
-					<td>Donation Amount</td><!-- table cell -->
-					<td></td>
-					<td><input type="text" id ="GrandTotal" size="8"  onchange="calculate()" required></td><!-- table cell -->
-				</tr><!-- close table row -->
-				<tr class="even"><!-- begin even table row -->
-					<td colspan="3">God bless you for your Donation!</td><!-- table cell -->
-				</tr><!-- close table row -->
-				<tr  class="odd"><!-- begin odd table row -->
-					<td colspan="2">Click button to donate</td><!-- table cell -->
-					<td><input type="submit" value="Donate Now" onclick="alert('Are you sure you want to donate?')"/></td><!-- table cell -->
-				</tr><!-- close table row -->
-			</table><!-- close table -->
-			</form><!-- close form -->
-
-		</article><!-- close article -->
-		<article><!-- begin article -->
-			<br><br>
-		</article><!-- close article -->
-		<article class="stitched"><!-- begin article -->
-		
-			<p<!-- Parish Ministry Groups -->
-					Parish Ministry Groups
-					An active parish is one that has many groups in
-					different ministries, including, Ministers of the Eucharist, Ministers
-					of the Word, Baptism Team, Altar and Church Decoration Group, Altar
-					Servers, Collectors, Bereavement Group, the Choir &amp; those who help
-					in the Sacristy, as well as the Local Conference of St Vincent de Paul
-					Society, Legion of Mary and the Divine Mercy Prayer Group. As well as
-					the groups directly involved in the Church, there is also a great
-					community outreach to those who are housebound, and also the Day Care
-					Centre, which provide real expressions of response to the Lord. <br>
-					<br>
-					<i>"Extract from the opening address given by Diarmuid Martin
-					Archbishop of Dublin in the '2006 Souvenir Booklet' on the occasion of
-					the 50 Anniversary of the opening of the Church"</i></p>
-		</article><!-- close article -->
-		
-	</section><!-- close section tag -->
+	
 </div><!-- close section_container tag -->
 <div id="the_footer_wrapper"><!-- div to wrap the footer -->
 

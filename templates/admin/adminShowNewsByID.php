@@ -38,12 +38,12 @@ use Itb\NewsFeed;
         <!-- ****************** section - block 1 ******************** -->
         <section class="flex_welcome_main"><!-- begin section tag-->
             <article class="outline_main"><!-- begin article -->
-                <h3>News Feed Editor News Feed Editor News Feed Editor</h3>
+                <h3>News Article Preview</h3>
 
 
                 <!--display news from db matching value stored in $whichNewsFeed-->
                 <p>
-                <h2><?= $newsFeeds->getId(); ?></h2></p><!-- news feed ID-->
+                <h2>Article ID: <?= $newsFeeds->getId(); ?></h2></p><!-- news feed ID-->
                 <p>
                 <h2><?= $newsFeeds->getNewsFeedHeading(); ?></h2></p><!-- news feed heading-->
                 <p>

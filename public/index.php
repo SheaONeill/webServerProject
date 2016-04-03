@@ -9,6 +9,7 @@ use Itb\MainController;
 use Itb\AdminController;
 use Itb\LoginController;
 use Itb\NewsFeedController;
+use Itb\CartController;
 
 
 define('DB_HOST', 'localhost');
@@ -23,6 +24,7 @@ $mainController = new MainController();
 $adminController = new AdminController();
 $loginController = new LoginController();
 $newsFeedController = new NewsFeedController();
+$cartController = new CartController();
 
 switch ($action){
 
@@ -93,6 +95,20 @@ switch ($action){
 
     case 'processLogin':
         $loginController->processLoginAction();
+        break;
+
+    //---------- Cart ROUTES ---------------
+
+    case 'addToCart':
+        $cartController->addToCart();
+        break;
+
+    case 'removeFromCart':
+        $cartController->removeFromCart();
+        break;
+
+    case 'emptyCart':
+        $cartController->forgetSession();
         break;
 
 
