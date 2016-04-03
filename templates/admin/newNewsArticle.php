@@ -38,7 +38,7 @@ use Itb\NewsFeed;
         <!-- ****************** section - block 1 ******************** -->
         <section class="flex_welcome_main"><!-- begin section tag-->
             <article class="outline_main"><!-- begin article -->
-                <h3>News Feed or</h3>
+                <h3>New News Article</h3>
 
 
                 <p><q>Fields marked with asterisk (<span class="red">*</span>) are required</q></p>
@@ -46,22 +46,29 @@ use Itb\NewsFeed;
                 <form action="index.php?action=createNewsArticle" method="post">
 
                     <fieldset>
-                        <legend>Testing Crud</legend>
+                        <legend>Fill in all sections</legend>
                         <br>
-                        Author:<span class="red">*</span><br><!-- red asterisk -->
-                        <p><input name="author" type="text"></p>
+                        Author:<span class="red">*</span><!-- red asterisk -->
+                        <textarea name="author" id="author" rows="1" cols="30"></textarea>
+                        <!--<p><input name="author" type="text"></p>-->
                         Date:<span class="red">*</span><br><!-- red asterisk -->
-                        <p><input name="date" type="text"></p>
-                        Heading:<span class="red">*</span><br><!-- red asterisk -->
-                        <p><input name="newsFeedHeading" type="text"></p>
+                        <textarea name="date" id="date" rows="1" cols="10"></textarea>
+                        <!--<p><input name="date" type="text"></p>-->
+                        <br>Heading:<span class="red">*</span><br><!-- red asterisk -->
+                        <textarea name="newsFeedHeading" id="newsFeedHeading" rows="2" cols="30"></textarea>
+                        <!--<p><input name="newsFeedHeading" type="textArea" rows="1" cols="20"></p>-->
                         SubHeading1:<span class="red">*</span><br><!-- red asterisk -->
-                        <p><input name="newsFeedSubHeading1" type="text"></p>
+                        <textarea name="newsFeedSubHeading1" id="newsFeedSubHeading1" rows="2" cols="30"></textarea>
+                        <!--<p><input name="newsFeedSubHeading1" type="text"></p>-->
                         SubHeading2:<span class="red">*</span><br><!-- red asterisk -->
-                        <p><input name="newsFeedSubHeading2" type="text"></p>
-                        Paragraph1:<span class="red">*</span><br><!-- red asterisk -->
-                        <p><input name="newsFeedParagraph1" type="text"></p>
-                        Paragraph2:<span class="red">*</span><br><!-- red asterisk -->
-                        <p><input name="newsFeedParagraph2" type="text"></p>
+                        <textarea name="newsFeedSubHeading2" id="newsFeedSubHeading2" rows="2" cols="30"></textarea>
+                        <!--<p><input name="newsFeedSubHeading2" type="text"></p>-->
+                        <br>Paragraph1:<span class="red">*</span><br><!-- red asterisk -->
+                        <textarea name="newsFeedParagraph1" id="newsFeedParagraph1" rows="8" cols="30"></textarea>
+                        <!--<p><input name="newsFeedParagraph1" type="text"></p>-->
+                        <br>Paragraph2:<span class="red">*</span><br><!-- red asterisk -->
+                        <textarea name="newsFeedParagraph2" id="newsFeedParagraph2" rows="8" cols="30"></textarea>
+                        <!--<p><input name="newsFeedParagraph2" type="text"></p>-->
 
                         <p><input type="submit" name="submit" id="submit" value="Publish"/><!-- form input -->
 

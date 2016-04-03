@@ -117,7 +117,8 @@ use Itb\NewsFeed;
 				<p><?= $newsFeed->getNewsFeedParagraph2(); ?></p><!--  news text 2 -->
 				<p>Author: <?= $newsFeed->getAuthor(); ?></p><!-- author -->
 				<p>Date: <?= $newsFeed->getDate(); ?></p><!-- date -->
-
+				<br>
+				<hr class="image_hr"><br>
 				<?php
 			}
 
