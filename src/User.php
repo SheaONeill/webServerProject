@@ -24,6 +24,8 @@ class User extends DatabaseTable
      */
     const ROLE_ADMIN = 2;
 
+    //create the variables to match user table in database 
+
     /**
      * this is the variable to store
      * the id of the user

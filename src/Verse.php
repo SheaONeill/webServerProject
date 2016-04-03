@@ -24,38 +24,40 @@ class Verse extends DatabaseTable
 
 {
 
+    //create the variables to match verse table in database
+
     /**
      * this is the variable to store
      * the id of the verse
-     * @var int
+     * @var int $id
      */
     private $id;
 
     /**
      * this is the variable to store
      * the verses heading
-     * @var string
+     * @var string $heading
      */
     private $heading;
 
     /**
      * this is the variable to store
      * the verses first subheading
-     * @var string
+     * @var string $subheading1
      */
     private $subheading1;
 
     /**
      * this is the variable to store
      * the verses second subheading
-     * @var string
+     * @var string $subheading2
      */
     private $subheading2;
 
     /**
      * this is the variable to store
      * the paragraph for the verse
-     * @var
+     * @var $paragraph
      */
     private $paragraph;
 
