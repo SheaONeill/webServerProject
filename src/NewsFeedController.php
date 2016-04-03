@@ -7,6 +7,12 @@
  */
 namespace Itb;
 
+/**
+ * Class NewsFeedController
+ *
+ * this class is responsible handling all the requests for the news editing section
+ * @package Itb
+ */
 class NewsFeedController
 {
 
@@ -17,6 +23,13 @@ class NewsFeedController
         $this->loginController = new LoginController();
     }//end constructor
 
+
+    /**
+     * this function checks to see if the user is logged in
+     * and sets the title and link styles and then imports
+     * the news page for admin editing actions
+     * if false it returns an error message
+     */
     public function adminNewsAction($valuePassed)
     {
         $isLoggedIn = $this->loginController->isLoggedInFromSession();
@@ -53,10 +66,16 @@ class NewsFeedController
 
     // create new Article functions
 
+
+    /**
+     * this function checks to see if the user is logged in
+     * and sets the title and link styles and then imports
+     * the show news page for admin editing actions
+     * if false it returns an error message
+     */
     function showCreateNewsArticleAction()
     {
 
-        //added this from seperate controllers example
         $isLoggedIn = $this->loginController->isLoggedInFromSession();
         $username = $this->loginController->usernameFromSession();
 
@@ -66,10 +85,15 @@ class NewsFeedController
 
     }//end show
 
+    /**
+     * this function checks to see if the user is logged in
+     * and sets the title and link styles and then imports
+     * the edit news page for admin editing new articles
+     * if false it returns an error message
+     */
     function showEditNewsArticleAction()
     {
 
-        //added this from seperate controllers example
         $isLoggedIn = $this->loginController->isLoggedInFromSession();
         $username = $this->loginController->usernameFromSession();
 
@@ -95,6 +119,10 @@ class NewsFeedController
 
     }//end show edit
 
+    /**
+     * this function sets the variables and adds them to the database
+     * it returns an error message if creation fails
+     */
     function createNewsArticleAction()
     {
 
@@ -136,6 +164,10 @@ class NewsFeedController
 
     }//end function create new items
 
+    /*
+     * this function updates the variables and adds them to the database
+     * it returns an error message if update fails
+     */
     function editNewsArticleAction()
     {
 
@@ -185,6 +217,11 @@ class NewsFeedController
         }//end else error
     }//end edit  news article
 
+    /**
+     * this function deletes the entry in the database
+     * according to the id of the news article
+     * it returns an error message if creation fails
+     */
     function deleteNewsArticleAction()
     {
         $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);

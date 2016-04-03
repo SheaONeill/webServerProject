@@ -4,7 +4,6 @@ use Itb;
 class MainController
 {
 
-    //added this from seperate controllers example
     private $loginController;
 
     //------------testing----------------
@@ -16,7 +15,6 @@ class MainController
     
     public function indexAction()
     {
-        //added this from seperate controllers example
         $isLoggedIn = $this->loginController->isLoggedInFromSession();
         $username = $this->loginController->usernameFromSession();
 
@@ -97,7 +95,6 @@ class MainController
 
     public function contactFormAction()
     {
-        //added this from seperate controllers example
         //$isLoggedIn = $this->loginController->isLoggedInFromSession();
         //$username = $this->loginController->usernameFromSession();
 

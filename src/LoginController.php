@@ -1,12 +1,21 @@
 <?php
 namespace Itb;
 
+/**
+ * Class NewsFeedController
+ *
+ * this class is responsible handling all the requests for the logins
+ * @package Itb
+ */
 class LoginController
 {
-
+    /**
+     * this function unsets the users session cookie
+     *and logs the user out
+     */
     public function logoutAction()
     {
-        // remove 'user' element from SESSION array
+        // remove user from the seesion array
         unset($_SESSION['user']);
 
         // redirect to index action
@@ -14,9 +23,15 @@ class LoginController
         $mainController->indexAction();
     }
 
+    /**
+     * this function is responsible for processing the user login
+     * the function checks to see if username and password match
+     * from the database and sets a session cookie if true
+     * if false and error message is displayed
+     */
     public function processLoginAction()
     {
-        // default is bad login
+        // this is the default for the is logged in variable
         $isLoggedIn = false;
 
         $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
@@ -50,9 +65,11 @@ class LoginController
     }
 
 
-    //--------- helper functions -------
-
-
+    /**
+     * this sets the login to true if a session entry is found
+     * for the user and returns true or false     *
+     * @return bool $isLoggedIn
+     */
     public function isLoggedInFromSession()
     {
         $isLoggedIn = false;
@@ -65,6 +82,11 @@ class LoginController
         return $isLoggedIn;
     }
 
+    /**
+     * this function gets the username from session cookie
+     * and returns a string
+     * @return string $username
+     */
     public function usernameFromSession()
     {
         $username = '';
@@ -78,5 +100,4 @@ class LoginController
     }
 
 
-
-}
+}//end class login controller
