@@ -214,6 +214,7 @@ table #totals{/* reference the totals table */
 }
 #totals th{/* reference the totals header */
 	color: yellow;/*set the font colour of the totals header */
+	font-size: 18px;/* set the font size */
 	background-color: olive;/* set the background colour */
 	text-align: center;/* centre align the text */
 	padding: 3px 12px 3px 3px;/* set the padding for the table header */
@@ -231,12 +232,14 @@ td img{/* reference the table data with images */
 	background-color: transparent;/* set the background colour */
 }
 tr.odd{/* reference the table rows with a class of odd */
-	background-color: #F3F3A6;/* set the background colour */
+	background-color: #D4D4A2;/* set the background colour */
 	text-align: center;/* centre align the text */
+	font-size: 16px;/* set the font size */
 }
 tr.even{/* reference the table rows with a class of even */
 	background-color: #D4D4A2;/* set the background colour */
 	text-align: center;/* centre align the text */
+	font-size: 16px;/* set the font size */
 }
 
 /* form styles */
@@ -268,10 +271,11 @@ tr.even{/* reference the table rows with a class of even */
    opacity: 0.8;/* set the opacity level */
 }
 #idtotal {
-	color: yellow;/* set the font colour */
-	font-size: 16px;/* set the font size */
+	color: #4C4C33;/* set the font colour */
+	font-size: 18px;/* set the font size */
 	line-height: 1em;/* set the line height */
-	padding: 25px;/* set the padding */
+	padding: 35px;/* set the padding */
+	text-align: center;/* centre align the text */
 }
 .random_verse {/* reference the random_verse */
    margin-top: .4rem;/* fix margin  */

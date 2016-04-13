@@ -1,13 +1,15 @@
 
-<hr>
-<h3>shopping cart</h3>
-<table>
+<table class ="donations" ><!-- begin table -->
+
     <tr>
-        <th>Product</th>
-        <th>Price</th>
-        <th>Quantity</th>
-        <th>sub-total</th>
-        <th>(remove)</th>
+        <td colspan="5"><h2>Shopping Cart</h2></td>
+    </tr>
+    <tr>
+        <th id="totals">Product</th>
+        <th id="totals">Price</th>
+        <th id="totals">Quantity</th>
+        <th id="totals">sub-total</th>
+        <th id="totals">(remove)</th>
     </tr>
 <?php
 //-----------------------------
@@ -24,13 +26,17 @@ foreach($shoppingCart as $id=>$quantity):
     $total += $subTotal;
 //-----------------------------
 ?>
-    <tr>
-    <td><?= $product->getDescription() ?></td>
+
+
+    <tr class="odd">
+    <td id="refresh"><?= $product->getDescription() ?></td>
     <td>&euro; <?= $product->getPrice() ?></td>
     <td><?= $quantity ?></td>
     <td><?= $subTotal ?></td>
-    <td><a href="/index.php?action=removeFromCart&id=<?= $product->getId() ?>">(remove from cart)</a></td>
-
+        <td><form action="index.php" method="get">
+                <input type="hidden" name="action" value="removeFromCart">
+                <input type="hidden" name="id" value="<?= $product->getId() ?>">
+                <input type="submit" value="Remove"></form></td>
     </tr>
 
 <?php
@@ -39,12 +45,20 @@ endforeach;
 //-----------------------------
 ?>
 
-    <tr>
+    <div><hr></div>
+    <tr id="idtotal">
         <td colspan="3">Total</td>
         <td>&euro; <?= $total ?></td>
+        <td><form action="index.php?action=emptyCart" method="post"><input type="hidden" name="action" value="">
+                <input type="submit" value="Clear Cart"></form></td>
+    </tr>
+
+    <tr>
+        <td colspan="2"></td>
+    </tr>
+    <tr>
+        <td colspan="1"></td>
     </tr>
 
 </table>
-
-<a href="/index.php?action=emptyCart">EMPTY CART</a>
 

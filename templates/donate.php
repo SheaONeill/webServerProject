@@ -40,13 +40,18 @@ use Itb\CartController;
 <div id="section_container"><!-- div to wrap the sections -->
     
 	<!-- ****************** section - block 1 ******************** -->
-    <section class="flex_donations"><!-- begin section tag-->
+    <section class="flex"><!-- begin section tag-->
 		<article class="flex"><!-- begin article -->
 			<table class ="donations" ><!-- begin table -->
+
+                <tr>
+                    <td colspan="5"><h2>Church Sale Items</h2></td>
+                </tr>
 				<tr>
-					<th>Product</th>
-					<th>Price</th>
-					<th>(add to cart)</th>
+					<th id="totals">Product</th>
+					<th id="totals">Price</th>
+					<th id="totals"></th>
+
 				</tr>
 				<?php
 
@@ -60,10 +65,13 @@ use Itb\CartController;
 				foreach($products as $product):
 //-----------------------------
 					?>
-					<tr>
-						<td><?= $product->getDescription() ?></td>
-						<td>&euro; <?= $product->getPrice() ?></td>
-						<td><a href="/index.php?action=addToCart&id=<?= $product->getId() ?>">(add to cart)</a></td>
+					<tr class="odd">
+						<td id="refresh"><?= $product->getDescription() ?></td>
+						<td >&euro; <?= $product->getPrice() ?></td>
+						<td><form action="index.php" method="get">
+								<input type="hidden" name="action" value="addToCart">
+								<input type="hidden" name="id" value="<?= $product->getId() ?>">
+								<input type="submit" value="Add Item to Cart"></form></td>
 					</tr>
 
 					<?php
@@ -88,7 +96,7 @@ use Itb\CartController;
 
 		</article><!-- close article -->	
     </section><!-- close section tag -->
-	
+
 </div><!-- close section_container tag -->
 <div id="the_footer_wrapper"><!-- div to wrap the footer -->
 
