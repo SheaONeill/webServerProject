@@ -71,9 +71,6 @@ class CartController {
 
     public function getShoppingCart()
     {
-
-
-
         if (isset($_SESSION['shoppingCart'])){
             return $_SESSION['shoppingCart'];
         } else {
@@ -88,21 +85,20 @@ class CartController {
 
         $this->killSession();
 
-        // redirect to display text
+        //redirect to refresh the shopping cart order details
         require_once __DIR__ . '/../templates/shop.php';
     }
 
     /**
-     * advice on how to kill session from PHP.net
-     * URL: http://php.net/manual/en/function.session-destroy.php
+     * this function removes the session     * 
      */
     public function killSession()
     {
-        // (1) Unset all of the session variables.
+        //unset all of the session variables.
         $_SESSION = [];
 
-        // (2) If it is desired to kill the session, also delete the session cookie.
-        // Note: This will destroy the session, and not just the session data!
+        // delete the session cookie.
+        // destroy the session and the session data!
         if (ini_get('session.use_cookies')){
             $params = session_get_cookie_params();
             setcookie(
@@ -116,7 +112,7 @@ class CartController {
             );
         }
 
-        // (3) destroy the session.
+        //destroy the session.
         session_destroy();
     }
 

@@ -29,14 +29,6 @@ if (empty($obituaryLinkStyle)){
 if (empty($site_mapLinkStyle)){
     $site_mapLinkStyle = '';
 }
-
-/* here is the same logic, using the '?' ternary operator and 'isset()' function
-$indexLinkStyle = isset($homeLinkStyle) ? $homeLinkStyle : '';
-$aboutLinkStyle = isset($aboutLinkStyle) ? $aboutLinkStyle : '';
-$listLinkStyle = isset($listLinkStyle) ? $listLinkStyle : '';
-$contactLinkStyle = isset($contactLinkStyle) ? $contactLinkStyle : '';
-$sitemapLinkStyle = isset($sitemapLinkStyle) ? $sitemapLinkStyle : '';
-*/
 //-------------------------------------------------
 ?>
 
