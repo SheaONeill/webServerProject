@@ -15,7 +15,7 @@ use StJosephsChurchEastWall\CartController;
 define('DB_HOST', 'localhost');
 define('DB_USER', 'JesusChrist');
 define('DB_PASS', 'HolyGod');
-define('DB_NAME', 'StJosephsChurchEastWall');
+define('DB_NAME', 'stjosephschurcheastwall');
 
 
 
