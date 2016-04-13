@@ -71,7 +71,7 @@ use StJosephsChurchEastWall\NewsFeed;
 				// and do something like this
 				// $randomVerseGen = rand($firstID,$lastID());
 				//$key=>&$value
-				$randomVerseGen = rand(1000,1003);
+				$randomVerseGen = rand(1000,1009);
 
 				$currentVerse = $newVerseArray->getOneById($randomVerseGen);
 				?>
