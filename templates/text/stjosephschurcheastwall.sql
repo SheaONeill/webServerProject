@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Apr 12, 2016 at 08:42 PM
+-- Generation Time: Apr 12, 2016 at 09:35 PM
 -- Server version: 10.1.9-MariaDB-log
 -- PHP Version: 5.6.16
 
@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `newsfeeds` (
 
 INSERT INTO `newsfeeds` (`id`, `author`, `date`, `newsFeedHeading`, `newsFeedSubHeading1`, `newsFeedSubHeading2`, `newsFeedParagraph1`, `newsFeedParagraph2`) VALUES
 (1, 'Howard A. Snyder, Daniel V. Runyon (Contributor)', '0000-00-00', 'Decoding the Church:', 'Mapping the DNA of Christ''s Body.', 'Decoding the Church takes this organic metaphor and examines its DNA to find the key to church structure and mission.', 'While many models have been proposed for understanding the nature of the church, the primary biblical image is that of the body of Christ.\r\nThe authors suggest that the classical understanding of the church as defined by the Nicene Creed-one, holy, \r\ncatholic, apostolic church-comprises only one strand of the churchs DNA.', 'They propose a more complex, living model for structuring the church and understanding its mission, and then explore how a biblically structured church can transform the world.\r\nDecoding the Church evaluates models based in hierarchy, psychology, and ecology, and stresses the biblical and contemporary reality of globalization. Includes discussion questions'),
-(2, 'test Author', '0000-00-01', 'test Heading', 'test sub1', 'test sub2', 'test par 1', 'test par 2');
+(2, 'test Author', '0000-00-01', 'test sub1', 'test sub1', 'test sub2', 'test par 1', 'testing paragraph 2');
 
 -- --------------------------------------------------------
 
@@ -102,12 +102,20 @@ INSERT INTO `products` (`id`, `description`, `quantity`, `price`, `buildingId`) 
 --
 
 CREATE TABLE IF NOT EXISTS `users` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` text NOT NULL,
   `password` text NOT NULL,
   `hashedPassword` text NOT NULL,
-  `role` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `role` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `password`, `hashedPassword`, `role`) VALUES
+(1, 'shea', '$2y$10$PGieOV0AsrbHQrfvccciQ.rI6p7raZuF2.bsF.fubqqXQCGOhLfvS', '', 2);
 
 -- --------------------------------------------------------
 
