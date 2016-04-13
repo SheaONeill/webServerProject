@@ -5,7 +5,7 @@
  * Date: 25/03/2016
  * Time: 12:10
  */
-namespace Itb;
+namespace StJosephsChurchEastWall;
 use Mattsmithdev\PdoCrud\DatabaseTable;
 use Mattsmithdev\PdoCrud\DatabaseManager;
 
@@ -15,7 +15,7 @@ use Mattsmithdev\PdoCrud\DatabaseManager;
  * This class is responsible for getting and setting the
  * variables for the news feed to and from the data base
  *
- * @package Itb
+ * @package StJosephsChurchEastWall
  */
 class NewsFeed extends DatabaseTable{
 

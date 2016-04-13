@@ -7,5 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Mattsmithdev\\PdoCrud\\' => array($vendorDir . '/mattsmithdev/pdo-crud-for-free/src'),
-    'Itb\\' => array($baseDir . '/src'),
+    'StJosephsChurchEastWall\\' => array($baseDir . '/src'),
 );

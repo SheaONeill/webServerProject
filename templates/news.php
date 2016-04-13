@@ -11,8 +11,8 @@ require_once __DIR__ . '/../templates/header_imports.php';*/
 //include the full header header_full.php
 require_once __DIR__ . '/../templates/includes/header_full.php';
 
-use Itb\Verse;
-use Itb\NewsFeed;
+use StJosephsChurchEastWall\Verse;
+use StJosephsChurchEastWall\NewsFeed;
 
 
 ?>

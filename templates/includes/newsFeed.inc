@@ -5,7 +5,7 @@
  * Date: 26/03/2016
  * Time: 03:11
  */
-use Itb\NewsFeed;
+use StJosephsChurchEastWall\NewsFeed;
 
 //-------------------------------------------
 ?>

@@ -6,7 +6,7 @@
  * Time: 22:46
  */
 
-namespace Itb;
+namespace StJosephsChurchEastWall;
 
 
 
@@ -18,7 +18,7 @@ use Mattsmithdev\PdoCrud\DatabaseManager;
  *
  * This class is responsible for getting and setting the
  * variables for the random verses to and from the data base
- * @package Itb
+ * @package StJosephsChurchEastWall
  */
 class Verse extends DatabaseTable
 

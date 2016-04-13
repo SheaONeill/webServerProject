@@ -5,13 +5,13 @@
  * Date: 01/04/16
  * Time: 11:22
  */
-namespace Itb;
+namespace StJosephsChurchEastWall;
 
 /**
  * Class NewsFeedController
  *
  * this class is responsible handling all the requests for the news editing section
- * @package Itb
+ * @package StJosephsChurchEastWall
  */
 class NewsFeedController
 {

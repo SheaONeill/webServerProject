@@ -1,11 +1,11 @@
 <?php
-namespace Itb;
+namespace StJosephsChurchEastWall;
 
 /**
  * Class AdminController
  *
  * this class is responsible handling all the requests for the admin section
- * @package Itb
+ * @package StJosephsChurchEastWall
  */
 class AdminController
 {

@@ -1,11 +1,11 @@
 <?php
-namespace Itb;
+namespace StJosephsChurchEastWall;
 
 /**
  * Class NewsFeedController
  *
  * this class is responsible handling all the requests for the logins
- * @package Itb
+ * @package StJosephsChurchEastWall
  */
 class LoginController
 {

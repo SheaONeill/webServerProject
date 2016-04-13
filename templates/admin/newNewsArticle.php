@@ -9,7 +9,7 @@
 //include the full header header_full.php
 require_once __DIR__ . '/../includes/header_full.php';
 
-use Itb\NewsFeed;
+use StJosephsChurchEastWall\NewsFeed;
 
 ?>
 <body><!-- begin body opening tag -->

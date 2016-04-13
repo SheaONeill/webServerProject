@@ -11,8 +11,8 @@ require_once __DIR__ . '/../templates/header_imports.php';*/
 //include the full header header_full.php
 require_once __DIR__ . '/../templates/includes/header_full.php';
 
-use Itb\Product;
-use Itb\CartController;
+use StJosephsChurchEastWall\Product;
+use StJosephsChurchEastWall\CartController;
 
 ?>
 <body><!-- begin body opening tag -->
@@ -59,7 +59,7 @@ use Itb\CartController;
 
 				//testing shopping cart
 
-				$shoppingCart = \Itb\CartController::getShoppingCart();
+				$shoppingCart = \StJosephsChurchEastWall\CartController::getShoppingCart();
 
 				$products = Product::getAll();
 

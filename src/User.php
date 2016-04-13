@@ -1,5 +1,5 @@
 <?php
-namespace Itb;
+namespace StJosephsChurchEastWall;
 
 use Mattsmithdev\PdoCrud\DatabaseTable;
 use Mattsmithdev\PdoCrud\DatabaseManager;
@@ -10,7 +10,7 @@ use Mattsmithdev\PdoCrud\DatabaseManager;
  * This class is responsible for getting and setting the
  * variables for the users and password to and from the data base
  *
- * @package Itb
+ * @package StJosephsChurchEastWall
  */
 class User extends DatabaseTable
 {

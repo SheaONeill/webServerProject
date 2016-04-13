@@ -1,5 +1,5 @@
 <?php
-namespace Itb;
+namespace StJosephsChurchEastWall;
 
 use Mattsmithdev\PdoCrud\DatabaseTable;
 

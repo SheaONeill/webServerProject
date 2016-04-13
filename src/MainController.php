@@ -1,6 +1,6 @@
 <?php
-namespace Itb;
-use Itb;
+namespace StJosephsChurchEastWall;
+use StJosephsChurchEastWall;
 class MainController
 {
 

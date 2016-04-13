@@ -21,7 +21,7 @@ $total = 0;
 //$products = Product::getAll();
 foreach($shoppingCart as $id=>$quantity):
 
-    $product = \Itb\Product::getOneById($id);
+    $product = \StJosephsChurchEastWall\Product::getOneById($id);
     $subTotal = $product->getPrice() * $quantity;
     $total += $subTotal;
 //-----------------------------

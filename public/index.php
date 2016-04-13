@@ -5,17 +5,17 @@ session_start();
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use Itb\MainController;
-use Itb\AdminController;
-use Itb\LoginController;
-use Itb\NewsFeedController;
-use Itb\CartController;
+use StJosephsChurchEastWall\MainController;
+use StJosephsChurchEastWall\AdminController;
+use StJosephsChurchEastWall\LoginController;
+use StJosephsChurchEastWall\NewsFeedController;
+use StJosephsChurchEastWall\CartController;
 
 
 define('DB_HOST', 'localhost');
-define('DB_USER', 'JavaBeanz');
-define('DB_PASS', 'coffee');
-define('DB_NAME', 'itb');
+define('DB_USER', 'JesusChrist');
+define('DB_PASS', 'HolyGod');
+define('DB_NAME', 'StJosephsChurchEastWall');
 
 
 
