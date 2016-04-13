@@ -98,7 +98,7 @@ class User extends DatabaseTable
     /**
      * get the role for the user
      *
-     * @return int
+     * @return int role
      */
     public function getRole()
     {
@@ -117,6 +117,7 @@ class User extends DatabaseTable
 
     /**
      * get the password for the user
+     * 
      * @return string $password
      */
     public function getPassword()
@@ -139,6 +140,7 @@ class User extends DatabaseTable
     /**
      * if a matching username and password in the database
      * is found return true or false
+     * 
      * @param string $username
      * @param string $password
      *
@@ -187,7 +189,9 @@ class User extends DatabaseTable
         }//enf if true
 
         else {
+            
             return null;
+            
         }//end else
 
     }//end getOneByUsername function

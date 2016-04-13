@@ -1,0 +1,200 @@
+<?php
+namespace StJosephsChurchEastWall;
+
+use Mattsmithdev\PdoCrud\DatabaseTable;
+use Mattsmithdev\PdoCrud\DatabaseManager;
+
+/**
+ * Class User
+ *
+ * This class is responsible for getting and setting the
+ * variables for the users and password to and from the data base
+ *
+ * @package StJosephsChurchEastWall
+ */
+class User extends DatabaseTable
+{
+    /**
+     * declare variable for user role and set the value
+     */
+    const ROLE_USER = 1;
+
+    /**
+     * declare variable for admin role and set the value
+     */
+    const ROLE_ADMIN = 2;
+
+    //create the variables to match user table in database 
+
+    /**
+     * this is the variable to store
+     * the id of the user
+     * @var int $id
+     */
+    private $id;
+
+    /**
+     * this is the variable to store
+     * the username of the user
+     * @var string $username
+     */
+    private $username;
+
+    /**
+     * this is the variable to store
+     * the password of the user
+     * @var string $password
+     */
+    private $password;
+
+    /**
+     * this is the variable to store
+     * the role of the user
+     * @var int $role
+     */
+    private $role;
+
+    /**
+     * get the id for the user
+     *
+     * @return int $id
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * set the id for the user
+     *
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * get the username for the user
+     *
+     * @return string $username
+     */
+    public function getUsername()
+    {
+        return $this->username;
+    }
+
+    /**
+     * set the username for the user
+     *
+     * @param string $username
+     */
+    public function setUsername($username)
+    {
+        $this->username = $username;
+    }
+
+
+    /**
+     * get the role for the user
+     *
+     * @return int role
+     */
+    public function getRole()
+    {
+        return $this->role;
+    }
+
+    /**
+     * set the role for the user
+     *
+     * @param int $role
+     */
+    public function setRole($role)
+    {
+        $this->role = $role;
+    }
+
+    /**
+     * get the password for the user
+     * 
+     * @return string $password
+     */
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    /**
+     * set and hash the password for the user
+     *
+     * @param mixed $password
+     */
+    public function setPassword($password)
+    {
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+        $this->password = $hashedPassword;
+    }
+
+    /**
+     * if a matching username and password in the database
+     * is found return true or false
+     * 
+     * @param string $username
+     * @param string $password
+     *
+     * @return boolean
+     */
+    public static function canFindMatchingUsernameAndPassword($username, $password)
+    {
+        $user = User::getOneByUsername($username);
+
+        // if no record has this username, return FALSE
+        if(null == $user){
+            return false;
+        }
+
+        // hashed correct password
+        $hashedStoredPassword = $user->getPassword();
+
+        // return whether or not hash of input password matches stored hash
+        return password_verify($password, $hashedStoredPassword);
+    }
+
+    /**
+     * if a record exists in the database with $username
+     * then return the user object for that record
+     * otherwise return 'null'
+     *
+     * @param string $username
+     *
+     * @return string|null
+     */
+    public static function getOneByUsername($username)
+    {
+
+        $db = new DatabaseManager();
+        $connection = $db->getDbh();
+
+        $sql = 'SELECT * FROM users WHERE username=:username';
+        $statement = $connection->prepare($sql);
+        $statement->bindParam(':username', $username, \PDO::PARAM_STR);
+        $statement->setFetchMode(\PDO::FETCH_CLASS, __CLASS__);
+        $statement->execute();
+
+        if ($object = $statement->fetch()) {
+            return $object;
+
+        }//enf if true
+
+        else {
+            
+            return null;
+            
+        }//end else
+
+    }//end getOneByUsername function
+
+
+}//end class user

@@ -64,6 +64,7 @@ class Verse extends DatabaseTable
 
     /**
      * this function gets the id
+     * 
      * @return int $id
      */
     public function getId()
@@ -73,6 +74,7 @@ class Verse extends DatabaseTable
 
     /**
      * this function sets the id
+     * 
      * @param int $id
      */
     public function setId($id)
@@ -82,6 +84,7 @@ class Verse extends DatabaseTable
 
     /**
      * this function gets the heading
+     * 
      * @return string $heading
      */
     public function getHeading()
@@ -91,6 +94,7 @@ class Verse extends DatabaseTable
 
     /**
      * this function sets the heading
+     * 
      * @param string $heading
      */
     public function setHeading($heading)
@@ -100,6 +104,7 @@ class Verse extends DatabaseTable
 
     /**
      * this function gets the first subheading
+     * 
      * @return string $subheading1
      */
     public function getSubheading1()
@@ -109,6 +114,7 @@ class Verse extends DatabaseTable
 
     /**
      * this function sets the first subheading
+     * 
      * @param string $subheading1
      */
     public function setSubheading1($subheading1)
@@ -118,6 +124,7 @@ class Verse extends DatabaseTable
 
     /**
      * this function gets the second subheading
+     * 
      * @return string subheading2
      */
     public function getSubheading2()
@@ -127,6 +134,7 @@ class Verse extends DatabaseTable
 
     /**
      * this function sets the second subheading
+     * 
      * @param string $subheading2
      */
     public function setSubheading2($subheading2)
@@ -136,6 +144,7 @@ class Verse extends DatabaseTable
 
     /**
      * this function gets the paragraph
+     * 
      * @return string $paragraph
      */
     public function getParagraph()
@@ -145,6 +154,7 @@ class Verse extends DatabaseTable
 
     /**
      * this function sets the paragraph
+     * 
      * @param string $paragraph
      */
     public function setParagraph($paragraph)
@@ -152,4 +162,4 @@ class Verse extends DatabaseTable
         $this->paragraph = $paragraph;
     }
   
-}//end class
+}//end class verse

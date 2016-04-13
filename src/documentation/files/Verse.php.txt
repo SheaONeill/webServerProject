@@ -1,0 +1,165 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: sheaoneill
+ * Date: 23/03/16
+ * Time: 22:46
+ */
+
+namespace StJosephsChurchEastWall;
+
+
+
+use Mattsmithdev\PdoCrud\DatabaseTable;
+use Mattsmithdev\PdoCrud\DatabaseManager;
+
+/**
+ * Class Verse
+ *
+ * This class is responsible for getting and setting the
+ * variables for the random verses to and from the data base
+ * @package StJosephsChurchEastWall
+ */
+class Verse extends DatabaseTable
+
+{
+
+    //create the variables to match verse table in database
+
+    /**
+     * this is the variable to store
+     * the id of the verse
+     * @var int $id
+     */
+    private $id;
+
+    /**
+     * this is the variable to store
+     * the verses heading
+     * @var string $heading
+     */
+    private $heading;
+
+    /**
+     * this is the variable to store
+     * the verses first subheading
+     * @var string $subheading1
+     */
+    private $subheading1;
+
+    /**
+     * this is the variable to store
+     * the verses second subheading
+     * @var string $subheading2
+     */
+    private $subheading2;
+
+    /**
+     * this is the variable to store
+     * the paragraph for the verse
+     * @var $paragraph
+     */
+    private $paragraph;
+
+
+    /**
+     * this function gets the id
+     * 
+     * @return int $id
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * this function sets the id
+     * 
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * this function gets the heading
+     * 
+     * @return string $heading
+     */
+    public function getHeading()
+    {
+        return $this->heading;
+    }
+
+    /**
+     * this function sets the heading
+     * 
+     * @param string $heading
+     */
+    public function setHeading($heading)
+    {
+        $this->heading = $heading;
+    }
+
+    /**
+     * this function gets the first subheading
+     * 
+     * @return string $subheading1
+     */
+    public function getSubheading1()
+    {
+        return $this->subheading1;
+    }
+
+    /**
+     * this function sets the first subheading
+     * 
+     * @param string $subheading1
+     */
+    public function setSubheading1($subheading1)
+    {
+        $this->subheading1 = $subheading1;
+    }
+
+    /**
+     * this function gets the second subheading
+     * 
+     * @return string subheading2
+     */
+    public function getSubheading2()
+    {
+        return $this->subheading2;
+    }
+
+    /**
+     * this function sets the second subheading
+     * 
+     * @param string $subheading2
+     */
+    public function setSubheading2($subheading2)
+    {
+        $this->subheading2 = $subheading2;
+    }
+
+    /**
+     * this function gets the paragraph
+     * 
+     * @return string $paragraph
+     */
+    public function getParagraph()
+    {
+        return $this->paragraph;
+    }
+
+    /**
+     * this function sets the paragraph
+     * 
+     * @param string $paragraph
+     */
+    public function setParagraph($paragraph)
+    {
+        $this->paragraph = $paragraph;
+    }
+  
+}//end class verse

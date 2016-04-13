@@ -80,6 +80,7 @@ class NewsFeed extends DatabaseTable{
     /**
      * this function gets the id
      * of the news article
+     * 
      * @return int $id
      */
     public function getId() {
@@ -89,7 +90,8 @@ class NewsFeed extends DatabaseTable{
     /**
      * this function sets the id
      * of the news article
-     * @param mixed $id
+     * 
+     * @param int $id
      */
     public function setId($id) {
         $this->id = $id;
@@ -98,6 +100,7 @@ class NewsFeed extends DatabaseTable{
     /**
      * this function gets the author
      * of the news article
+     * 
      * @return string $author
      */
     public function getAuthor() {
@@ -107,6 +110,7 @@ class NewsFeed extends DatabaseTable{
     /**
      * this function sets the author
      * of the news article
+     * 
      * @param string $author
      */
     public function setAuthor($author) {
@@ -116,6 +120,7 @@ class NewsFeed extends DatabaseTable{
     /**
      * this function gets the date
      * of the news article
+     * 
      * @return string $date
      */
     public function getDate() {
@@ -125,6 +130,7 @@ class NewsFeed extends DatabaseTable{
     /**
      * this function sets the date
      * of the news article
+     * 
      * @param string $date
      */
     public function setDate($date) {
@@ -134,6 +140,7 @@ class NewsFeed extends DatabaseTable{
     /**
      * this function gets the heading
      * of the news article
+     * 
      * @return string $newsFeedHeading
      */
     public function getNewsFeedHeading() {
@@ -143,6 +150,7 @@ class NewsFeed extends DatabaseTable{
     /**
      * this function sets the heading
      * of the news article
+     * 
      * @param string $newsFeedHeading
      */
     public function setNewsFeedHeading($newsFeedHeading) {
@@ -152,6 +160,7 @@ class NewsFeed extends DatabaseTable{
     /**
      * this function gets the first subheading
      * of the news article
+     * 
      * @return string $newsFeedSubHeading1
      */
     public function getNewsFeedSubHeading1() {
@@ -161,6 +170,7 @@ class NewsFeed extends DatabaseTable{
     /**
      * this function sets the first subheading
      * of the news article
+     * 
      * @param string $newsFeedSubHeading1
      */
     public function setNewsFeedSubHeading1($newsFeedSubHeading1) {
@@ -170,6 +180,7 @@ class NewsFeed extends DatabaseTable{
     /**
      * this function sets the second subheading
      * of the news article
+     * 
      * @return string $newsFeedSubHeading2
      */
     public function getNewsFeedSubHeading2() {
@@ -179,6 +190,7 @@ class NewsFeed extends DatabaseTable{
     /**
      * this function sets the second subheading
      * of the news article
+     * 
      * @param string $newsFeedSubHeading2     
      */
     public function setNewsFeedSubHeading2($newsFeedSubHeading2) {
@@ -188,6 +200,7 @@ class NewsFeed extends DatabaseTable{
     /**
      * this function gets the first paragraph
      * of the news article
+     * 
      * @return string $newsFeedParagraph1
      */
     public function getNewsFeedParagraph1() {
@@ -197,6 +210,7 @@ class NewsFeed extends DatabaseTable{
     /**
      * this function sets the first paragraph
      * of the news article
+     * 
      * @param string $newsFeedParagraph1
      */
     public function setNewsFeedParagraph1($newsFeedParagraph1) {
@@ -206,6 +220,7 @@ class NewsFeed extends DatabaseTable{
     /**
      * this function gets the second paragraph
      * of the news article
+     * 
      * @return string $newsFeedParagraph2
      */
     public function getNewsFeedParagraph2() {
@@ -215,10 +230,11 @@ class NewsFeed extends DatabaseTable{
     /**
      * this function sets the second paragraph
      * of the news article
+     * 
      * @param string $newsFeedParagraph2
      */
     public function setNewsFeedParagraph2($newsFeedParagraph2) {
         $this->newsFeedParagraph2 = $newsFeedParagraph2;
     }
 
-}//end class
+}//end class newsfeed
