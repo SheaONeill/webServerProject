@@ -30,9 +30,9 @@ foreach($shoppingCart as $id=>$quantity):
 
     <tr class="odd">
     <td id="refresh"><?= $product->getDescription() ?></td>
-    <td>&euro; <?= $product->getPrice() ?></td>
+    <td>&euro; <?= number_format((float)$product->getPrice(), 2, '.', '') ?></td>
     <td><?= $quantity ?></td>
-    <td><?= $subTotal ?></td>
+    <td>&euro; <?= number_format((float)$subTotal, 2, '.', '') ?></td>
         <td><form action="index.php" method="get">
                 <input type="hidden" name="action" value="removeFromCart">
                 <input type="hidden" name="id" value="<?= $product->getId() ?>">
@@ -47,8 +47,8 @@ endforeach;
 
     <div><hr></div>
     <tr id="idtotal">
-        <td colspan="3">Total</td>
-        <td>&euro; <?= $total ?></td>
+        <td colspan="3" id="idtotal">Total</td>
+        <td>&euro; <?= number_format((float)$total, 2, '.', '') ?></td>
         <td><form action="index.php?action=emptyCart" method="post"><input type="hidden" name="action" value="">
                 <input type="submit" value="Clear Cart"></form></td>
     </tr>

@@ -48,8 +48,10 @@ use Itb\CartController;
                     <td colspan="5"><h2>Church Sale Items</h2></td>
                 </tr>
 				<tr>
+					<th id="totals">ID</th>
 					<th id="totals">Product</th>
 					<th id="totals">Price</th>
+                    <th id="totals">Available</th>
 					<th id="totals"></th>
 
 				</tr>
@@ -66,8 +68,10 @@ use Itb\CartController;
 //-----------------------------
 					?>
 					<tr class="odd">
+                        <td><?= $product->getId() ?></td>
 						<td id="refresh"><?= $product->getDescription() ?></td>
-						<td >&euro; <?= $product->getPrice() ?></td>
+						<td >&euro; <?= number_format((float)$product->getPrice(), 2, '.', '') ?></td>
+                        <td><?= $product->getQuantity() ?></td>
 						<td><form action="index.php" method="get">
 								<input type="hidden" name="action" value="addToCart">
 								<input type="hidden" name="id" value="<?= $product->getId() ?>">

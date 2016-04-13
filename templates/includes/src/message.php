@@ -18,6 +18,12 @@ require_once __DIR__ . '/../header_full.php';
         require_once __DIR__ . '/../body_header_media_logos.php';
         ?>
     </header><!-- close header tag -->
+    <div id ="login_header">
+        <?php
+        //include the login_header.php
+        require_once __DIR__ . '/../login_header.php';
+        ?>
+    </div>
     <div id="nav_container"><!-- div to wrap the nav-->
         <?php
         //include the navbar from body_header_nav.php

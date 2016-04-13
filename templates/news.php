@@ -71,7 +71,7 @@ use Itb\NewsFeed;
 				// and do something like this
 				// $randomVerseGen = rand($firstID,$lastID());
 				//$key=>&$value
-				$randomVerseGen = rand(1000,1002);
+				$randomVerseGen = rand(1000,1003);
 
 				$currentVerse = $newVerseArray->getOneById($randomVerseGen);
 				?>

@@ -271,10 +271,12 @@ tr.even{/* reference the table rows with a class of even */
    opacity: 0.8;/* set the opacity level */
 }
 #idtotal {
-	color: #4C4C33;/* set the font colour */
+	background-color: olive;
+	color: aquamarine;/* set the font colour */
 	font-size: 18px;/* set the font size */
+	font-weight: 300;
 	line-height: 1em;/* set the line height */
-	padding: 35px;/* set the padding */
+	padding: 10px;/* set the padding */
 	text-align: center;/* centre align the text */
 }
 .random_verse {/* reference the random_verse */
