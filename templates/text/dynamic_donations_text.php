@@ -164,6 +164,6 @@
 					diocesan Bishop, and sit is comprised of members of the faithful
 					selected according to these norms (Canon 537)</i>
 
-            <p><!-- Thank You For Your Donation -->
+            <p><!-- Thank You For Your Shop -->
 					Thank you so much for your donation.<br><br>People take church facilites for granted! <br>Please know how much you've helped our paish church and how much we all appreciate it.<br><br>Best regards,
 -

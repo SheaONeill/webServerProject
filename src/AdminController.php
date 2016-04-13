@@ -51,14 +51,14 @@ class AdminController
      * the donations page for admin editing actions
      * if false it returns an error message
      */
-    public function adminDonationAction()
+    public function adminShopAction()
     {
         $isLoggedIn = $this->loginController->isLoggedInFromSession();
         if ($isLoggedIn) {
             $username = $this->loginController->usernameFromSession();
-            $pageTitle = ' Donation';
-            $adminDonationLinkStyle = 'current_page';
-            require_once __DIR__ . '/../templates/admin/adminDonation.php';
+            $pageTitle = ' Shop';
+            $adminShopLinkStyle = 'current_page';
+            require_once __DIR__ . '/../templates/admin/adminShop.php';
         } else {
 
             $message_heading = "--------------------------------------------------------------";

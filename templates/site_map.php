@@ -83,7 +83,7 @@ require_once __DIR__ . '/../templates/includes/header_full.php';
 							<li class="square"><a href="shop.php?action=shop">St. Vincent de Paul Society</a></li><!-- site_map link list item -->
 							<li class="square"><a href="shop.php?action=shop">Church Collections</a></li><!-- site_map link list item -->
 							<li class="square"><a href="shop.php?action=shop">Finance Committee</a></li><!-- site_map link list item -->
-							<li class="square"><a href="shop.php?action=shop">Donation Totals</a></li><!-- site_map link list item -->
+							<li class="square"><a href="shop.php?action=shop">Shop Totals</a></li><!-- site_map link list item -->
 						</ul><!-- close nested unordered link list tag -->
 					</li><!-- close link list tag -->
 					<li class="circle"><a href="contact.php?action=contact">Contact</a><!-- site_map link list item -->

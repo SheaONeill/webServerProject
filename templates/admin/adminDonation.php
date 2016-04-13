@@ -39,7 +39,7 @@ require_once __DIR__ . '/../includes/header_full.php';
 
 
                 ?>
-                <h1> Donation</h1><!-- incoming message heading-->
+                <h1> Shop</h1><!-- incoming message heading-->
 
 
             </article>

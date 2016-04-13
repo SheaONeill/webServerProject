@@ -76,10 +76,10 @@ switch ($action){
         $newsFeedController->deleteNewsArticleAction();
         break;
 
-//--------------- Admin Donation Section ----------------
+//--------------- Admin Shop Section ----------------
 
-    case 'adminDonation':
-        $adminController->adminDonationAction();
+    case 'adminShop':
+        $adminController->adminShopAction();
         break;
 
     //--------------- Admin User Section ----------------

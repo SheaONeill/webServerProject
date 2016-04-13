@@ -15,8 +15,8 @@ if (empty($adminNewsLinkStyle)) {
 if (empty($adminVerseLinkStyle)) {
     $adminVerseLinkStyle = '';
 }
-if (empty($adminDonationLinkStyle)) {
-    $adminDonationLinkStyle = '';
+if (empty($adminShopLinkStyle)) {
+    $adminShopLinkStyle = '';
 }
 if (empty($adminUserLinkStyle)) {
     $adminUserLinkStyle = '';
@@ -30,7 +30,7 @@ if (empty($adminUserLinkStyle)) {
         <!-- list item and set current page-->
         <li><a href="index.php?action=adminVerse" class="<?= $adminVerseLinkStyle ?>"> Verse</a></li>
         <!-- list item and set current page-->
-        <li><a href="index.php?action=adminDonation" class="<?= $adminDonationLinkStyle ?>"> Donation</a>
+        <li><a href="index.php?action=adminShop" class="<?= $adminShopLinkStyle ?>"> Shop</a>
         </li><!-- list item and set current page-->
         <li><a href="index.php?action=adminUser" class="<?= $adminUserLinkStyle ?>"> User</a></li>
         <!-- list item and set current page-->
