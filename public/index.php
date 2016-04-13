@@ -123,8 +123,8 @@ switch ($action){
 
         break;
 
-    case 'donate':
-        $mainController->donateAction();
+    case 'shop':
+        $mainController->shopAction();
         break;
 
     case 'contact':

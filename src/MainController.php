@@ -45,16 +45,16 @@ class MainController
         require_once __DIR__ . '/../templates/news.php';
     }
 
-    public function donateAction()
+    public function shopAction()
     {
         //added this from seperate controllers example
         $isLoggedIn = $this->loginController->isLoggedInFromSession();
         $username = $this->loginController->usernameFromSession();
 
-        $pageTitle = 'Donate';
-        $donateLinkStyle = 'current_page';
+        $pageTitle = 'Shop';
+        $shopLinkStyle = 'current_page';
      
-        require_once __DIR__ . '/../templates/donate.php';
+        require_once __DIR__ . '/../templates/shop.php';
     }
 
     public function contactAction()

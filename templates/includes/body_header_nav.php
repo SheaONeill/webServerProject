@@ -21,8 +21,8 @@ if (empty($newsLinkStyle)){
 if (empty($contactLinkStyle)){
     $contactLinkStyle = '';
 }
-if (empty($donateLinkStyle)){
-    $donateLinkStyle = '';
+if (empty($shopLinkStyle)){
+    $shopLinkStyle = '';
 }
 
 ?>
@@ -35,7 +35,7 @@ if (empty($donateLinkStyle)){
         <!-- list item and set current page-->
         <li><a href="../news.php?action=news" class="<?= $newsLinkStyle ?>">News</a></li>
         <!-- list item and set current page-->
-        <li><a href="../donate.php?action=donate" class="<?= $donateLinkStyle ?>">Donate</a></li>
+        <li><a href="../shop.php?action=shop" class="<?= $shopLinkStyle ?>">Shop</a></li>
         <!-- list item and set current page-->
         <li><a href="../contact.php?action=contact" class="<?= $contactLinkStyle ?>">Contact</a></li>
         <!-- list item and set current page-->

@@ -17,8 +17,8 @@ if (empty($historyLinkStyle)){
 if (empty($newsLinkStyle)){
     $newsLinkStyle = '';
 }
-if (empty($donateLinkStyle)){
-    $donateLinkStyle = '';
+if (empty($shopLinkStyle)){
+    $shopLinkStyle = '';
 }
 if (empty($contactLinkStyle)){
     $contactLinkStyle = '';
@@ -46,7 +46,7 @@ $sitemapLinkStyle = isset($sitemapLinkStyle) ? $sitemapLinkStyle : '';
         <li class="footer_item"><a href="../index.php?action=index" class="footer__link">Welcome</a></li><!-- footer link list item -->
         <li class="footer_item"><a href="../history.php?action=history" class="footer__link">History</a></li><!-- footer link list item -->
         <li class="footer_item"><a href="../news.php?action=news" class="footer__link">News</a></li><!-- footer link list item -->
-        <li class="footer_item"><a href="../donate.php?action=donate" class="footer__link">Donate</a></li><!-- footer link list item -->
+        <li class="footer_item"><a href="../shop.php?action=shop" class="footer__link">Shop</a></li><!-- footer link list item -->
         <li class="footer_item"><a href="../contact.php?action=contact" class="footer__link">Contact Us</a></li><!-- footer link list item -->
         <li class="footer_item"><a href="../obituary.php?action=obituary" target="_blank">Obituary</a></li><!-- footer link list item -->
         <li class="footer_item"><a href="../site_map.php?action=site_map" class="footer__link">Site Map</a></li><!-- footer link list item -->

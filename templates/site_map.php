@@ -67,23 +67,23 @@ require_once __DIR__ . '/../templates/includes/header_full.php';
 							<li class="square"><a href="news.php?action=news">Prayer For The Church In Ireland</a></li><!-- site_map link list item -->
 						</ul><!-- close nested unordered link list tag -->
 					</li><!-- close link list tag -->
-					<li class="circle"><a href="donate.php?action=donate">Donate</a><!-- site_map link list item -->
+					<li class="circle"><a href="shop.php?action=shop">Shop</a><!-- site_map link list item -->
 						<ul><!-- begin nested unordered site_map link list opening tag -->
-							<li class="square"><a href="donate.php?action=donate">Parish Ministry Groups</a></li><!-- site_map link list item -->
-							<li class="square"><a href="donate.php?action=donate">Pastoral Council</a></li><!-- site_map link list item -->
-							<li class="square"><a href="donate.php?action=donate">Baptismal Ministry</a></li><!-- site_map link list item -->
-							<li class="square"><a href="donate.php?action=donate">Bethany Bereavement Support</a></li><!-- site_map link list item -->
-							<li class="square"><a href="donate.php?action=donate">Scripture Exploration Group</a></li><!-- site_map link list item -->
-							<li class="square"><a href="donate.php?action=donate">Ministers of the Eucharist</a></li><!-- site_map link list item -->
-							<li class="square"><a href="donate.php?action=donate">The Ministers of the Word</a></li><!-- site_map link list item -->
-							<li class="square"><a href="donate.php?action=donate">The Choir</a></li><!-- site_map link list item -->
-							<li class="square"><a href="donate.php?action=donate">RCIA</a></li><!-- site_map link list item -->
-							<li class="square"><a href="donate.php?action=donate">Church Decoration Group</a></li><!-- site_map link list item -->
-							<li class="square"><a href="donate.php?action=donate">Liturgy Group</a></li><!-- site_map link list item -->
-							<li class="square"><a href="donate.php?action=donate">St. Vincent de Paul Society</a></li><!-- site_map link list item -->
-							<li class="square"><a href="donate.php?action=donate">Church Collections</a></li><!-- site_map link list item -->
-							<li class="square"><a href="donate.php?action=donate">Finance Committee</a></li><!-- site_map link list item -->
-							<li class="square"><a href="donate.php?action=donate">Donation Totals</a></li><!-- site_map link list item -->
+							<li class="square"><a href="shop.php?action=shop">Parish Ministry Groups</a></li><!-- site_map link list item -->
+							<li class="square"><a href="shop.php?action=shop">Pastoral Council</a></li><!-- site_map link list item -->
+							<li class="square"><a href="shop.php?action=shop">Baptismal Ministry</a></li><!-- site_map link list item -->
+							<li class="square"><a href="shop.php?action=shop">Bethany Bereavement Support</a></li><!-- site_map link list item -->
+							<li class="square"><a href="shop.php?action=shop">Scripture Exploration Group</a></li><!-- site_map link list item -->
+							<li class="square"><a href="shop.php?action=shop">Ministers of the Eucharist</a></li><!-- site_map link list item -->
+							<li class="square"><a href="shop.php?action=shop">The Ministers of the Word</a></li><!-- site_map link list item -->
+							<li class="square"><a href="shop.php?action=shop">The Choir</a></li><!-- site_map link list item -->
+							<li class="square"><a href="shop.php?action=shop">RCIA</a></li><!-- site_map link list item -->
+							<li class="square"><a href="shop.php?action=shop">Church Decoration Group</a></li><!-- site_map link list item -->
+							<li class="square"><a href="shop.php?action=shop">Liturgy Group</a></li><!-- site_map link list item -->
+							<li class="square"><a href="shop.php?action=shop">St. Vincent de Paul Society</a></li><!-- site_map link list item -->
+							<li class="square"><a href="shop.php?action=shop">Church Collections</a></li><!-- site_map link list item -->
+							<li class="square"><a href="shop.php?action=shop">Finance Committee</a></li><!-- site_map link list item -->
+							<li class="square"><a href="shop.php?action=shop">Donation Totals</a></li><!-- site_map link list item -->
 						</ul><!-- close nested unordered link list tag -->
 					</li><!-- close link list tag -->
 					<li class="circle"><a href="contact.php?action=contact">Contact</a><!-- site_map link list item -->

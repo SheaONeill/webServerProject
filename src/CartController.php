@@ -44,7 +44,7 @@ class CartController {
         $_SESSION['shoppingCart'] = $shoppingCart;
 
         // redirect display page
-        require_once __DIR__ . '/../templates/donate.php';
+        require_once __DIR__ . '/../templates/shop.php';
     }
 
     public function removeFromCart()
@@ -66,7 +66,7 @@ class CartController {
         $_SESSION['shoppingCart'] = $shoppingCart;
 
         // redirect display page
-        require_once __DIR__ . '/../templates/donate.php';
+        require_once __DIR__ . '/../templates/shop.php';
     }
 
     public function getShoppingCart()
@@ -89,7 +89,7 @@ class CartController {
         $this->killSession();
 
         // redirect to display text
-        require_once __DIR__ . '/../templates/donate.php';
+        require_once __DIR__ . '/../templates/shop.php';
     }
 
     /**

@@ -443,7 +443,7 @@ require_once __DIR__ . '/../templates/includes/header_full.php';
 					<td colspan="3">God bless you for your Donation!</td><!-- table cell -->
 				</tr><!-- close table row -->
 				<tr  class="odd"><!-- begin odd table row -->
-					<td colspan="2">Click button to donate</td><!-- table cell -->
+					<td colspan="2">Click button to shop</td><!-- table cell -->
 					<td><input type="submit" value="Donate Now" onclick="alert('Are you sure you want to donate?')"/></td><!-- table cell -->
 				</tr><!-- close table row -->
 			</table><!-- close table -->
