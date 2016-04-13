@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Apr 12, 2016 at 08:32 PM
+-- Generation Time: Apr 12, 2016 at 08:42 PM
 -- Server version: 10.1.9-MariaDB-log
 -- PHP Version: 5.6.16
 
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `stjosephschurcheastwall`
 --
+CREATE DATABASE IF NOT EXISTS `stjosephschurcheastwall` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `stjosephschurcheastwall`;
 
 -- --------------------------------------------------------
 
@@ -26,12 +28,13 @@ SET time_zone = "+00:00";
 -- Table structure for table `administrator`
 --
 
-CREATE TABLE `administrator` (
-  `adminID` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `administrator` (
+  `adminID` int(11) NOT NULL AUTO_INCREMENT,
   `adminUserName` varchar(45) NOT NULL,
   `adminPassword` varchar(10) NOT NULL,
-  `adminHashedPassword` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `adminHashedPassword` text NOT NULL,
+  PRIMARY KEY (`adminID`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `administrator`
@@ -46,16 +49,17 @@ INSERT INTO `administrator` (`adminID`, `adminUserName`, `adminPassword`, `admin
 -- Table structure for table `newsfeeds`
 --
 
-CREATE TABLE `newsfeeds` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `newsfeeds` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `author` text NOT NULL,
   `date` date NOT NULL,
   `newsFeedHeading` text NOT NULL,
   `newsFeedSubHeading1` text NOT NULL,
   `newsFeedSubHeading2` text NOT NULL,
   `newsFeedParagraph1` text NOT NULL,
-  `newsFeedParagraph2` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `newsFeedParagraph2` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `newsfeeds`
@@ -71,13 +75,14 @@ INSERT INTO `newsfeeds` (`id`, `author`, `date`, `newsFeedHeading`, `newsFeedSub
 -- Table structure for table `products`
 --
 
-CREATE TABLE `products` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `products` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `description` text NOT NULL,
   `quantity` int(11) NOT NULL,
   `price` float NOT NULL,
-  `buildingId` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `buildingId` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `products`
@@ -96,7 +101,7 @@ INSERT INTO `products` (`id`, `description`, `quantity`, `price`, `buildingId`) 
 -- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL,
   `username` text NOT NULL,
   `password` text NOT NULL,
@@ -110,7 +115,7 @@ CREATE TABLE `users` (
 -- Table structure for table `verses`
 --
 
-CREATE TABLE `verses` (
+CREATE TABLE IF NOT EXISTS `verses` (
   `id` int(11) NOT NULL,
   `heading` text NOT NULL,
   `subheading1` text NOT NULL,
@@ -134,47 +139,6 @@ INSERT INTO `verses` (`id`, `heading`, `subheading1`, `subheading2`, `paragraph`
 (1008, 'John 15:12-15', 'My command is this: Love each other as I have loved you.', 'Greater love has no one than this: to lay down one’s life for one’s friends.You are my friends if you do what I command.', 'I no longer call you servants, because a servant does not know his master’s business. Instead, I have called you friends, for everything that I learned from my Father I have made known to you.'),
 (1009, 'Job 29:4-6', 'Oh, for the days when I was in my prime,', 'when God’s intimate friendship blessed my house,when the Almighty was still with me and my children were around me,', 'when my path was drenched with cream and the rock poured out for me streams of olive oil.');
 
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `administrator`
---
-ALTER TABLE `administrator`
-  ADD PRIMARY KEY (`adminID`);
-
---
--- Indexes for table `newsfeeds`
---
-ALTER TABLE `newsfeeds`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `products`
---
-ALTER TABLE `products`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `administrator`
---
-ALTER TABLE `administrator`
-  MODIFY `adminID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT for table `newsfeeds`
---
-ALTER TABLE `newsfeeds`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT for table `products`
---
-ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
