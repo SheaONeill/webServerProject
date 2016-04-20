@@ -9,7 +9,7 @@
     },
     "scripts":{
         "phpunit":"php phpunit.phar --log-tap ./templates/tests/log.txt",
-        "phpunit-coverage":"php phpunit.phar --coverage-html ./tests/coverage",
+        "phpunit-coverage": "php phpunit.phar --coverage-html ./templates/tests/coverage",
 
         "reportfixsrc":"php php-cs-fixer.phar fix --level=psr2 --dry-run --diff ./src > ./templates/tests/fixerReport.txt",
         "reportfixtests":"php php-cs-fixer.phar fix --level=psr2 --dry-run --diff ./tests > ./templates/tests/fixerReport.txt",

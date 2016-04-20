@@ -10,7 +10,8 @@ namespace StJosephsChurchEastWallTest;
 
 use StJosephsChurchEastWall\Product;
 
-class ProductTest extends \PHPUnit_Framework_TestCase{
+class ProductTest extends \PHPUnit_Framework_TestCase
+{
 
     /**
      * First test to see if Product can be instantiated
@@ -25,5 +26,4 @@ class ProductTest extends \PHPUnit_Framework_TestCase{
         // assert
         $this->assertNotNull($v);
     }
-    
 }
