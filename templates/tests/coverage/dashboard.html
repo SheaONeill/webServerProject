@@ -1,778 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Dashboard for /home/sheaoneill/PhpstormProjects/webServerProject/src</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/nv.d3.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.min.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <ol class="breadcrumb">
-                    <li><a href="index.html">/home/sheaoneill/PhpstormProjects/webServerProject/src</a></li>
-                    <li class="active">(Dashboard)</li>
-
-                </ol>
-            </div>
-        </div>
-    </div>
-</header>
-<div class="container">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for C:\Users\B00084432\PhpstormProjects\webServerProject\src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/nv.d3.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <h2>Classes</h2>
-        </div>
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="index.html">C:\Users\B00084432\PhpstormProjects\webServerProject\src</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <h3>Coverage Distribution</h3>
-            <div id="classCoverageDistribution" style="height: 300px;">
-                <svg></svg>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <h3>Complexity</h3>
-            <div id="classComplexity" style="height: 300px;">
-                <svg></svg>
-            </div>
-        </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <h3>Insufficient Coverage</h3>
-            <div class="scrollbox">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th>Class</th>
-                        <th class="text-right">Coverage</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td><a href="Product.php.html#14">Product</a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="User.php.html#15">User</a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="ZMetaTest.php.html#25">ZMetaTest</a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeedController.php.html#16">NewsFeedController</a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeed.php.html#21">NewsFeed</a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="CartController.php.html#11">CartController</a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="LoginController.php.html#10">LoginController</a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="MainController.php.html#6">MainController</a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="AdminController.php.html#10">AdminController</a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <h3>Project Risks</h3>
-            <div class="scrollbox">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th>Class</th>
-                        <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td><a href="NewsFeedController.php.html#16">NewsFeedController</a></td>
-                        <td class="text-right">210</td>
-                    </tr>
-                    <tr>
-                        <td><a href="User.php.html#15">User</a></td>
-                        <td class="text-right">156</td>
-                    </tr>
-                    <tr>
-                        <td><a href="MainController.php.html#6">MainController</a></td>
-                        <td class="text-right">132</td>
-                    </tr>
-                    <tr>
-                        <td><a href="ZMetaTest.php.html#25">ZMetaTest</a></td>
-                        <td class="text-right">90</td>
-                    </tr>
-                    <tr>
-                        <td><a href="CartController.php.html#11">CartController</a></td>
-                        <td class="text-right">90</td>
-                    </tr>
-                    <tr>
-                        <td><a href="LoginController.php.html#10">LoginController</a></td>
-                        <td class="text-right">56</td>
-                    </tr>
-                    <tr>
-                        <td><a href="AdminController.php.html#10">AdminController</a></td>
-                        <td class="text-right">56</td>
-                    </tr>
-
-                    </tbody>
-                </table>
-            </div>
-        </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <h2>Methods</h2>
-        </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <h3>Coverage Distribution</h3>
-            <div id="methodCoverageDistribution" style="height: 300px;">
-                <svg></svg>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <h3>Complexity</h3>
-            <div id="methodComplexity" style="height: 300px;">
-                <svg></svg>
-            </div>
-        </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="NewsFeedController.php.html#16">NewsFeedController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#15">User</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ZMetaTest.php.html#25">ZMetaTest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeed.php.html#21">NewsFeed</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MainController.php.html#6">MainController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CartController.php.html#11">CartController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LoginController.php.html#10">LoginController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AdminController.php.html#10">AdminController</a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <h3>Insufficient Coverage</h3>
-            <div class="scrollbox">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th>Method</th>
-                        <th class="text-right">Coverage</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td><a href="NewsFeedController.php.html#199"><abbr
-                                title="NewsFeedController::deleteNewsArticleAction">deleteNewsArticleAction</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeedController.php.html#150"><abbr
-                                title="NewsFeedController::editNewsArticleAction">editNewsArticleAction</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeedController.php.html#112"><abbr
-                                title="NewsFeedController::createNewsArticleAction">createNewsArticleAction</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="Product.php.html#52"><abbr title="Product::getId">getId</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="Product.php.html#62"><abbr title="Product::setId">setId</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="Product.php.html#82"><abbr
-                                title="Product::setDescription">setDescription</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="Product.php.html#72"><abbr
-                                title="Product::getDescription">getDescription</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeedController.php.html#87"><abbr
-                                title="NewsFeedController::showEditNewsArticleAction">showEditNewsArticleAction</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeedController.php.html#70"><abbr
-                                title="NewsFeedController::showCreateNewsArticleAction">showCreateNewsArticleAction</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeed.php.html#231"><abbr title="NewsFeed::setNewsFeedParagraph1">setNewsFeedParagraph1</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeed.php.html#220"><abbr title="NewsFeed::getNewsFeedParagraph1">getNewsFeedParagraph1</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeed.php.html#242"><abbr title="NewsFeed::getNewsFeedParagraph2">getNewsFeedParagraph2</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeed.php.html#253"><abbr title="NewsFeed::setNewsFeedParagraph2">setNewsFeedParagraph2</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeedController.php.html#33"><abbr title="NewsFeedController::adminNewsAction">adminNewsAction</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeedController.php.html#21"><abbr title="NewsFeedController::__construct">__construct</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="Product.php.html#92"><abbr title="Product::getPrice">getPrice</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="Product.php.html#102"><abbr title="Product::setPrice">setPrice</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="User.php.html#149"><abbr title="User::canFindMatchingUsernameAndPassword">canFindMatchingUsernameAndPassword</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="User.php.html#133"><abbr title="User::setPassword">setPassword</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="User.php.html#123"><abbr title="User::getPassword">getPassword</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="User.php.html#174"><abbr title="User::getOneByUsername">getOneByUsername</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="ZMetaTest.php.html#31"><abbr title="ZMetaTest::testPSR2DirectorySrc">testPSR2DirectorySrc</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="ZMetaTest.php.html#117"><abbr title="ZMetaTest::testPSR2DirectoryPublic">testPSR2DirectoryPublic</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="ZMetaTest.php.html#74"><abbr title="ZMetaTest::testPSR2DirectoryTests">testPSR2DirectoryTests</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="User.php.html#113"><abbr title="User::setRole">setRole</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="User.php.html#103"><abbr title="User::getRole">getRole</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="Product.php.html#122"><abbr title="Product::setQuantity">setQuantity</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="Product.php.html#112"><abbr title="Product::getQuantity">getQuantity</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="User.php.html#62"><abbr title="User::getId">getId</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="User.php.html#72"><abbr title="User::setId">setId</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="User.php.html#92"><abbr title="User::setUsername">setUsername</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="User.php.html#82"><abbr title="User::getUsername">getUsername</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeed.php.html#209"><abbr title="NewsFeed::setNewsFeedSubHeading2">setNewsFeedSubHeading2</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeed.php.html#198"><abbr title="NewsFeed::getNewsFeedSubHeading2">getNewsFeedSubHeading2</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="LoginController.php.html#32"><abbr title="LoginController::processLoginAction">processLoginAction</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="LoginController.php.html#16"><abbr title="LoginController::logoutAction">logoutAction</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="CartController.php.html#94"><abbr
-                                title="CartController::killSession">killSession</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="LoginController.php.html#72"><abbr title="LoginController::isLoggedInFromSession">isLoggedInFromSession</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="LoginController.php.html#89"><abbr title="LoginController::usernameFromSession">usernameFromSession</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="MainController.php.html#18"><abbr
-                                title="MainController::indexAction">indexAction</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="MainController.php.html#13"><abbr
-                                title="MainController::__construct">__construct</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="CartController.php.html#80"><abbr title="CartController::forgetSession">forgetSession</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="CartController.php.html#71"><abbr title="CartController::getShoppingCart">getShoppingCart</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="AdminController.php.html#53"><abbr title="AdminController::adminShopAction">adminShopAction</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="AdminController.php.html#32"><abbr title="AdminController::adminVerseAction">adminVerseAction</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="AdminController.php.html#74"><abbr title="AdminController::adminUserAction">adminUserAction</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="CartController.php.html#16"><abbr
-                                title="CartController::__construct">__construct</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="CartController.php.html#50"><abbr title="CartController::removeFromCart">removeFromCart</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="CartController.php.html#21"><abbr
-                                title="CartController::addToCart">addToCart</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="MainController.php.html#28"><abbr title="MainController::historyAction">historyAction</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="MainController.php.html#39"><abbr
-                                title="MainController::newsAction">newsAction</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeed.php.html#143"><abbr title="NewsFeed::setDate">setDate</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeed.php.html#132"><abbr title="NewsFeed::getDate">getDate</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeed.php.html#121"><abbr title="NewsFeed::setAuthor">setAuthor</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeed.php.html#154"><abbr title="NewsFeed::getNewsFeedHeading">getNewsFeedHeading</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeed.php.html#165"><abbr title="NewsFeed::setNewsFeedHeading">setNewsFeedHeading</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeed.php.html#187"><abbr title="NewsFeed::setNewsFeedSubHeading1">setNewsFeedSubHeading1</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeed.php.html#176"><abbr title="NewsFeed::getNewsFeedSubHeading1">getNewsFeedSubHeading1</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeed.php.html#110"><abbr title="NewsFeed::getAuthor">getAuthor</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeed.php.html#99"><abbr title="NewsFeed::setId">setId</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="MainController.php.html#62"><abbr title="MainController::contactAction">contactAction</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="MainController.php.html#50"><abbr
-                                title="MainController::shopAction">shopAction</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="MainController.php.html#73"><abbr title="MainController::obituaryAction">obituaryAction</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="MainController.php.html#84"><abbr title="MainController::site_mapAction">site_mapAction</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeed.php.html#88"><abbr title="NewsFeed::getId">getId</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="MainController.php.html#95"><abbr title="MainController::contactFormAction">contactFormAction</abbr></a>
-                        </td>
-                        <td class="text-right">0%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="AdminController.php.html#21"><abbr
-                                title="AdminController::__construct">__construct</abbr></a></td>
-                        <td class="text-right">0%</td>
-                    </tr>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="NewsFeedController.php.html#16">NewsFeedController</a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="User.php.html#15">User</a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="MainController.php.html#6">MainController</a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="ZMetaTest.php.html#25">ZMetaTest</a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="CartController.php.html#11">CartController</a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="LoginController.php.html#10">LoginController</a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="AdminController.php.html#10">AdminController</a></td><td class="text-right">56</td></tr>
 
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <h3>Project Risks</h3>
-            <div class="scrollbox">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th>Method</th>
-                        <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td><a href="NewsFeedController.php.html#33"><abbr title="NewsFeedController::adminNewsAction">adminNewsAction</abbr></a>
-                        </td>
-                        <td class="text-right">20</td>
-                    </tr>
-                    <tr>
-                        <td><a href="ZMetaTest.php.html#31"><abbr title="ZMetaTest::testPSR2DirectorySrc">testPSR2DirectorySrc</abbr></a>
-                        </td>
-                        <td class="text-right">12</td>
-                    </tr>
-                    <tr>
-                        <td><a href="ZMetaTest.php.html#117"><abbr title="ZMetaTest::testPSR2DirectoryPublic">testPSR2DirectoryPublic</abbr></a>
-                        </td>
-                        <td class="text-right">12</td>
-                    </tr>
-                    <tr>
-                        <td><a href="ZMetaTest.php.html#74"><abbr title="ZMetaTest::testPSR2DirectoryTests">testPSR2DirectoryTests</abbr></a>
-                        </td>
-                        <td class="text-right">12</td>
-                    </tr>
-                    <tr>
-                        <td><a href="MainController.php.html#95"><abbr title="MainController::contactFormAction">contactFormAction</abbr></a>
-                        </td>
-                        <td class="text-right">12</td>
-                    </tr>
-                    <tr>
-                        <td><a href="User.php.html#149"><abbr title="User::canFindMatchingUsernameAndPassword">canFindMatchingUsernameAndPassword</abbr></a>
-                        </td>
-                        <td class="text-right">6</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeedController.php.html#199"><abbr
-                                title="NewsFeedController::deleteNewsArticleAction">deleteNewsArticleAction</abbr></a>
-                        </td>
-                        <td class="text-right">6</td>
-                    </tr>
-                    <tr>
-                        <td><a href="User.php.html#174"><abbr title="User::getOneByUsername">getOneByUsername</abbr></a>
-                        </td>
-                        <td class="text-right">6</td>
-                    </tr>
-                    <tr>
-                        <td><a href="CartController.php.html#21"><abbr
-                                title="CartController::addToCart">addToCart</abbr></a></td>
-                        <td class="text-right">6</td>
-                    </tr>
-                    <tr>
-                        <td><a href="AdminController.php.html#53"><abbr title="AdminController::adminShopAction">adminShopAction</abbr></a>
-                        </td>
-                        <td class="text-right">6</td>
-                    </tr>
-                    <tr>
-                        <td><a href="AdminController.php.html#74"><abbr title="AdminController::adminUserAction">adminUserAction</abbr></a>
-                        </td>
-                        <td class="text-right">6</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeedController.php.html#150"><abbr
-                                title="NewsFeedController::editNewsArticleAction">editNewsArticleAction</abbr></a></td>
-                        <td class="text-right">6</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeedController.php.html#112"><abbr
-                                title="NewsFeedController::createNewsArticleAction">createNewsArticleAction</abbr></a>
-                        </td>
-                        <td class="text-right">6</td>
-                    </tr>
-                    <tr>
-                        <td><a href="LoginController.php.html#72"><abbr title="LoginController::isLoggedInFromSession">isLoggedInFromSession</abbr></a>
-                        </td>
-                        <td class="text-right">6</td>
-                    </tr>
-                    <tr>
-                        <td><a href="LoginController.php.html#32"><abbr title="LoginController::processLoginAction">processLoginAction</abbr></a>
-                        </td>
-                        <td class="text-right">6</td>
-                    </tr>
-                    <tr>
-                        <td><a href="LoginController.php.html#89"><abbr title="LoginController::usernameFromSession">usernameFromSession</abbr></a>
-                        </td>
-                        <td class="text-right">6</td>
-                    </tr>
-                    <tr>
-                        <td><a href="AdminController.php.html#32"><abbr title="AdminController::adminVerseAction">adminVerseAction</abbr></a>
-                        </td>
-                        <td class="text-right">6</td>
-                    </tr>
-                    <tr>
-                        <td><a href="NewsFeedController.php.html#87"><abbr
-                                title="NewsFeedController::showEditNewsArticleAction">showEditNewsArticleAction</abbr></a>
-                        </td>
-                        <td class="text-right">6</td>
-                    </tr>
-                    <tr>
-                        <td><a href="CartController.php.html#71"><abbr title="CartController::getShoppingCart">getShoppingCart</abbr></a>
-                        </td>
-                        <td class="text-right">6</td>
-                    </tr>
-                    <tr>
-                        <td><a href="CartController.php.html#94"><abbr
-                                title="CartController::killSession">killSession</abbr></a></td>
-                        <td class="text-right">6</td>
-                    </tr>
-
-                    </tbody>
-                </table>
-            </div>
-        </div>
+       </tbody>
+      </table>
+     </div>
     </div>
-    <footer>
-        <hr/>
-        <p>
-            <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage
-                3.1.0</a> using <a href="http://php.net/" target="_top">PHP 5.6.20</a> and <a
-                    href="https://phpunit.de/">PHPUnit 5.1.4</a> at Wed Apr 20 14:24:03 IST 2016.
-            </small>
-        </p>
-    </footer>
-</div>
-<script src="js/jquery.min.js" type="text/javascript"></script>
-<script src="js/bootstrap.min.js" type="text/javascript"></script>
-<script src="js/holder.min.js" type="text/javascript"></script>
-<script src="js/d3.min.js" type="text/javascript"></script>
-<script src="js/nv.d3.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        nv.addGraph(function () {
-            var chart = nv.models.multiBarChart();
-            chart.tooltips(false)
-                    .showControls(false)
-                    .showLegend(false)
-                    .reduceXTicks(false)
-                    .staggerLabels(true)
-                    .yAxis.tickFormat(d3.format('d'));
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="NewsFeedController.php.html#21"><abbr title="NewsFeedController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeed.php.html#253"><abbr title="NewsFeed::setNewsFeedParagraph2">setNewsFeedParagraph2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeedController.php.html#33"><abbr title="NewsFeedController::adminNewsAction">adminNewsAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeedController.php.html#70"><abbr title="NewsFeedController::showCreateNewsArticleAction">showCreateNewsArticleAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeedController.php.html#112"><abbr title="NewsFeedController::createNewsArticleAction">createNewsArticleAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeedController.php.html#87"><abbr title="NewsFeedController::showEditNewsArticleAction">showEditNewsArticleAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeed.php.html#242"><abbr title="NewsFeed::getNewsFeedParagraph2">getNewsFeedParagraph2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeed.php.html#231"><abbr title="NewsFeed::setNewsFeedParagraph1">setNewsFeedParagraph1</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeed.php.html#187"><abbr title="NewsFeed::setNewsFeedSubHeading1">setNewsFeedSubHeading1</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeed.php.html#176"><abbr title="NewsFeed::getNewsFeedSubHeading1">getNewsFeedSubHeading1</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeed.php.html#198"><abbr title="NewsFeed::getNewsFeedSubHeading2">getNewsFeedSubHeading2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeed.php.html#209"><abbr title="NewsFeed::setNewsFeedSubHeading2">setNewsFeedSubHeading2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeed.php.html#220"><abbr title="NewsFeed::getNewsFeedParagraph1">getNewsFeedParagraph1</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeedController.php.html#150"><abbr title="NewsFeedController::editNewsArticleAction">editNewsArticleAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeedController.php.html#199"><abbr title="NewsFeedController::deleteNewsArticleAction">deleteNewsArticleAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#149"><abbr title="User::canFindMatchingUsernameAndPassword">canFindMatchingUsernameAndPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#133"><abbr title="User::setPassword">setPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#174"><abbr title="User::getOneByUsername">getOneByUsername</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ZMetaTest.php.html#31"><abbr title="ZMetaTest::testPSR2DirectorySrc">testPSR2DirectorySrc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ZMetaTest.php.html#117"><abbr title="ZMetaTest::testPSR2DirectoryPublic">testPSR2DirectoryPublic</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ZMetaTest.php.html#74"><abbr title="ZMetaTest::testPSR2DirectoryTests">testPSR2DirectoryTests</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#123"><abbr title="User::getPassword">getPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#113"><abbr title="User::setRole">setRole</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#72"><abbr title="User::setId">setId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#62"><abbr title="User::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#82"><abbr title="User::getUsername">getUsername</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#92"><abbr title="User::setUsername">setUsername</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#103"><abbr title="User::getRole">getRole</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeed.php.html#165"><abbr title="NewsFeed::setNewsFeedHeading">setNewsFeedHeading</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeed.php.html#154"><abbr title="NewsFeed::getNewsFeedHeading">getNewsFeedHeading</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CartController.php.html#94"><abbr title="CartController::killSession">killSession</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CartController.php.html#80"><abbr title="CartController::forgetSession">forgetSession</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LoginController.php.html#16"><abbr title="LoginController::logoutAction">logoutAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LoginController.php.html#32"><abbr title="LoginController::processLoginAction">processLoginAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LoginController.php.html#89"><abbr title="LoginController::usernameFromSession">usernameFromSession</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LoginController.php.html#72"><abbr title="LoginController::isLoggedInFromSession">isLoggedInFromSession</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CartController.php.html#71"><abbr title="CartController::getShoppingCart">getShoppingCart</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CartController.php.html#50"><abbr title="CartController::removeFromCart">removeFromCart</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AdminController.php.html#53"><abbr title="AdminController::adminShopAction">adminShopAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AdminController.php.html#32"><abbr title="AdminController::adminVerseAction">adminVerseAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AdminController.php.html#74"><abbr title="AdminController::adminUserAction">adminUserAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CartController.php.html#16"><abbr title="CartController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CartController.php.html#21"><abbr title="CartController::addToCart">addToCart</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MainController.php.html#13"><abbr title="MainController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MainController.php.html#18"><abbr title="MainController::indexAction">indexAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeed.php.html#99"><abbr title="NewsFeed::setId">setId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeed.php.html#88"><abbr title="NewsFeed::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeed.php.html#110"><abbr title="NewsFeed::getAuthor">getAuthor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeed.php.html#121"><abbr title="NewsFeed::setAuthor">setAuthor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeed.php.html#143"><abbr title="NewsFeed::setDate">setDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NewsFeed.php.html#132"><abbr title="NewsFeed::getDate">getDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MainController.php.html#95"><abbr title="MainController::contactFormAction">contactFormAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MainController.php.html#84"><abbr title="MainController::site_mapAction">site_mapAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MainController.php.html#39"><abbr title="MainController::newsAction">newsAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MainController.php.html#28"><abbr title="MainController::historyAction">historyAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MainController.php.html#50"><abbr title="MainController::shopAction">shopAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MainController.php.html#62"><abbr title="MainController::contactAction">contactAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MainController.php.html#73"><abbr title="MainController::obituaryAction">obituaryAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AdminController.php.html#21"><abbr title="AdminController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
 
-            d3.select('#classCoverageDistribution svg')
-                    .datum(getCoverageDistributionData([9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], "Class Coverage"))
-                    .transition().duration(500).call(chart);
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="NewsFeedController.php.html#33"><abbr title="NewsFeedController::adminNewsAction">adminNewsAction</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="ZMetaTest.php.html#31"><abbr title="ZMetaTest::testPSR2DirectorySrc">testPSR2DirectorySrc</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ZMetaTest.php.html#117"><abbr title="ZMetaTest::testPSR2DirectoryPublic">testPSR2DirectoryPublic</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ZMetaTest.php.html#74"><abbr title="ZMetaTest::testPSR2DirectoryTests">testPSR2DirectoryTests</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="MainController.php.html#95"><abbr title="MainController::contactFormAction">contactFormAction</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="User.php.html#149"><abbr title="User::canFindMatchingUsernameAndPassword">canFindMatchingUsernameAndPassword</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NewsFeedController.php.html#199"><abbr title="NewsFeedController::deleteNewsArticleAction">deleteNewsArticleAction</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="User.php.html#174"><abbr title="User::getOneByUsername">getOneByUsername</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CartController.php.html#21"><abbr title="CartController::addToCart">addToCart</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AdminController.php.html#53"><abbr title="AdminController::adminShopAction">adminShopAction</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AdminController.php.html#74"><abbr title="AdminController::adminUserAction">adminUserAction</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NewsFeedController.php.html#150"><abbr title="NewsFeedController::editNewsArticleAction">editNewsArticleAction</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NewsFeedController.php.html#112"><abbr title="NewsFeedController::createNewsArticleAction">createNewsArticleAction</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="LoginController.php.html#72"><abbr title="LoginController::isLoggedInFromSession">isLoggedInFromSession</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="LoginController.php.html#32"><abbr title="LoginController::processLoginAction">processLoginAction</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="LoginController.php.html#89"><abbr title="LoginController::usernameFromSession">usernameFromSession</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AdminController.php.html#32"><abbr title="AdminController::adminVerseAction">adminVerseAction</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NewsFeedController.php.html#87"><abbr title="NewsFeedController::showEditNewsArticleAction">showEditNewsArticleAction</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CartController.php.html#71"><abbr title="CartController::getShoppingCart">getShoppingCart</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CartController.php.html#94"><abbr title="CartController::killSession">killSession</abbr></a></td><td class="text-right">6</td></tr>
 
-            nv.utils.windowResize(chart.update);
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 3.1.0</a> using <a href="http://php.net/" target="_top">PHP 5.6.16</a> and <a href="https://phpunit.de/">PHPUnit 5.1.4</a> at Wed Apr 20 6:52:58 PDT 2016.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/holder.min.js" type="text/javascript"></script>
+  <script src="js/d3.min.js" type="text/javascript"></script>
+  <script src="js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
 
-            return chart;
-        });
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([8,0,0,0,0,0,0,0,0,0,0,2], "Class Coverage"))
+      .transition().duration(500).call(chart);
 
-        nv.addGraph(function () {
-            var chart = nv.models.multiBarChart();
-            chart.tooltips(false)
-                    .showControls(false)
-                    .showLegend(false)
-                    .reduceXTicks(false)
-                    .staggerLabels(true)
-                    .yAxis.tickFormat(d3.format('d'));
+    nv.utils.windowResize(chart.update);
 
-            d3.select('#methodCoverageDistribution svg')
-                    .datum(getCoverageDistributionData([67, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10], "Method Coverage"))
-                    .transition().duration(500).call(chart);
+    return chart;
+  });
 
-            nv.utils.windowResize(chart.update);
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
 
-            return chart;
-        });
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([59,0,0,0,0,0,0,0,0,0,0,18], "Method Coverage"))
+      .transition().duration(500).call(chart);
 
-        function getCoverageDistributionData(data, label) {
-            var labels = [
-                '0%',
-                '0-10%',
-                '10-20%',
-                '20-30%',
-                '30-40%',
-                '40-50%',
-                '50-60%',
-                '60-70%',
-                '70-80%',
-                '80-90%',
-                '90-100%',
-                '100%'
-            ];
-            var values = [];
-            $.each(labels, function (key) {
-                values.push({x: labels[key], y: data[key]});
-            });
+    nv.utils.windowResize(chart.update);
 
-            return [
-                {
-                    key: label,
-                    values: values,
-                    color: "#4572A7"
-                }
-            ];
-        }
+    return chart;
+  });
 
-        nv.addGraph(function () {
-            var chart = nv.models.scatterChart()
-                    .showDistX(true)
-                    .showDistY(true)
-                    .showLegend(false)
-                    .forceX([0, 100]);
-            chart.tooltipContent(function (key, y, e, graph) {
-                return '<p>' + graph.point.class + '</p>';
-            });
-
-            chart.xAxis.axisLabel('Code Coverage (in percent)');
-            chart.yAxis.axisLabel('Cyclomatic Complexity');
-
-            d3.select('#classComplexity svg')
-                    .datum(getComplexityData([[0, 7, "<a href=\"AdminController.php.html#10\">AdminController<\/a>"], [0, 9, "<a href=\"CartController.php.html#11\">CartController<\/a>"], [0, 7, "<a href=\"LoginController.php.html#10\">LoginController<\/a>"], [0, 11, "<a href=\"MainController.php.html#6\">MainController<\/a>"], [0, 16, "<a href=\"NewsFeed.php.html#21\">NewsFeed<\/a>"], [0, 14, "<a href=\"NewsFeedController.php.html#16\">NewsFeedController<\/a>"], [0, 8, "<a href=\"Product.php.html#14\">Product<\/a>"], [0, 12, "<a href=\"User.php.html#15\">User<\/a>"], [100, 10, "<a href=\"Verse.php.html#21\">Verse<\/a>"], [0, 9, "<a href=\"ZMetaTest.php.html#25\">ZMetaTest<\/a>"]], 'Class Complexity'))
-                    .transition()
-                    .duration(500)
-                    .call(chart);
-
-            nv.utils.windowResize(chart.update);
-
-            return chart;
-        });
-
-        nv.addGraph(function () {
-            var chart = nv.models.scatterChart()
-                    .showDistX(true)
-                    .showDistY(true)
-                    .showLegend(false)
-                    .forceX([0, 100]);
-            chart.tooltipContent(function (key, y, e, graph) {
-                return '<p>' + graph.point.class + '</p>';
-            });
-
-            chart.xAxis.axisLabel('Code Coverage (in percent)');
-            chart.yAxis.axisLabel('Method Complexity');
-
-            d3.select('#methodComplexity svg')
-                    .datum(getComplexityData([[0, 1, "<a href=\"AdminController.php.html#21\">AdminController::__construct<\/a>"], [0, 2, "<a href=\"AdminController.php.html#32\">AdminController::adminVerseAction<\/a>"], [0, 2, "<a href=\"AdminController.php.html#53\">AdminController::adminShopAction<\/a>"], [0, 2, "<a href=\"AdminController.php.html#74\">AdminController::adminUserAction<\/a>"], [0, 1, "<a href=\"CartController.php.html#16\">CartController::__construct<\/a>"], [0, 2, "<a href=\"CartController.php.html#21\">CartController::addToCart<\/a>"], [0, 1, "<a href=\"CartController.php.html#50\">CartController::removeFromCart<\/a>"], [0, 2, "<a href=\"CartController.php.html#71\">CartController::getShoppingCart<\/a>"], [0, 1, "<a href=\"CartController.php.html#80\">CartController::forgetSession<\/a>"], [0, 2, "<a href=\"CartController.php.html#94\">CartController::killSession<\/a>"], [0, 1, "<a href=\"LoginController.php.html#16\">LoginController::logoutAction<\/a>"], [0, 2, "<a href=\"LoginController.php.html#32\">LoginController::processLoginAction<\/a>"], [0, 2, "<a href=\"LoginController.php.html#72\">LoginController::isLoggedInFromSession<\/a>"], [0, 2, "<a href=\"LoginController.php.html#89\">LoginController::usernameFromSession<\/a>"], [0, 1, "<a href=\"MainController.php.html#13\">MainController::__construct<\/a>"], [0, 1, "<a href=\"MainController.php.html#18\">MainController::indexAction<\/a>"], [0, 1, "<a href=\"MainController.php.html#28\">MainController::historyAction<\/a>"], [0, 1, "<a href=\"MainController.php.html#39\">MainController::newsAction<\/a>"], [0, 1, "<a href=\"MainController.php.html#50\">MainController::shopAction<\/a>"], [0, 1, "<a href=\"MainController.php.html#62\">MainController::contactAction<\/a>"], [0, 1, "<a href=\"MainController.php.html#73\">MainController::obituaryAction<\/a>"], [0, 1, "<a href=\"MainController.php.html#84\">MainController::site_mapAction<\/a>"], [0, 3, "<a href=\"MainController.php.html#95\">MainController::contactFormAction<\/a>"], [0, 1, "<a href=\"NewsFeed.php.html#88\">NewsFeed::getId<\/a>"], [0, 1, "<a href=\"NewsFeed.php.html#99\">NewsFeed::setId<\/a>"], [0, 1, "<a href=\"NewsFeed.php.html#110\">NewsFeed::getAuthor<\/a>"], [0, 1, "<a href=\"NewsFeed.php.html#121\">NewsFeed::setAuthor<\/a>"], [0, 1, "<a href=\"NewsFeed.php.html#132\">NewsFeed::getDate<\/a>"], [0, 1, "<a href=\"NewsFeed.php.html#143\">NewsFeed::setDate<\/a>"], [0, 1, "<a href=\"NewsFeed.php.html#154\">NewsFeed::getNewsFeedHeading<\/a>"], [0, 1, "<a href=\"NewsFeed.php.html#165\">NewsFeed::setNewsFeedHeading<\/a>"], [0, 1, "<a href=\"NewsFeed.php.html#176\">NewsFeed::getNewsFeedSubHeading1<\/a>"], [0, 1, "<a href=\"NewsFeed.php.html#187\">NewsFeed::setNewsFeedSubHeading1<\/a>"], [0, 1, "<a href=\"NewsFeed.php.html#198\">NewsFeed::getNewsFeedSubHeading2<\/a>"], [0, 1, "<a href=\"NewsFeed.php.html#209\">NewsFeed::setNewsFeedSubHeading2<\/a>"], [0, 1, "<a href=\"NewsFeed.php.html#220\">NewsFeed::getNewsFeedParagraph1<\/a>"], [0, 1, "<a href=\"NewsFeed.php.html#231\">NewsFeed::setNewsFeedParagraph1<\/a>"], [0, 1, "<a href=\"NewsFeed.php.html#242\">NewsFeed::getNewsFeedParagraph2<\/a>"], [0, 1, "<a href=\"NewsFeed.php.html#253\">NewsFeed::setNewsFeedParagraph2<\/a>"], [0, 1, "<a href=\"NewsFeedController.php.html#21\">NewsFeedController::__construct<\/a>"], [0, 4, "<a href=\"NewsFeedController.php.html#33\">NewsFeedController::adminNewsAction<\/a>"], [0, 1, "<a href=\"NewsFeedController.php.html#70\">NewsFeedController::showCreateNewsArticleAction<\/a>"], [0, 2, "<a href=\"NewsFeedController.php.html#87\">NewsFeedController::showEditNewsArticleAction<\/a>"], [0, 2, "<a href=\"NewsFeedController.php.html#112\">NewsFeedController::createNewsArticleAction<\/a>"], [0, 2, "<a href=\"NewsFeedController.php.html#150\">NewsFeedController::editNewsArticleAction<\/a>"], [0, 2, "<a href=\"NewsFeedController.php.html#199\">NewsFeedController::deleteNewsArticleAction<\/a>"], [0, 1, "<a href=\"Product.php.html#52\">Product::getId<\/a>"], [0, 1, "<a href=\"Product.php.html#62\">Product::setId<\/a>"], [0, 1, "<a href=\"Product.php.html#72\">Product::getDescription<\/a>"], [0, 1, "<a href=\"Product.php.html#82\">Product::setDescription<\/a>"], [0, 1, "<a href=\"Product.php.html#92\">Product::getPrice<\/a>"], [0, 1, "<a href=\"Product.php.html#102\">Product::setPrice<\/a>"], [0, 1, "<a href=\"Product.php.html#112\">Product::getQuantity<\/a>"], [0, 1, "<a href=\"Product.php.html#122\">Product::setQuantity<\/a>"], [0, 1, "<a href=\"User.php.html#62\">User::getId<\/a>"], [0, 1, "<a href=\"User.php.html#72\">User::setId<\/a>"], [0, 1, "<a href=\"User.php.html#82\">User::getUsername<\/a>"], [0, 1, "<a href=\"User.php.html#92\">User::setUsername<\/a>"], [0, 1, "<a href=\"User.php.html#103\">User::getRole<\/a>"], [0, 1, "<a href=\"User.php.html#113\">User::setRole<\/a>"], [0, 1, "<a href=\"User.php.html#123\">User::getPassword<\/a>"], [0, 1, "<a href=\"User.php.html#133\">User::setPassword<\/a>"], [0, 2, "<a href=\"User.php.html#149\">User::canFindMatchingUsernameAndPassword<\/a>"], [0, 2, "<a href=\"User.php.html#174\">User::getOneByUsername<\/a>"], [100, 1, "<a href=\"Verse.php.html#67\">Verse::getId<\/a>"], [100, 1, "<a href=\"Verse.php.html#77\">Verse::setId<\/a>"], [100, 1, "<a href=\"Verse.php.html#87\">Verse::getHeading<\/a>"], [100, 1, "<a href=\"Verse.php.html#97\">Verse::setHeading<\/a>"], [100, 1, "<a href=\"Verse.php.html#107\">Verse::getSubheading1<\/a>"], [100, 1, "<a href=\"Verse.php.html#117\">Verse::setSubheading1<\/a>"], [100, 1, "<a href=\"Verse.php.html#127\">Verse::getSubheading2<\/a>"], [100, 1, "<a href=\"Verse.php.html#137\">Verse::setSubheading2<\/a>"], [100, 1, "<a href=\"Verse.php.html#147\">Verse::getParagraph<\/a>"], [100, 1, "<a href=\"Verse.php.html#157\">Verse::setParagraph<\/a>"], [0, 3, "<a href=\"ZMetaTest.php.html#31\">ZMetaTest::testPSR2DirectorySrc<\/a>"], [0, 3, "<a href=\"ZMetaTest.php.html#74\">ZMetaTest::testPSR2DirectoryTests<\/a>"], [0, 3, "<a href=\"ZMetaTest.php.html#117\">ZMetaTest::testPSR2DirectoryPublic<\/a>"]], 'Method Complexity'))
-                    .transition()
-                    .duration(500)
-                    .call(chart);
-
-            nv.utils.windowResize(chart.update);
-
-            return chart;
-        });
-
-        function getComplexityData(data, label) {
-            var values = [];
-            $.each(data, function (key) {
-                var value = Math.round(data[key][0] * 100) / 100;
-                values.push({
-                    x: value,
-                    y: data[key][1],
-                    class: data[key][2],
-                    size: 0.05,
-                    shape: 'diamond'
-                });
-            });
-
-            return [
-                {
-                    key: label,
-                    values: values,
-                    color: "#4572A7"
-                }
-            ];
-        }
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
     });
-</script>
-</body>
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,7,"<a href=\"AdminController.php.html#10\">AdminController<\/a>"],[0,9,"<a href=\"CartController.php.html#11\">CartController<\/a>"],[0,7,"<a href=\"LoginController.php.html#10\">LoginController<\/a>"],[0,11,"<a href=\"MainController.php.html#6\">MainController<\/a>"],[0,16,"<a href=\"NewsFeed.php.html#21\">NewsFeed<\/a>"],[0,14,"<a href=\"NewsFeedController.php.html#16\">NewsFeedController<\/a>"],[100,8,"<a href=\"Product.php.html#14\">Product<\/a>"],[0,12,"<a href=\"User.php.html#15\">User<\/a>"],[100,10,"<a href=\"Verse.php.html#21\">Verse<\/a>"],[0,9,"<a href=\"ZMetaTest.php.html#25\">ZMetaTest<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"AdminController.php.html#21\">AdminController::__construct<\/a>"],[0,2,"<a href=\"AdminController.php.html#32\">AdminController::adminVerseAction<\/a>"],[0,2,"<a href=\"AdminController.php.html#53\">AdminController::adminShopAction<\/a>"],[0,2,"<a href=\"AdminController.php.html#74\">AdminController::adminUserAction<\/a>"],[0,1,"<a href=\"CartController.php.html#16\">CartController::__construct<\/a>"],[0,2,"<a href=\"CartController.php.html#21\">CartController::addToCart<\/a>"],[0,1,"<a href=\"CartController.php.html#50\">CartController::removeFromCart<\/a>"],[0,2,"<a href=\"CartController.php.html#71\">CartController::getShoppingCart<\/a>"],[0,1,"<a href=\"CartController.php.html#80\">CartController::forgetSession<\/a>"],[0,2,"<a href=\"CartController.php.html#94\">CartController::killSession<\/a>"],[0,1,"<a href=\"LoginController.php.html#16\">LoginController::logoutAction<\/a>"],[0,2,"<a href=\"LoginController.php.html#32\">LoginController::processLoginAction<\/a>"],[0,2,"<a href=\"LoginController.php.html#72\">LoginController::isLoggedInFromSession<\/a>"],[0,2,"<a href=\"LoginController.php.html#89\">LoginController::usernameFromSession<\/a>"],[0,1,"<a href=\"MainController.php.html#13\">MainController::__construct<\/a>"],[0,1,"<a href=\"MainController.php.html#18\">MainController::indexAction<\/a>"],[0,1,"<a href=\"MainController.php.html#28\">MainController::historyAction<\/a>"],[0,1,"<a href=\"MainController.php.html#39\">MainController::newsAction<\/a>"],[0,1,"<a href=\"MainController.php.html#50\">MainController::shopAction<\/a>"],[0,1,"<a href=\"MainController.php.html#62\">MainController::contactAction<\/a>"],[0,1,"<a href=\"MainController.php.html#73\">MainController::obituaryAction<\/a>"],[0,1,"<a href=\"MainController.php.html#84\">MainController::site_mapAction<\/a>"],[0,3,"<a href=\"MainController.php.html#95\">MainController::contactFormAction<\/a>"],[0,1,"<a href=\"NewsFeed.php.html#88\">NewsFeed::getId<\/a>"],[0,1,"<a href=\"NewsFeed.php.html#99\">NewsFeed::setId<\/a>"],[0,1,"<a href=\"NewsFeed.php.html#110\">NewsFeed::getAuthor<\/a>"],[0,1,"<a href=\"NewsFeed.php.html#121\">NewsFeed::setAuthor<\/a>"],[0,1,"<a href=\"NewsFeed.php.html#132\">NewsFeed::getDate<\/a>"],[0,1,"<a href=\"NewsFeed.php.html#143\">NewsFeed::setDate<\/a>"],[0,1,"<a href=\"NewsFeed.php.html#154\">NewsFeed::getNewsFeedHeading<\/a>"],[0,1,"<a href=\"NewsFeed.php.html#165\">NewsFeed::setNewsFeedHeading<\/a>"],[0,1,"<a href=\"NewsFeed.php.html#176\">NewsFeed::getNewsFeedSubHeading1<\/a>"],[0,1,"<a href=\"NewsFeed.php.html#187\">NewsFeed::setNewsFeedSubHeading1<\/a>"],[0,1,"<a href=\"NewsFeed.php.html#198\">NewsFeed::getNewsFeedSubHeading2<\/a>"],[0,1,"<a href=\"NewsFeed.php.html#209\">NewsFeed::setNewsFeedSubHeading2<\/a>"],[0,1,"<a href=\"NewsFeed.php.html#220\">NewsFeed::getNewsFeedParagraph1<\/a>"],[0,1,"<a href=\"NewsFeed.php.html#231\">NewsFeed::setNewsFeedParagraph1<\/a>"],[0,1,"<a href=\"NewsFeed.php.html#242\">NewsFeed::getNewsFeedParagraph2<\/a>"],[0,1,"<a href=\"NewsFeed.php.html#253\">NewsFeed::setNewsFeedParagraph2<\/a>"],[0,1,"<a href=\"NewsFeedController.php.html#21\">NewsFeedController::__construct<\/a>"],[0,4,"<a href=\"NewsFeedController.php.html#33\">NewsFeedController::adminNewsAction<\/a>"],[0,1,"<a href=\"NewsFeedController.php.html#70\">NewsFeedController::showCreateNewsArticleAction<\/a>"],[0,2,"<a href=\"NewsFeedController.php.html#87\">NewsFeedController::showEditNewsArticleAction<\/a>"],[0,2,"<a href=\"NewsFeedController.php.html#112\">NewsFeedController::createNewsArticleAction<\/a>"],[0,2,"<a href=\"NewsFeedController.php.html#150\">NewsFeedController::editNewsArticleAction<\/a>"],[0,2,"<a href=\"NewsFeedController.php.html#199\">NewsFeedController::deleteNewsArticleAction<\/a>"],[100,1,"<a href=\"Product.php.html#52\">Product::getId<\/a>"],[100,1,"<a href=\"Product.php.html#62\">Product::setId<\/a>"],[100,1,"<a href=\"Product.php.html#72\">Product::getDescription<\/a>"],[100,1,"<a href=\"Product.php.html#82\">Product::setDescription<\/a>"],[100,1,"<a href=\"Product.php.html#92\">Product::getPrice<\/a>"],[100,1,"<a href=\"Product.php.html#102\">Product::setPrice<\/a>"],[100,1,"<a href=\"Product.php.html#112\">Product::getQuantity<\/a>"],[100,1,"<a href=\"Product.php.html#122\">Product::setQuantity<\/a>"],[0,1,"<a href=\"User.php.html#62\">User::getId<\/a>"],[0,1,"<a href=\"User.php.html#72\">User::setId<\/a>"],[0,1,"<a href=\"User.php.html#82\">User::getUsername<\/a>"],[0,1,"<a href=\"User.php.html#92\">User::setUsername<\/a>"],[0,1,"<a href=\"User.php.html#103\">User::getRole<\/a>"],[0,1,"<a href=\"User.php.html#113\">User::setRole<\/a>"],[0,1,"<a href=\"User.php.html#123\">User::getPassword<\/a>"],[0,1,"<a href=\"User.php.html#133\">User::setPassword<\/a>"],[0,2,"<a href=\"User.php.html#149\">User::canFindMatchingUsernameAndPassword<\/a>"],[0,2,"<a href=\"User.php.html#174\">User::getOneByUsername<\/a>"],[100,1,"<a href=\"Verse.php.html#67\">Verse::getId<\/a>"],[100,1,"<a href=\"Verse.php.html#77\">Verse::setId<\/a>"],[100,1,"<a href=\"Verse.php.html#87\">Verse::getHeading<\/a>"],[100,1,"<a href=\"Verse.php.html#97\">Verse::setHeading<\/a>"],[100,1,"<a href=\"Verse.php.html#107\">Verse::getSubheading1<\/a>"],[100,1,"<a href=\"Verse.php.html#117\">Verse::setSubheading1<\/a>"],[100,1,"<a href=\"Verse.php.html#127\">Verse::getSubheading2<\/a>"],[100,1,"<a href=\"Verse.php.html#137\">Verse::setSubheading2<\/a>"],[100,1,"<a href=\"Verse.php.html#147\">Verse::getParagraph<\/a>"],[100,1,"<a href=\"Verse.php.html#157\">Verse::setParagraph<\/a>"],[0,3,"<a href=\"ZMetaTest.php.html#31\">ZMetaTest::testPSR2DirectorySrc<\/a>"],[0,3,"<a href=\"ZMetaTest.php.html#74\">ZMetaTest::testPSR2DirectoryTests<\/a>"],[0,3,"<a href=\"ZMetaTest.php.html#117\">ZMetaTest::testPSR2DirectoryPublic<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
 </html>
