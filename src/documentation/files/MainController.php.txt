@@ -1,6 +1,8 @@
 <?php
 namespace StJosephsChurchEastWall;
+
 use StJosephsChurchEastWall;
+
 class MainController
 {
 
@@ -11,7 +13,7 @@ class MainController
     public function __construct()
     {
         $this->loginController = new LoginController();
-    }     
+    }
     
     public function indexAction()
     {
@@ -92,8 +94,8 @@ class MainController
 
     public function contactFormAction()
     {
-        //$isLoggedIn = $this->loginController->isLoggedInFromSession();
-        //$username = $this->loginController->usernameFromSession();
+        $isLoggedIn = $this->loginController->isLoggedInFromSession();
+        $username = $this->loginController->usernameFromSession();
 
         $numItems = sizeof($_GET);
 
@@ -107,9 +109,9 @@ class MainController
         $mainMessage = 'Here are the message details:';
         
          //replace the underscore with space and capitalise each word
-        $messageDetails_01 = 'Contact: ' . ucwords(str_replace('_',' ',$who_to_contact));
+        $messageDetails_01 = 'Contact: ' . ucwords(str_replace('_', ' ', $who_to_contact));
         $messageDetails_02 = 'Your Email: ' . $email;
-        $messageDetails_03 = 'Message sent to ' . ucwords(str_replace('_',' ',$who_to_contact)). " : ". $textArea;
+        $messageDetails_03 = 'Message sent to ' . ucwords(str_replace('_', ' ', $who_to_contact)). " : ". $textArea;
 
         // if subscribed to newsletter then set the variable value
         if (!empty($newsletter)) {
@@ -120,9 +122,9 @@ class MainController
             $messageDetails_05 = 'Messenger Subscription: Subscribed';
         }
         require_once __DIR__ . '/../templates/includes/src/message.php';
-
     }//end contact form action
 
     //testing list newsfeeds
-
 }//end class MainController
+
+

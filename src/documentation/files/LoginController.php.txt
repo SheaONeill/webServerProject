@@ -41,22 +41,21 @@ class LoginController
         $isLoggedIn = User::canFindMatchingUsernameAndPassword($username, $password);
 
         // action depending on login success
-        if($isLoggedIn){
+        if ($isLoggedIn) {
             // STORE login status SESSION
             $_SESSION['user'] = $username;
 
             //save name in a cookie, to expire
             $hour_as_seconds = 15 * 1;
             $expire_time = time() + $hour_as_seconds;
-            setcookie( 'user', $username, $expire_time );
-            setcookie( 'password', $password, $expire_time );
+            setcookie('user', $username, $expire_time);
+            setcookie('password', $password, $expire_time);
 
             //refresh page
             //http://stackoverflow.com/questions/4221116/php-refresh-current-page
             header('Location: '.$_SERVER['PHP_SELF']);
 
             //or http://stackoverflow.com/questions/10643626/refresh-page-after-form-submiting
-
         } else {
             $message_heading = "It's a Sin!";
             $mainMessage = 'bad username or password, please try again';
@@ -75,7 +74,7 @@ class LoginController
         $isLoggedIn = false;
 
         // user is logged in if there is a 'user' entry in the SESSION superglobal
-        if(isset($_SESSION['user'])){
+        if (isset($_SESSION['user'])) {
             $isLoggedIn = true;
         }
 
@@ -98,6 +97,6 @@ class LoginController
 
         return $username;
     }
-
-
 }//end class login controller
+
+

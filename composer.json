@@ -11,13 +11,13 @@
         "phpunit":"php phpunit.phar --log-tap ./templates/tests/log.txt",
         "phpunit-coverage":"php phpunit.phar --coverage-html ./tests/coverage",
 
-        "reportfixsrc":"php php-cs-fixer.phar fix --level=psr2 --dry-run --diff ./src > ./tests/fixerReport.txt",
-        "reportfixtests":"php php-cs-fixer.phar fix --level=psr2 --dry-run --diff ./tests > ./tests/fixerReport.txt",
-        "reportfixpublic":"php php-cs-fixer.phar fix --level=psr2 --dry-run --diff ./public > ./tests/fixerReport.txt",
+        "reportfixsrc":"php php-cs-fixer.phar fix --level=psr2 --dry-run --diff ./src > ./templates/tests/fixerReport.txt",
+        "reportfixtests":"php php-cs-fixer.phar fix --level=psr2 --dry-run --diff ./tests > ./templates/tests/fixerReport.txt",
+        "reportfixpublic":"php php-cs-fixer.phar fix --level=psr2 --dry-run --diff ./public > ./templates/tests/fixerReport.txt",
 
         "fixsrc":"php php-cs-fixer.phar fix --level=psr2 ./src",
         "fixpublic":"php php-cs-fixer.phar fix --level=psr2 ./public",
-        "fixtests":"php php-cs-fixer.phar fix --level=psr2 ./tests",
+        "fixtests":"php php-cs-fixer.phar fix --level=psr2 ./templates/tests",
 
         "phpdoc": "php phpDocumentor.phar -d ./src -t ./src/documentation",
         "phpdoc-twig": "php phpDocumentor.phar -d ./src -t ./src/documentation --template=responsive-twig"

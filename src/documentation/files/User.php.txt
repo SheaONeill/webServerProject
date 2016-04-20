@@ -151,7 +151,7 @@ class User extends DatabaseTable
         $user = User::getOneByUsername($username);
 
         // if no record has this username, return FALSE
-        if(null == $user){
+        if (null == $user) {
             return false;
         }
 
@@ -173,7 +173,6 @@ class User extends DatabaseTable
      */
     public static function getOneByUsername($username)
     {
-
         $db = new DatabaseManager();
         $connection = $db->getDbh();
 
@@ -185,16 +184,12 @@ class User extends DatabaseTable
 
         if ($object = $statement->fetch()) {
             return $object;
-
         }//enf if true
 
         else {
-            
             return null;
-            
         }//end else
-
     }//end getOneByUsername function
-
-
 }//end class user
+
+

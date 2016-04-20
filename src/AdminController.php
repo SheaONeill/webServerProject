@@ -32,13 +32,12 @@ class AdminController
     public function adminVerseAction()
     {
         $isLoggedIn = $this->loginController->isLoggedInFromSession();
-        if ($isLoggedIn){
+        if ($isLoggedIn) {
             $username = $this->loginController->usernameFromSession();
             $pageTitle = ' Verse';
             $adminVerseLinkStyle = 'current_page';
             require_once __DIR__ . '/../templates/admin/adminVerse.php';
         } else {
-
             $message_heading = "--------------------------------------------------------------";
             $mainMessage = 'UNAUTHORIZED ACCESS AREA 2).';
             require_once __DIR__ . '/../templates/includes/src/message.php';
@@ -60,7 +59,6 @@ class AdminController
             $adminShopLinkStyle = 'current_page';
             require_once __DIR__ . '/../templates/admin/adminShop.php';
         } else {
-
             $message_heading = "--------------------------------------------------------------";
             $mainMessage = 'UNAUTHORIZED ACCESS AREA 3).';
             require_once __DIR__ . '/../templates/includes/src/message.php';
@@ -82,12 +80,10 @@ class AdminController
             $adminUserLinkStyle = 'current_page';
             require_once __DIR__ . '/../templates/admin/adminUser.php';
         } else {
-
             $message_heading = "--------------------------------------------------------------";
             $mainMessage = 'UNAUTHORIZED ACCESS AREA 4).';
             require_once __DIR__ . '/../templates/includes/src/message.php';
         }
     }//end admin user function
-
-
 }//end class
+

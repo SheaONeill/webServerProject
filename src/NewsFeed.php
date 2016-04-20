@@ -6,6 +6,7 @@
  * Time: 12:10
  */
 namespace StJosephsChurchEastWall;
+
 use Mattsmithdev\PdoCrud\DatabaseTable;
 use Mattsmithdev\PdoCrud\DatabaseManager;
 
@@ -17,7 +18,8 @@ use Mattsmithdev\PdoCrud\DatabaseManager;
  *
  * @package StJosephsChurchEastWall
  */
-class NewsFeed extends DatabaseTable{
+class NewsFeed extends DatabaseTable
+{
 
     //create the variables to match newsfeed table in database 
 
@@ -83,7 +85,8 @@ class NewsFeed extends DatabaseTable{
      * 
      * @return int $id
      */
-    public function getId() {
+    public function getId()
+    {
         return $this->id;
     }
 
@@ -93,7 +96,8 @@ class NewsFeed extends DatabaseTable{
      * 
      * @param int $id
      */
-    public function setId($id) {
+    public function setId($id)
+    {
         $this->id = $id;
     }
 
@@ -103,7 +107,8 @@ class NewsFeed extends DatabaseTable{
      * 
      * @return string $author
      */
-    public function getAuthor() {
+    public function getAuthor()
+    {
         return $this->author;
     }
 
@@ -113,7 +118,8 @@ class NewsFeed extends DatabaseTable{
      * 
      * @param string $author
      */
-    public function setAuthor($author) {
+    public function setAuthor($author)
+    {
         $this->author = $author;
     }
 
@@ -123,7 +129,8 @@ class NewsFeed extends DatabaseTable{
      * 
      * @return string $date
      */
-    public function getDate() {
+    public function getDate()
+    {
         return $this->date;
     }
 
@@ -133,7 +140,8 @@ class NewsFeed extends DatabaseTable{
      * 
      * @param string $date
      */
-    public function setDate($date) {
+    public function setDate($date)
+    {
         $this->date = $date;
     }
 
@@ -143,7 +151,8 @@ class NewsFeed extends DatabaseTable{
      * 
      * @return string $newsFeedHeading
      */
-    public function getNewsFeedHeading() {
+    public function getNewsFeedHeading()
+    {
         return $this->newsFeedHeading;
     }
 
@@ -153,7 +162,8 @@ class NewsFeed extends DatabaseTable{
      * 
      * @param string $newsFeedHeading
      */
-    public function setNewsFeedHeading($newsFeedHeading) {
+    public function setNewsFeedHeading($newsFeedHeading)
+    {
         $this->newsFeedHeading = $newsFeedHeading;
     }
 
@@ -163,7 +173,8 @@ class NewsFeed extends DatabaseTable{
      * 
      * @return string $newsFeedSubHeading1
      */
-    public function getNewsFeedSubHeading1() {
+    public function getNewsFeedSubHeading1()
+    {
         return $this->newsFeedSubHeading1;
     }
 
@@ -173,7 +184,8 @@ class NewsFeed extends DatabaseTable{
      * 
      * @param string $newsFeedSubHeading1
      */
-    public function setNewsFeedSubHeading1($newsFeedSubHeading1) {
+    public function setNewsFeedSubHeading1($newsFeedSubHeading1)
+    {
         $this->newsFeedSubHeading1 = $newsFeedSubHeading1;
     }
 
@@ -183,7 +195,8 @@ class NewsFeed extends DatabaseTable{
      * 
      * @return string $newsFeedSubHeading2
      */
-    public function getNewsFeedSubHeading2() {
+    public function getNewsFeedSubHeading2()
+    {
         return $this->newsFeedSubHeading2;
     }
 
@@ -193,7 +206,8 @@ class NewsFeed extends DatabaseTable{
      * 
      * @param string $newsFeedSubHeading2     
      */
-    public function setNewsFeedSubHeading2($newsFeedSubHeading2) {
+    public function setNewsFeedSubHeading2($newsFeedSubHeading2)
+    {
         $this->newsFeedSubHeading2 = $newsFeedSubHeading2;
     }
 
@@ -203,7 +217,8 @@ class NewsFeed extends DatabaseTable{
      * 
      * @return string $newsFeedParagraph1
      */
-    public function getNewsFeedParagraph1() {
+    public function getNewsFeedParagraph1()
+    {
         return $this->newsFeedParagraph1;
     }
 
@@ -213,7 +228,8 @@ class NewsFeed extends DatabaseTable{
      * 
      * @param string $newsFeedParagraph1
      */
-    public function setNewsFeedParagraph1($newsFeedParagraph1) {
+    public function setNewsFeedParagraph1($newsFeedParagraph1)
+    {
         $this->newsFeedParagraph1 = $newsFeedParagraph1;
     }
 
@@ -223,7 +239,8 @@ class NewsFeed extends DatabaseTable{
      * 
      * @return string $newsFeedParagraph2
      */
-    public function getNewsFeedParagraph2() {
+    public function getNewsFeedParagraph2()
+    {
         return $this->newsFeedParagraph2;
     }
 
@@ -233,8 +250,9 @@ class NewsFeed extends DatabaseTable{
      * 
      * @param string $newsFeedParagraph2
      */
-    public function setNewsFeedParagraph2($newsFeedParagraph2) {
+    public function setNewsFeedParagraph2($newsFeedParagraph2)
+    {
         $this->newsFeedParagraph2 = $newsFeedParagraph2;
     }
-
 }//end class newsfeed
+

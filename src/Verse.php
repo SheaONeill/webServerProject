@@ -8,8 +8,6 @@
 
 namespace StJosephsChurchEastWall;
 
-
-
 use Mattsmithdev\PdoCrud\DatabaseTable;
 use Mattsmithdev\PdoCrud\DatabaseManager;
 
@@ -21,7 +19,6 @@ use Mattsmithdev\PdoCrud\DatabaseManager;
  * @package StJosephsChurchEastWall
  */
 class Verse extends DatabaseTable
-
 {
 
     //create the variables to match verse table in database
@@ -161,5 +158,5 @@ class Verse extends DatabaseTable
     {
         $this->paragraph = $paragraph;
     }
-  
 }//end class verse
+

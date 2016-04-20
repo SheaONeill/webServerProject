@@ -8,10 +8,9 @@
 
 namespace StJosephsChurchEastWallTest;
 
-
 use StJosephsChurchEastWall\Verse;
-class VerseTest extends \PHPUnit_Framework_TestCase
 
+class VerseTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -126,7 +125,6 @@ class VerseTest extends \PHPUnit_Framework_TestCase
             ['3003','3003'],
             ['3004','3004'],
         ];
-
     }
 
     // ---------------- Testing Heading  -----------------------
@@ -154,7 +152,6 @@ class VerseTest extends \PHPUnit_Framework_TestCase
             ['Heading3003','Heading3003'],
             ['Heading3004','Heading3004'],
         ];
-
     }
 
 
@@ -183,7 +180,6 @@ class VerseTest extends \PHPUnit_Framework_TestCase
             ['SubheadingOne3003','SubheadingOne3003'],
             ['SubheadingOne3004','SubheadingOne3004'],
         ];
-
     }
 
     // ---------------- Testing subHeadingTwo  -----------------------
@@ -211,7 +207,6 @@ class VerseTest extends \PHPUnit_Framework_TestCase
             ['SubheadingTwo3003','SubheadingTwo3003'],
             ['SubheadingTwo3004','SubheadingTwo3004'],
         ];
-
     }
 
     // ---------------- Testing paragraph  -----------------------
@@ -239,6 +234,5 @@ class VerseTest extends \PHPUnit_Framework_TestCase
             ['Paragraph3003','Paragraph3003'],
             ['Paragraph3004','Paragraph3004'],
         ];
-
     }
 }

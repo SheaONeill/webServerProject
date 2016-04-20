@@ -8,8 +8,8 @@
 
 namespace StJosephsChurchEastWall;
 
-
-class CartController {
+class CartController
+{
 
     private $loginController;
 
@@ -33,7 +33,7 @@ class CartController {
         $oldTotal = 0;
 
         // if quantity found in cart array, then use this
-        if(isset($shoppingCart[$id])){
+        if (isset($shoppingCart[$id])) {
             $oldTotal = $shoppingCart[$id];
         }
 
@@ -49,7 +49,6 @@ class CartController {
 
     public function removeFromCart()
     {
-
         $isLoggedIn = $this->loginController->isLoggedInFromSession();
         $username = $this->loginController->usernameFromSession();
 
@@ -71,7 +70,7 @@ class CartController {
 
     public function getShoppingCart()
     {
-        if (isset($_SESSION['shoppingCart'])){
+        if (isset($_SESSION['shoppingCart'])) {
             return $_SESSION['shoppingCart'];
         } else {
             return [];
@@ -99,7 +98,7 @@ class CartController {
 
         // delete the session cookie.
         // destroy the session and the session data!
-        if (ini_get('session.use_cookies')){
+        if (ini_get('session.use_cookies')) {
             $params = session_get_cookie_params();
             setcookie(
                 session_name(),
@@ -115,5 +114,4 @@ class CartController {
         //destroy the session.
         session_destroy();
     }
-
 }

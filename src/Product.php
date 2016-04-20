@@ -11,7 +11,8 @@ use Mattsmithdev\PdoCrud\DatabaseTable;
  *
  * @package StJosephsChurchEastWall
  */
-class Product extends DatabaseTable {
+class Product extends DatabaseTable
+{
 
     //create the variables to match product table in database 
 
@@ -48,7 +49,8 @@ class Product extends DatabaseTable {
      *
      * @return int $id
      */
-    public function getId() {
+    public function getId()
+    {
         return $this->id;
     }
 
@@ -57,7 +59,8 @@ class Product extends DatabaseTable {
      *
      * @param int $id
      */
-    public function setId($id) {
+    public function setId($id)
+    {
         $this->id = $id;
     }
 
@@ -66,7 +69,8 @@ class Product extends DatabaseTable {
      *
      * @return string $description
      */
-    public function getDescription() {
+    public function getDescription()
+    {
         return $this->description;
     }
 
@@ -75,7 +79,8 @@ class Product extends DatabaseTable {
      *     
      * @param string $description
      */
-    public function setDescription($description) {
+    public function setDescription($description)
+    {
         $this->description = $description;
     }
 
@@ -84,7 +89,8 @@ class Product extends DatabaseTable {
      *
      * @return float $price
      */
-    public function getPrice() {
+    public function getPrice()
+    {
         return $this->price;
     }
 
@@ -93,7 +99,8 @@ class Product extends DatabaseTable {
      * 
      * @param float $price
      */
-    public function setPrice($price) {
+    public function setPrice($price)
+    {
         $this->price = $price;
     }
 
@@ -102,8 +109,9 @@ class Product extends DatabaseTable {
      * 
      * @return int $quantity
      */
-    public function getQuantity() {
-    return $this->quantity;
+    public function getQuantity()
+    {
+        return $this->quantity;
     }
 
     /**
@@ -111,8 +119,9 @@ class Product extends DatabaseTable {
      * 
      * @param int $quantity
      */
-    public function setQuantity($quantity) {
-    $this->quantity = $quantity;
+    public function setQuantity($quantity)
+    {
+        $this->quantity = $quantity;
     }
-
 }//end class products
+
