@@ -1,28 +1,32 @@
 TAP version 13
 ok 1 - StJosephsChurchEastWallTest\ProductTest::testCanCreateClass1
-ok 2 - StJosephsChurchEastWallTest\VerseTest::testCanCreateClass1
-ok 3 - StJosephsChurchEastWallTest\VerseTest::testGetIdAfterSet3000
-ok 4 - StJosephsChurchEastWallTest\VerseTest::testGetHeadingAfterSetHeading3000
-ok 5 - StJosephsChurchEastWallTest\VerseTest::testGetSubHeading1AfterSetSubHeading13000
-ok 6 - StJosephsChurchEastWallTest\VerseTest::testGetParagraphAfterSetParagraph3000
-ok 7 - StJosephsChurchEastWallTest\VerseTest::testGetIdAfterSetFromProvider with data set #0 ('3001', '3001')
-ok 8 - StJosephsChurchEastWallTest\VerseTest::testGetIdAfterSetFromProvider with data set #1 ('3002', '3002')
-ok 9 - StJosephsChurchEastWallTest\VerseTest::testGetIdAfterSetFromProvider with data set #2 ('3003', '3003')
-ok 10 - StJosephsChurchEastWallTest\VerseTest::testGetIdAfterSetFromProvider with data set #3 ('3004', '3004')
-ok 11 - StJosephsChurchEastWallTest\VerseTest::testGetHeadingAfterSetFromProvider with data set #0 ('Heading3001', 'Heading3001')
-ok 12 - StJosephsChurchEastWallTest\VerseTest::testGetHeadingAfterSetFromProvider with data set #1 ('Heading3002', 'Heading3002')
-ok 13 - StJosephsChurchEastWallTest\VerseTest::testGetHeadingAfterSetFromProvider with data set #2 ('Heading3003', 'Heading3003')
-ok 14 - StJosephsChurchEastWallTest\VerseTest::testGetHeadingAfterSetFromProvider with data set #3 ('Heading3004', 'Heading3004')
-ok 15 - StJosephsChurchEastWallTest\VerseTest::testGetSubheading1AfterSetFromProvider with data set #0 ('SubheadingOne3001', 'SubheadingOne3001')
-ok 16 - StJosephsChurchEastWallTest\VerseTest::testGetSubheading1AfterSetFromProvider with data set #1 ('SubheadingOne3002', 'SubheadingOne3002')
-ok 17 - StJosephsChurchEastWallTest\VerseTest::testGetSubheading1AfterSetFromProvider with data set #2 ('SubheadingOne3003', 'SubheadingOne3003')
-ok 18 - StJosephsChurchEastWallTest\VerseTest::testGetSubheading1AfterSetFromProvider with data set #3 ('SubheadingOne3004', 'SubheadingOne3004')
-ok 19 - StJosephsChurchEastWallTest\VerseTest::testGetSubheading2AfterSetFromProvider with data set #0 ('SubheadingTwo3001', 'SubheadingTwo3001')
-ok 20 - StJosephsChurchEastWallTest\VerseTest::testGetSubheading2AfterSetFromProvider with data set #1 ('SubheadingTwo3002', 'SubheadingTwo3002')
-ok 21 - StJosephsChurchEastWallTest\VerseTest::testGetSubheading2AfterSetFromProvider with data set #2 ('SubheadingTwo3003', 'SubheadingTwo3003')
-ok 22 - StJosephsChurchEastWallTest\VerseTest::testGetSubheading2AfterSetFromProvider with data set #3 ('SubheadingTwo3004', 'SubheadingTwo3004')
-ok 23 - StJosephsChurchEastWallTest\VerseTest::testGetParagraphAfterSetFromProvider with data set #0 ('Paragraph3001', 'Paragraph3001')
-ok 24 - StJosephsChurchEastWallTest\VerseTest::testGetParagraphAfterSetFromProvider with data set #1 ('Paragraph3002', 'Paragraph3002')
-ok 25 - StJosephsChurchEastWallTest\VerseTest::testGetParagraphAfterSetFromProvider with data set #2 ('Paragraph3003', 'Paragraph3003')
-ok 26 - StJosephsChurchEastWallTest\VerseTest::testGetParagraphAfterSetFromProvider with data set #3 ('Paragraph3004', 'Paragraph3004')
-1..26
+ok 2 - StJosephsChurchEastWallTest\ProductTest::testGetIdAfterSet10
+ok 3 - StJosephsChurchEastWallTest\ProductTest::testGetDescriptionAfterSetDescription10
+ok 4 - StJosephsChurchEastWallTest\ProductTest::testGetPrice10AfterSetPrice10
+ok 5 - StJosephsChurchEastWallTest\ProductTest::testGetQuantityAfterSetQuantity10
+ok 6 - StJosephsChurchEastWallTest\VerseTest::testCanCreateClass1
+ok 7 - StJosephsChurchEastWallTest\VerseTest::testGetIdAfterSet3000
+ok 8 - StJosephsChurchEastWallTest\VerseTest::testGetHeadingAfterSetHeading3000
+ok 9 - StJosephsChurchEastWallTest\VerseTest::testGetSubHeading1AfterSetSubHeading13000
+ok 10 - StJosephsChurchEastWallTest\VerseTest::testGetParagraphAfterSetParagraph3000
+ok 11 - StJosephsChurchEastWallTest\VerseTest::testGetIdAfterSetFromProvider with data set #0 ('3001', '3001')
+ok 12 - StJosephsChurchEastWallTest\VerseTest::testGetIdAfterSetFromProvider with data set #1 ('3002', '3002')
+ok 13 - StJosephsChurchEastWallTest\VerseTest::testGetIdAfterSetFromProvider with data set #2 ('3003', '3003')
+ok 14 - StJosephsChurchEastWallTest\VerseTest::testGetIdAfterSetFromProvider with data set #3 ('3004', '3004')
+ok 15 - StJosephsChurchEastWallTest\VerseTest::testGetHeadingAfterSetFromProvider with data set #0 ('Heading3001', 'Heading3001')
+ok 16 - StJosephsChurchEastWallTest\VerseTest::testGetHeadingAfterSetFromProvider with data set #1 ('Heading3002', 'Heading3002')
+ok 17 - StJosephsChurchEastWallTest\VerseTest::testGetHeadingAfterSetFromProvider with data set #2 ('Heading3003', 'Heading3003')
+ok 18 - StJosephsChurchEastWallTest\VerseTest::testGetHeadingAfterSetFromProvider with data set #3 ('Heading3004', 'Heading3004')
+ok 19 - StJosephsChurchEastWallTest\VerseTest::testGetSubheading1AfterSetFromProvider with data set #0 ('SubheadingOne3001', 'SubheadingOne3001')
+ok 20 - StJosephsChurchEastWallTest\VerseTest::testGetSubheading1AfterSetFromProvider with data set #1 ('SubheadingOne3002', 'SubheadingOne3002')
+ok 21 - StJosephsChurchEastWallTest\VerseTest::testGetSubheading1AfterSetFromProvider with data set #2 ('SubheadingOne3003', 'SubheadingOne3003')
+ok 22 - StJosephsChurchEastWallTest\VerseTest::testGetSubheading1AfterSetFromProvider with data set #3 ('SubheadingOne3004', 'SubheadingOne3004')
+ok 23 - StJosephsChurchEastWallTest\VerseTest::testGetSubheading2AfterSetFromProvider with data set #0 ('SubheadingTwo3001', 'SubheadingTwo3001')
+ok 24 - StJosephsChurchEastWallTest\VerseTest::testGetSubheading2AfterSetFromProvider with data set #1 ('SubheadingTwo3002', 'SubheadingTwo3002')
+ok 25 - StJosephsChurchEastWallTest\VerseTest::testGetSubheading2AfterSetFromProvider with data set #2 ('SubheadingTwo3003', 'SubheadingTwo3003')
+ok 26 - StJosephsChurchEastWallTest\VerseTest::testGetSubheading2AfterSetFromProvider with data set #3 ('SubheadingTwo3004', 'SubheadingTwo3004')
+ok 27 - StJosephsChurchEastWallTest\VerseTest::testGetParagraphAfterSetFromProvider with data set #0 ('Paragraph3001', 'Paragraph3001')
+ok 28 - StJosephsChurchEastWallTest\VerseTest::testGetParagraphAfterSetFromProvider with data set #1 ('Paragraph3002', 'Paragraph3002')
+ok 29 - StJosephsChurchEastWallTest\VerseTest::testGetParagraphAfterSetFromProvider with data set #2 ('Paragraph3003', 'Paragraph3003')
+ok 30 - StJosephsChurchEastWallTest\VerseTest::testGetParagraphAfterSetFromProvider with data set #3 ('Paragraph3004', 'Paragraph3004')
+1..30
