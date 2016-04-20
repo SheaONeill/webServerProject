@@ -1,9 +1,23 @@
 <?php
+// server should keep session data for AT LEAST 1 hour
+ini_set('session.gc_maxlifetime', 3600);
+
+// each client should remember their session id for EXACTLY 1 hour
+session_set_cookie_params(600);
+
 
 //start the session
 session_start();
 
 require_once __DIR__ . '/../vendor/autoload.php';
+
+// testing twig 
+//$myTemplatesPath = __DIR__ . '/../templates';
+//$loader = new Twig_Loader_Filesystem($myTemplatesPath);
+//$twig = new Twig_Environment($loader);
+
+//$templateName = 'index';
+//echo $twig->render($templateName . '.twig');
 
 use StJosephsChurchEastWall\MainController;
 use StJosephsChurchEastWall\AdminController;

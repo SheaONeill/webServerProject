@@ -4,8 +4,8 @@
     colors="true">
 
     <testsuites>
-        <testsuite name="The project's test suite">
-            <directory>./tests</directory>
+        <testsuite name="test products">
+            <directory>./templates/tests</directory>
         </testsuite>
     </testsuites>
 
@@ -13,6 +13,7 @@
         <whitelist>
             <directory>src</directory>
         </whitelist>
+
     </filter>
 
 

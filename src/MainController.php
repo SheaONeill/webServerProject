@@ -92,8 +92,8 @@ class MainController
 
     public function contactFormAction()
     {
-        //$isLoggedIn = $this->loginController->isLoggedInFromSession();
-        //$username = $this->loginController->usernameFromSession();
+        $isLoggedIn = $this->loginController->isLoggedInFromSession();
+        $username = $this->loginController->usernameFromSession();
 
         $numItems = sizeof($_GET);
 
