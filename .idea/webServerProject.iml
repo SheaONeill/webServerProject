@@ -9,11 +9,13 @@
         <CLASSES>
           <root url="phar://$MODULE_DIR$/phpDocumentor.phar/" />
           <root url="phar://$MODULE_DIR$/php-cs-fixer.phar/" />
+          <root url="phar://$MODULE_DIR$/composer.phar/" />
           <root url="phar://$MODULE_DIR$/phpunit.phar/" />
         </CLASSES>
         <SOURCES>
           <root url="phar://$MODULE_DIR$/phpDocumentor.phar/" />
           <root url="phar://$MODULE_DIR$/php-cs-fixer.phar/" />
+          <root url="phar://$MODULE_DIR$/composer.phar/" />
           <root url="phar://$MODULE_DIR$/phpunit.phar/" />
         </SOURCES>
       </library>

@@ -84,14 +84,44 @@ class ProductTest extends \PHPUnit_Framework_TestCase
     public function testGetQuantityAfterSetQuantity10()
     {
         // arrange
-        $v = new Product();
-        $v->setQuantity('10');
+        $p = new Product();
+        $p->setQuantity('10');
         $expectedResult = '10';
 
         // act
-        $result = $v->getQuantity();
+        $result = $p->getQuantity();
 
         // assert
         $this->assertEquals($expectedResult, $result);
     }
-}
+
+    // ---------------- data provider tests -----------------------
+
+    // ---------------- Testing Id  -----------------------
+    /**
+     * @dataProvider idProvider
+     */
+    public function testGetIdAfterSetFromProvider($id, $expectedResult)
+    {
+        // arrange
+        $p = new Product();
+        $p->setId($id);
+
+        // act
+        $result = $p->getId();
+
+        // assert
+        $this->assertEquals($expectedResult, $result);
+    }
+
+    public function idProvider()
+    {
+        return [
+            ['11', '11'],
+            ['12', '12'],
+            ['13', '13'],
+            ['14', '14'],
+        ];
+    }
+    
+}//end class ProductTest
