@@ -8,7 +8,6 @@
 
 namespace StJosephsChurchEastWallTest;
 
-
-class AdminControllerTestCase {
-
+class AdminControllerTestCase
+{
 }

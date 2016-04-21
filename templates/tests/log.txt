@@ -33,4 +33,7 @@ ok 31 - StJosephsChurchEastWallTest\VerseTest::testGetParagraphAfterSetFromProvi
 ok 32 - StJosephsChurchEastWallTest\VerseTest::testGetParagraphAfterSetFromProvider with data set #1 ('Paragraph3002', 'Paragraph3002')
 ok 33 - StJosephsChurchEastWallTest\VerseTest::testGetParagraphAfterSetFromProvider with data set #2 ('Paragraph3003', 'Paragraph3003')
 ok 34 - StJosephsChurchEastWallTest\VerseTest::testGetParagraphAfterSetFromProvider with data set #3 ('Paragraph3004', 'Paragraph3004')
-1..34
+ok 35 - StJosephsChurchEastWallTest\ZMetaTest::testPSR2DirectorySrc
+ok 36 - StJosephsChurchEastWallTest\ZMetaTest::testPSR2DirectoryTests
+ok 37 - StJosephsChurchEastWallTest\ZMetaTest::testPSR2DirectoryPublic
+1..37

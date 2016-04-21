@@ -123,5 +123,5 @@ class ProductTest extends \PHPUnit_Framework_TestCase
             ['14', '14'],
         ];
     }
-    
 }//end class ProductTest
+

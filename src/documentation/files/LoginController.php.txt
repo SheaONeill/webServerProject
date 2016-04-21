@@ -35,7 +35,6 @@ class LoginController
         $isLoggedIn = false;
 
 
-
         //start the session
         //session_start();
 

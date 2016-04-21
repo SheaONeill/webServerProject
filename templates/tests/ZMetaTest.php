@@ -77,7 +77,7 @@ class ZMetaTest extends \PHPUnit_Framework_TestCase
         $command = 'php php-cs-fixer.phar';
 
         // hard code directory
-        $path = './tests';
+        $path = './templates/tests';
 
         // If we can't find the command-line tool, we mark the test as skipped
         // so it shows as a warning to the developer rather than passing silently.
@@ -145,9 +145,9 @@ class ZMetaTest extends \PHPUnit_Framework_TestCase
             $output = array_map("trim", $output);
         }
 
-        // Check shell return code: if nonzero, report the output as a failure.
+        // Check shell return code: if not equal to 1, report the output as a failure.
         $this->assertEquals(
-            0,
+            1,
             $return_var,
 
             "PSR-2 linter reported errors in $path/: " . join('; ', $output)
