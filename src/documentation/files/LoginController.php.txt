@@ -34,6 +34,11 @@ class LoginController
         // this is the default for the is logged in variable
         $isLoggedIn = false;
 
+
+
+        //start the session
+        //session_start();
+
         $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
         $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
 
@@ -44,6 +49,12 @@ class LoginController
         if ($isLoggedIn) {
             // STORE login status SESSION
             $_SESSION['user'] = $username;
+
+            // server should keep session data for AT LEAST 1 hour
+            ini_set('session.gc_maxlifetime', 3600);
+
+            // each client should remember their session id for EXACTLY 1 hour
+            session_set_cookie_params(600);
 
             //save name in a cookie, to expire
             $hour_as_seconds = 15 * 1;
