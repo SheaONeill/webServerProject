@@ -1,0 +1,54 @@
+{% include 'includes/header_full.php' %}
+
+{#use StJosephsChurchEastWall\Verse;
+use StJosephsChurchEastWall\NewsFeed;#}
+
+
+<body xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"><!-- begin body opening tag -->
+<div id="main_container"><!-- div to wrap everything-->
+    <!-- ***** header ***** -->
+    <header><!-- begin header opening tag -->
+
+        {#//include the social media links from body_header_media_logos.php#}
+        {% include 'includes/body_header_media_logos.php' %}
+
+    </header><!-- close header tag -->
+
+    <div id="nav_container"><!-- div to wrap the nav-->
+
+        {#//include the navbar from body_header_nav.php#}
+        {% include 'includes/body_header_nav.php' %}
+
+    </div><!-- close nav_container -->
+
+
+    <div id="section_container"><!-- div to wrap the sections -->
+
+        <table>    <!-- begin table -->
+
+
+            {% for obituary in obituarys %}
+                <tr>
+                    <td><p>{{ obituary.month }}    {{ obituary.year }}</p>
+                        <p><i>  {{ obituary.name }}</i> {{ obituary.road }}</p></td>
+
+                </tr>
+
+
+            {% endfor %}
+        </table>
+
+    </div><!-- close section_container tag -->
+    <div id="the_footer_wrapper"><!-- div to wrap the footer -->
+
+
+        {#//include the footer from footer.php#}
+        {% include 'includes/footer.php' %}
+
+
+        <p id="copyright">&copy; 2016&nbsp;&nbsp;James O&#39;Neill&nbsp;&nbsp;<a href="mailto:B00084432@student.itb.ie">Email</a></li>
+        </p><!-- footer copyright-->
+    </div><!-- close the_footer_wrapper tag -->
+</div><!-- close main_container div tag -->
+</body><!-- close body tag -->
+</html><!-- close html tag -->

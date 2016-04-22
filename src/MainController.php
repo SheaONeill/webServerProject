@@ -70,15 +70,26 @@ class MainController
         require_once __DIR__ . '/../templates/contact.php';
     }
 
-    public function obituaryAction()
+    public function obituaryAction($twig)
     {
         //added this from seperate controllers example
         $isLoggedIn = $this->loginController->isLoggedInFromSession();
         $username = $this->loginController->usernameFromSession();
 
+
+        $obituaryRepository = new ObituaryRepository();
+        $obituarys = $obituaryRepository->getAll();
+
+        $argsArray = [
+            'obituarys' => $obituarys,
+        ];
+
+        $templateName = 'obituary';
+        print $twig->render($templateName . '.twig', $argsArray);
+
         $pageTitle = 'Site Map';
         $obituaryLinkStyle = 'current_page';
-        require_once __DIR__ . '/../templates/obituary.php';
+        /* require_once __DIR__ . '/../templates/obituary.php';*/
     }
 
     public function site_mapAction()

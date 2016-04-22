@@ -9,15 +9,9 @@
 //start the session
 session_start();
 
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../startUP/startUp.php';
+/*require_once __DIR__ . '/../vendor/autoload.php';*/
 
-// testing twig 
-//$myTemplatesPath = __DIR__ . '/../templates/twig';
-//$loader = new Twig_Loader_Filesystem($myTemplatesPath);
-//$twig = new Twig_Environment($loader);
-
-//$templateName = 'contact';
-//echo $twig->render($templateName . '.twig');
 
 use StJosephsChurchEastWall\MainController;
 use StJosephsChurchEastWall\AdminController;
@@ -146,7 +140,7 @@ switch ($action){
         break;
 
     case 'obituary':
-        $mainController->obituaryAction();
+        $mainController->obituaryAction($twig);
         break;
 
     case 'site_map':
